@@ -42,6 +42,18 @@ async def test_changed_review_answer_requires_review(settings, model, solver):
     assert any("改变了初答" in warning for warning in response.warnings)
 
 
+@pytest.mark.asyncio
+async def test_empty_review_answer_keeps_draft_answer(settings, model, solver):
+    model.review_answer = ""
+    response = await solver.solve("测试题", options={"A": "甲", "B": "乙"}, question_type="single")
+    assert response.answer == "A"
+    assert response.question_type == "single"
+    assert response.confidence == pytest.approx(0.91)
+    assert "模型未能给出有效答案" not in response.warnings
+    assert any("保留初答" in warning for warning in response.warnings)
+    assert response.needs_review is True
+
+
 def test_evaluation_summary_counts_blank_and_manual_separately():
     results = [
         {"auto_graded": True, "is_correct": True, "answer": "A", "question_type": "single", "input_type": "text", "latency_seconds": 1.0},

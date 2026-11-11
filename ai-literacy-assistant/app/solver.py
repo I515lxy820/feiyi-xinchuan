@@ -219,7 +219,17 @@ class Solver:
                     reviewed = await self.model.review(
                         draft.question_text or question_text, draft, sources
                     )
-                    if normalize_answer(reviewed.answer, reviewed.question_type) != normalize_answer(
+                    if reviewed.question_type == "unknown" and draft.question_type != "unknown":
+                        reviewed.question_type = draft.question_type
+                    if not reviewed.options:
+                        reviewed.options = draft.options
+                    if not reviewed.answer.strip() and draft.answer.strip():
+                        review_failed = True
+                        self._append(warnings, "复核未返回有效答案，已保留初答")
+                        reviewed.answer = draft.answer
+                        reviewed.question_type = draft.question_type or reviewed.question_type
+                        reviewed.confidence = draft.confidence
+                    elif normalize_answer(reviewed.answer, reviewed.question_type) != normalize_answer(
                         draft.answer, draft.question_type
                     ):
                         self._append(warnings, "联网复核改变了初答，请重点人工核对")
