@@ -46,6 +46,7 @@ class SolveResponse(BaseModel):
     is_correct: bool | None = None
     correct_answer: str | None = None
     error_category: str | None = None
+    answer_status: Literal["confirmed", "pending"] | None = None
 
 
 class QuestionRecord(BaseModel):
@@ -57,6 +58,7 @@ class QuestionRecord(BaseModel):
     explanation: str = ""
     source: str = ""
     image_path: str = ""
+    answer_status: Literal["confirmed", "pending"] = "confirmed"
 
 
 class QuestionPublic(BaseModel):
@@ -67,6 +69,45 @@ class QuestionPublic(BaseModel):
     topic: str
     source: str = ""
     has_image: bool = False
+    answer_status: Literal["confirmed", "pending"] = "confirmed"
+
+
+class ImportQuestion(BaseModel):
+    question_text: str = Field(min_length=1)
+    question_type: QuestionType = "unknown"
+    options: dict[str, str] = Field(default_factory=dict)
+    answer: str = ""
+    topic: str = "导入题"
+    explanation: str = ""
+    source: str = ""
+
+
+class ImportRequest(BaseModel):
+    questions: list[ImportQuestion]
+    auto_solve: bool = True
+    search_mode: Literal["auto", "off"] = "off"
+
+
+class ImportItemResult(BaseModel):
+    question_text: str
+    question_type: QuestionType = "unknown"
+    options: dict[str, str] = Field(default_factory=dict)
+    answer: str = ""
+    status: Literal["confirmed", "pending", "skipped", "failed"]
+    message: str = ""
+
+
+class ImportResult(BaseModel):
+    total: int
+    confirmed: int
+    pending: int
+    skipped: int
+    failed: int
+    items: list[ImportItemResult]
+
+
+class AnswerConfirm(BaseModel):
+    answer: str = Field(min_length=1)
 
 
 class RunCreate(BaseModel):

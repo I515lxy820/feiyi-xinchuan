@@ -209,3 +209,21 @@ footer p { margin: 0; max-width: 950px; }
   .mistake-answers { grid-template-columns: 1fr; }
   footer { flex-direction: column; gap: 6px; }
 }
+
+.import-panel { margin-top: 24px; }
+.panel-hint { margin: 0 0 14px; color: var(--muted); font-size: 13px; line-height: 1.8; }
+#import-input { min-height: 160px; font-size: 13px; }
+.import-actions { flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 14px; }
+.import-result { margin-top: 18px; border-top: 1px solid var(--line); padding-top: 16px; }
+.import-result > p { margin: 0 0 12px; font-weight: 700; font-size: 13px; }
+.import-items { display: grid; gap: 8px; max-height: 280px; overflow: auto; }
+.import-item { display: flex; flex-direction: column; gap: 3px; padding: 9px 12px; border-radius: 9px; background: #f7f9f5; border-left: 3px solid var(--line); font-size: 13px; }
+.import-item small { color: var(--muted); }
+.import-item.pending { border-left-color: #c98d24; }
+.import-item.confirmed { border-left-color: #477f63; }
+.import-item.failed { border-left-color: #c0504d; }
+.import-item.skipped { opacity: .65; }
+.pending-note { margin: 0 0 14px; padding: 8px 12px; border-radius: 9px; background: #fdf6e6; color: #8a5c00; font-size: 13px; }
+.answer-confirm { border-top: 1px dashed var(--line); }
+.answer-confirm-row { display: flex; gap: 10px; align-items: center; margin-top: 10px; }
+.answer-confirm-input { flex: 1; }

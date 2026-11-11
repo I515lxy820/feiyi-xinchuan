@@ -152,3 +152,50 @@ def test_webpage_source_is_linked_without_exposing_page_text(settings, model):
 
     review_call = next(call for call in model.calls if "citations" in call)
     assert review_call["citations"][0].page_text == "仅供模型复核的网页正文"
+
+
+def find_question_id(settings, text):
+    database = Database(settings.database_path)
+    with database.connect() as connection:
+        return connection.execute(
+            "SELECT id FROM practice_questions WHERE question_hash = ?", (question_hash(text),)
+        ).fetchone()[0]
+
+
+def test_import_questions_marks_pending_and_confirms(settings, solver):
+    with make_client(settings, solver) as client:
+        response = client.post("/api/import/questions", json={"questions": [
+            {"question_text": "已带答案的导入题", "question_type": "single", "options": {"A": "甲", "B": "乙"}, "answer": "B"},
+            {"question_text": "需要自动作答的导入题", "question_type": "single", "options": {"A": "甲", "B": "乙"}},
+            {"question_text": "已带答案的导入题", "question_type": "single", "options": {"A": "甲", "B": "乙"}, "answer": "A"},
+        ]})
+        assert response.status_code == 200
+        summary = response.json()
+        assert summary["total"] == 3
+        assert summary["confirmed"] == 1
+        assert summary["pending"] == 1
+        assert summary["skipped"] == 1
+        assert client.get("/api/stats").json()["pending_questions"] == 1
+
+        question_id = find_question_id(settings, "需要自动作答的导入题")
+        assert client.post(f"/api/questions/{question_id}/answer", json={"answer": "C"}).status_code == 400
+        confirmed = client.post(f"/api/questions/{question_id}/answer", json={"answer": "B"})
+        assert confirmed.json() == {"id": question_id, "answer": "B", "answer_status": "confirmed"}
+        assert client.get("/api/stats").json()["pending_questions"] == 0
+
+
+def test_import_without_answer_and_without_autosolve_fails(settings, solver):
+    with make_client(settings, solver) as client:
+        summary = client.post("/api/import/questions", json={
+            "questions": [{"question_text": "没有答案的题", "question_type": "single", "options": {"A": "甲"}}],
+            "auto_solve": False,
+        }).json()
+        assert summary["failed"] == 1
+        assert "未提供答案" in summary["items"][0]["message"]
+
+
+def test_import_rejects_too_many_questions(settings, solver):
+    with make_client(settings, solver) as client:
+        questions = [{"question_text": f"批量题 {index}", "question_type": "boolean", "answer": "正确"} for index in range(51)]
+        response = client.post("/api/import/questions", json={"questions": questions})
+        assert response.status_code == 400

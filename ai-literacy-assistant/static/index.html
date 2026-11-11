@@ -113,6 +113,17 @@
           <div id="practice-result" class="result-content empty-state compact-empty"><p>完成本题后显示模型答案、标准答案和判分结果。</p></div>
         </article>
       </div>
+      <article class="panel import-panel">
+        <div class="panel-heading"><h3>批量导入题目</h3><span class="step-badge">AI 待确认</span></div>
+        <p class="panel-hint">粘贴题目 JSON 或纯文本（题目、选项每行一条，题目之间空一行）。未提供答案时会自动作答并标记为“待确认”，确认后才作为正式标准答案。</p>
+        <textarea id="import-input" rows="8" placeholder='[{"question_text":"题干","question_type":"single","options":{"A":"甲","B":"乙"}}]'></textarea>
+        <div class="button-row import-actions">
+          <label class="checkbox-label"><input id="import-auto-solve" type="checkbox" checked>缺答案时自动作答</label>
+          <label class="checkbox-label"><input id="import-search" type="checkbox">导入时联网核对（较慢）</label>
+          <button id="import-submit" class="primary-button compact" type="button">导入题库</button>
+        </div>
+        <div id="import-result" class="import-result" hidden></div>
+      </article>
     </section>
 
     <section id="view-mistakes" class="view">

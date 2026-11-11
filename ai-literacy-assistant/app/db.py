@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from .answers import normalize_answer
 from .schemas import Citation, QuestionRecord, SolveResponse
 
 
@@ -36,6 +37,7 @@ class Database:
                     explanation TEXT NOT NULL DEFAULT '',
                     source TEXT NOT NULL DEFAULT '',
                     image_path TEXT NOT NULL DEFAULT '',
+                    answer_status TEXT NOT NULL DEFAULT 'confirmed',
                     question_hash TEXT NOT NULL UNIQUE,
                     created_at TEXT NOT NULL
                 );
@@ -89,6 +91,14 @@ class Database:
                 CREATE INDEX IF NOT EXISTS idx_feedback_attempt ON feedback(attempt_id, id);
                 """
             )
+            columns = {
+                row["name"]
+                for row in connection.execute("PRAGMA table_info(practice_questions)")
+            }
+            if "answer_status" not in columns:
+                connection.execute(
+                    "ALTER TABLE practice_questions ADD COLUMN answer_status TEXT NOT NULL DEFAULT 'confirmed'"
+                )
 
     @staticmethod
     def _question_from_row(row: sqlite3.Row, include_answer: bool = False) -> dict[str, Any]:
@@ -99,6 +109,7 @@ class Database:
             "options": json.loads(row["options_json"]),
             "topic": row["topic"],
             "source": row["source"],
+            "answer_status": row["answer_status"],
             "has_image": bool(row["image_path"]),
         }
         if include_answer:
@@ -118,8 +129,8 @@ class Database:
                     """
                     INSERT OR IGNORE INTO practice_questions (
                         question_text, options_json, question_type, topic, answer,
-                        explanation, source, image_path, question_hash, created_at
-                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                        explanation, source, image_path, answer_status, question_hash, created_at
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     """,
                     (
                         record.question_text,
@@ -130,6 +141,7 @@ class Database:
                         record.explanation,
                         record.source,
                         record.image_path,
+                        record.answer_status,
                         question_hash,
                         utc_now(),
                     ),
@@ -316,6 +328,9 @@ class Database:
             runs = connection.execute(
                 "SELECT * FROM practice_runs ORDER BY id DESC LIMIT 10"
             ).fetchall()
+            pending_questions = connection.execute(
+                "SELECT COUNT(*) FROM practice_questions WHERE answer_status = 'pending'"
+            ).fetchone()[0]
 
         overall = {"attempts": len(rows), "graded": 0, "correct": 0, "accuracy": None}
         by_type: dict[str, dict[str, Any]] = {}
@@ -360,7 +375,27 @@ class Database:
             "by_topic": by_topic,
             "latency_seconds": {"p50": percentile(0.5), "p95": percentile(0.95)},
             "recent_runs": [dict(run) for run in runs],
+            "pending_questions": pending_questions,
         }
+
+    def confirm_answer(self, question_id: int, answer: str) -> dict[str, Any] | None:
+        question = self.get_question(question_id, include_answer=True)
+        if question is None:
+            return None
+        normalized = normalize_answer(answer, question["question_type"])
+        with self.connect() as connection:
+            connection.execute(
+                "UPDATE practice_questions SET answer = ?, answer_status = 'confirmed' WHERE id = ?",
+                (normalized, question_id),
+            )
+        return self.get_question(question_id, include_answer=True)
+
+    def question_exists(self, question_hash_value: str) -> bool:
+        with self.connect() as connection:
+            return connection.execute(
+                "SELECT 1 FROM practice_questions WHERE question_hash = ?",
+                (question_hash_value,),
+            ).fetchone() is not None
 
     def question_hashes(self) -> set[str]:
         with self.connect() as connection:

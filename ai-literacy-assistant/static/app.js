@@ -12,6 +12,10 @@ const typeNames = {
   fill: "填空题", essay: "简答题", unknown: "题型待确认",
 };
 
+const importStatusNames = {
+  confirmed: "已作为标准答案", pending: "已导入，待确认", skipped: "跳过", failed: "失败",
+};
+
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 
@@ -134,8 +138,13 @@ function renderResult(container, data, practice = false) {
 
   if (practice && data.correct_answer !== null) {
     const standard = node("section", "result-section");
-    standard.append(node("h4", "", "标准答案"), node("p", "", data.correct_answer));
+    const pending = data.answer_status === "pending";
+    standard.append(
+      node("h4", "", pending ? "标准答案（AI 生成，待确认）" : "标准答案"),
+      node("p", "", data.correct_answer)
+    );
     container.append(standard);
+    if (pending && state.question) addAnswerConfirm(container, state.question.id, data.correct_answer);
   }
 
   if (data.warnings?.length) {
@@ -175,6 +184,121 @@ function renderResult(container, data, practice = false) {
   timingSection.append(node("h4", "", "处理耗时"), node("p", "", timingText));
   container.append(timingSection);
   addFeedback(container, data.attempt_id);
+}
+
+function addAnswerConfirm(container, questionId, currentAnswer) {
+  const section = node("section", "result-section answer-confirm");
+  section.append(node("h4", "", "确认标准答案"));
+  const input = node("input", "answer-confirm-input");
+  input.type = "text";
+  input.value = currentAnswer || "";
+  input.placeholder = "如 A、A,C 或 正确";
+  const button = node("button", "secondary-button compact", "确认并转为标准答案");
+  button.type = "button";
+  button.addEventListener("click", async () => {
+    const answer = input.value.trim();
+    if (!answer) {
+      toast("请填写标准答案", true);
+      return;
+    }
+    setBusy(button, true, "保存中…");
+    try {
+      const result = await api(`/api/questions/${questionId}/answer`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ answer }),
+      });
+      toast(`标准答案已确认为 ${result.answer}`);
+      if (state.question) state.question.answer_status = "confirmed";
+      section.replaceChildren(node("p", "", `标准答案已确认：${result.answer}`));
+    } catch (error) {
+      toast(error.message, true);
+    } finally {
+      setBusy(button, false);
+    }
+  });
+  const row = node("div", "answer-confirm-row");
+  row.append(input, button);
+  section.append(row);
+  container.append(section);
+}
+
+function parseImportText(raw) {
+  const trimmed = raw.trim();
+  if (!trimmed) return [];
+  if (trimmed.startsWith("[") || trimmed.startsWith("{")) {
+    const parsed = JSON.parse(trimmed);
+    return Array.isArray(parsed) ? parsed : parsed.questions || [];
+  }
+  return trimmed
+    .split(/\n\s*\n/)
+    .map((block) => {
+      const lines = block.split("\n").map((line) => line.trim()).filter(Boolean);
+      const question = { question_text: lines[0] || "", question_type: "unknown", options: {}, answer: "" };
+      lines.slice(1).forEach((line) => {
+        const answer = line.match(/^(?:答案|正确答案)\s*[：:]\s*(.+)$/);
+        const option = line.match(/^([A-Za-z])\s*[.、．:：)]\s*(.+)$/);
+        if (answer) question.answer = answer[1].trim();
+        else if (option) question.options[option[1].toUpperCase()] = option[2].trim();
+      });
+      return question;
+    })
+    .filter((item) => item.question_text);
+}
+
+function renderImportResult(result) {
+  const container = $("#import-result");
+  container.hidden = false;
+  container.replaceChildren();
+  container.append(
+    node("p", "", `共 ${result.total} 题：已确认 ${result.confirmed}，待确认 ${result.pending}，跳过 ${result.skipped}，失败 ${result.failed}`)
+  );
+  const list = node("div", "import-items");
+  result.items.forEach((item) => {
+    const row = node("div", `import-item ${item.status}`);
+    row.append(node("strong", "", item.question_text.slice(0, 36)));
+    const detail = [importStatusNames[item.status], item.answer, item.message].filter(Boolean).join(" · ");
+    row.append(node("small", "", detail));
+    list.append(row);
+  });
+  container.append(list);
+}
+
+async function importQuestions() {
+  const button = $("#import-submit");
+  let questions;
+  try {
+    questions = parseImportText($("#import-input").value);
+  } catch {
+    toast("JSON 格式不正确，请检查后重试", true);
+    return;
+  }
+  if (!questions.length) {
+    toast("请先粘贴题目", true);
+    return;
+  }
+  if (questions.length > 50) {
+    toast("单次最多导入 50 道题，请分批粘贴", true);
+    return;
+  }
+  setBusy(button, true, `导入中（${questions.length} 题）…`);
+  try {
+    const result = await api("/api/import/questions", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        questions,
+        auto_solve: $("#import-auto-solve").checked,
+        search_mode: $("#import-search").checked ? "auto" : "off",
+      }),
+    });
+    renderImportResult(result);
+    $("#run-status").textContent = `题库已更新：新增 ${result.confirmed + result.pending} 题，其中待确认 ${result.pending} 题`;
+  } catch (error) {
+    toast(error.message, true);
+  } finally {
+    setBusy(button, false);
+  }
 }
 
 function setImage(file) {
@@ -269,6 +393,9 @@ function renderPracticeQuestion(question) {
   }
   $("#practice-type").textContent = `${typeNames[question.question_type]} · ${question.topic}`;
   container.append(node("h3", "", question.question_text));
+  if (question.answer_status === "pending") {
+    container.append(node("p", "pending-note", "该题标准答案由 AI 生成，尚未人工确认，确认后才计入正式准确率。"));
+  }
   if (question.has_image) {
     const image = node("img");
     image.src = `/api/practice/${question.id}/image`;
@@ -455,6 +582,7 @@ const dropzone = $("#dropzone");
 dropzone.addEventListener("drop", (event) => setImage(event.dataTransfer.files[0]));
 $("#solve-button").addEventListener("click", solveQuick);
 $("#start-run").addEventListener("click", startRun);
+$("#import-submit").addEventListener("click", importQuestions);
 $("#next-practice").addEventListener("click", async () => { state.question = null; await nextPractice(); });
 $("#solve-practice").addEventListener("click", solvePractice);
 $("#auto-run").addEventListener("click", autoPractice);

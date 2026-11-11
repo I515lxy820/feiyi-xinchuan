@@ -1,21 +1,37 @@
 from contextlib import asynccontextmanager
+import asyncio
 from pathlib import Path
 from typing import Literal
 
 from fastapi import FastAPI, File, Form, HTTPException, Query, UploadFile
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
+from pydantic import ValidationError
 
-from .answers import answers_match, classify_error
+from .answers import answers_match, classify_error, normalize_answer
 from .config import BASE_DIR, Settings
 from .db import Database
 from .imaging import ImageValidationError, prepare_image
 from .providers import ProviderError
-from .schemas import FeedbackCreate, HealthResponse, QuestionPublic, RunCreate, SolveResponse
+from .question_io import question_hash, validate_record
+from .schemas import (
+    AnswerConfirm,
+    FeedbackCreate,
+    HealthResponse,
+    ImportItemResult,
+    ImportQuestion,
+    ImportRequest,
+    ImportResult,
+    QuestionPublic,
+    QuestionRecord,
+    RunCreate,
+    SolveResponse,
+)
 from .solver import Solver
 
 
 STATIC_DIR = BASE_DIR / "static"
+MAX_IMPORT_QUESTIONS = 50
 
 
 def create_app(settings: Settings | None, solver: Solver | None = None) -> FastAPI:
@@ -158,6 +174,7 @@ def create_app(settings: Settings | None, solver: Solver | None = None) -> FastA
             response.answer, question["answer"], question["question_type"]
         )
         response.correct_answer = question["answer"]
+        response.answer_status = question["answer_status"]
         response.run_id = run_id
         response.error_category = classify_error(response)
         input_type = (
@@ -190,6 +207,154 @@ def create_app(settings: Settings | None, solver: Solver | None = None) -> FastA
     @app.get("/api/mistakes")
     async def mistakes(topic: str = "") -> list[dict]:
         return database.list_mistakes(topic.strip())
+
+    @app.post("/api/import/questions", response_model=ImportResult)
+    async def import_questions(payload: ImportRequest) -> ImportResult:
+        if not payload.questions:
+            raise HTTPException(status_code=400, detail="请至少提供一道题目")
+        if len(payload.questions) > MAX_IMPORT_QUESTIONS:
+            raise HTTPException(
+                status_code=400, detail=f"单次最多导入 {MAX_IMPORT_QUESTIONS} 道题"
+            )
+
+        semaphore = asyncio.Semaphore(3)
+        seen: set[str] = set()
+
+        def failure(
+            text: str,
+            message: str,
+            question_type: str = "unknown",
+            options: dict[str, str] | None = None,
+        ) -> tuple[ImportItemResult, None]:
+            return (
+                ImportItemResult(
+                    question_text=text,
+                    question_type=question_type,
+                    options=options or {},
+                    status="failed",
+                    message=message,
+                ),
+                None,
+            )
+
+        async def handle(item: ImportQuestion) -> tuple[ImportItemResult, QuestionRecord | None]:
+            text = item.question_text.strip()
+            options = {
+                str(key).strip().upper(): str(value).strip()
+                for key, value in item.options.items()
+                if str(value).strip()
+            }
+            question_type = item.question_type
+            answer = item.answer.strip()
+            explanation = item.explanation.strip()
+            digest = question_hash(text)
+
+            if digest in seen:
+                return (
+                    ImportItemResult(
+                        question_text=text,
+                        status="skipped",
+                        message="与本次导入中的另一题重复",
+                    ),
+                    None,
+                )
+            seen.add(digest)
+            if database.question_exists(digest):
+                return (
+                    ImportItemResult(
+                        question_text=text, status="skipped", message="题库中已存在相同题目"
+                    ),
+                    None,
+                )
+
+            if not answer:
+                if not payload.auto_solve:
+                    return failure(text, "未提供答案且未开启自动作答", question_type, options)
+                if app.state.solver is None:
+                    return failure(text, "模型未配置，无法自动作答，请手工提供答案", question_type, options)
+                async with semaphore:
+                    try:
+                        solved = await app.state.solver.solve(
+                            text,
+                            options=options,
+                            question_type=question_type,
+                            search_mode=payload.search_mode,
+                        )
+                    except ProviderError as exc:
+                        return failure(text, f"自动作答失败：{exc}", question_type, options)
+                if not solved.answer:
+                    return failure(text, "自动作答未返回答案，请手工提供答案", question_type, options)
+                if solved.question_type != "unknown":
+                    question_type = solved.question_type
+                options = options or solved.options
+                answer = solved.answer
+                explanation = explanation or solved.explanation
+
+            try:
+                record = validate_record(
+                    QuestionRecord(
+                        question_text=text,
+                        question_type=question_type,  # type: ignore[arg-type]
+                        options=options,
+                        answer=answer,
+                        topic=item.topic.strip()[:100] or "导入题",
+                        explanation=explanation,
+                        source=item.source.strip()[:500],
+                    )
+                )
+            except (ValidationError, ValueError) as exc:
+                return failure(text, f"题目校验失败：{exc}", question_type, options)
+
+            record.answer_status = "confirmed" if item.answer.strip() else "pending"
+            return (
+                ImportItemResult(
+                    question_text=record.question_text,
+                    question_type=record.question_type,
+                    options=record.options,
+                    answer=record.answer,
+                    status="confirmed" if record.answer_status == "confirmed" else "pending",
+                ),
+                record,
+            )
+
+        pairs = await asyncio.gather(*(handle(item) for item in payload.questions))
+        items = [pair[0] for pair in pairs]
+        records = [
+            (pair[1], question_hash(pair[1].question_text)) for pair in pairs if pair[1] is not None
+        ]
+        if records:
+            database.insert_questions(records)
+        return ImportResult(
+            total=len(items),
+            confirmed=sum(1 for item in items if item.status == "confirmed"),
+            pending=sum(1 for item in items if item.status == "pending"),
+            skipped=sum(1 for item in items if item.status == "skipped"),
+            failed=sum(1 for item in items if item.status == "failed"),
+            items=items,
+        )
+
+    @app.post("/api/questions/{question_id}/answer")
+    async def confirm_question_answer(question_id: int, payload: AnswerConfirm) -> dict:
+        question = database.get_question(question_id, include_answer=True)
+        if not question:
+            raise HTTPException(status_code=404, detail="题目不存在")
+        answer = payload.answer.strip()
+        question_type = question["question_type"]
+        normalized = normalize_answer(answer, question_type)
+        if question_type in {"single", "multiple"}:
+            labels = normalized.split(",") if normalized else []
+            if not labels or any(label not in question["options"] for label in labels):
+                raise HTTPException(status_code=400, detail="答案必须是题目中的有效选项标签")
+            if question_type == "single" and len(labels) != 1:
+                raise HTTPException(status_code=400, detail="单选题只能填写一个选项标签")
+        elif question_type == "boolean" and normalized not in {"正确", "错误"}:
+            raise HTTPException(status_code=400, detail="判断题答案必须是“正确”或“错误”")
+        updated = database.confirm_answer(question_id, answer)
+        return {
+            "id": question_id,
+            "answer": updated["answer"],
+            "answer_status": updated["answer_status"],
+        }
 
     @app.get("/api/stats")
     async def stats() -> dict:
