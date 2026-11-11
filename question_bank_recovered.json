@@ -1,0 +1,949 @@
+[
+  {
+    "question_text": "在论文排版中，如果要分章节设置不同的页眉，需要先（）。",
+    "question_type": "single",
+    "options": {
+      "A": "分页",
+      "B": "分节",
+      "C": "设置样式",
+      "D": "分栏"
+    },
+    "answer": "B",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在cnki的专业检索中，输入这样的表达式：'FT=新冠肺炎 /PREV 3 中药'，请问检索意图是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "新冠肺炎和中药这个两个词必须出现在同一段中，按次序出现，间隔大于3个词。",
+      "B": "新冠肺炎和中药这个两个词必须出现在同一段中，按次序出现，间隔小于3个词。",
+      "C": "新冠肺炎和中药这个两个词必须出现在同一段中，不限制次序，间隔大于3个词。",
+      "D": "新冠肺炎和中药这个两个词必须出现在同一句中，按次序出现，间隔小于3个词。"
+    },
+    "answer": "D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列属于词云生成器的是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "幕布",
+      "B": "石墨",
+      "C": "一起写",
+      "D": "微词云"
+    },
+    "answer": "D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "中国专利公布公告系统提供的查询功能包括（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "命令行查询",
+      "B": "LOC分类查询",
+      "C": "IPC分类查询",
+      "D": "高级查询"
+    },
+    "answer": "B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列哪些搜索语法搜狗支持得比较好？（）",
+    "question_type": "multiple",
+    "options": {
+      "A": "inurl",
+      "B": "filetype",
+      "C": "空格",
+      "D": "site"
+    },
+    "answer": "B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "1checker这个工具能够（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "把中文翻译成英文",
+      "B": "对于英文表达中的错误，给出修改建议",
+      "C": "找出英文表达中用错的词语",
+      "D": "找出英文表达中语法错误"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列学术数据库，没有购买也能免费检索的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "维普",
+      "B": "CNKI",
+      "C": "万方",
+      "D": "读秀"
+    },
+    "answer": "A,B,C",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "百度网盘，可以（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "把互联网上的文件下载到网盘中",
+      "B": "可以把自己网盘中的文件分享给别人",
+      "C": "可以制作思维导图",
+      "D": "存储文件"
+    },
+    "answer": "A,B,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "可以查阅到图书目录的网站有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "亚马逊",
+      "B": "京东",
+      "C": "当当",
+      "D": "淘宝/天猫"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "进入百度的高级搜索页面（https://www.baidu.com/gaoji/advanced.html），可以看到一个文档格式的限制选项，可以指定搜索结果的具体文件格式，其中有一个“所有格式”的选项。如果输入搜索词“视频”，选择这个“所有格式”，下列哪些格式的文件可能被找到？",
+    "question_type": "multiple",
+    "options": {
+      "A": "PDF",
+      "B": "MP4",
+      "C": "WORD",
+      "D": "XLS"
+    },
+    "answer": "A,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列哪些网站或者系统可以帮助我们了解一家公司？",
+    "question_type": "multiple",
+    "options": {
+      "A": "中国裁判文书网",
+      "B": "国家企业信用信息公示系统",
+      "C": "天眼查",
+      "D": "国家知识产权局旗下的中国商标网和专利检索与分析平台"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在四川省图书馆查询“物种起源”，相关的索书号有以下哪些？",
+    "question_type": "multiple",
+    "options": {
+      "A": "2020/I247.55/21",
+      "B": "2018/Q111.2/1",
+      "C": "2016/H319.4:Q/1",
+      "D": "2019/Q111.2/3"
+    },
+    "answer": "A,B,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "联图网（http://www.liantu.com/）是一个比较知名的二维码在线生成器。在联图网中可以做成二维码的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "wifi",
+      "B": "文本",
+      "C": "网址",
+      "D": "名片"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "一席是一个高质量中文演讲平台，一席的特点有哪些？",
+    "question_type": "multiple",
+    "options": {
+      "A": "质量高，选题广。",
+      "B": "聚焦中文演讲。",
+      "C": "内容平易近人，接地气。",
+      "D": "演讲者往往是具体领域的开拓者。"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "关于书格（https://new.shuge.org），下列说法正确的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "书格提供一站式检索，也可以分类浏览。",
+      "B": "书格中的资源大部分免费，部分珍贵古籍影印版，需要付费获取。",
+      "C": "书格是一个查找古籍影印本的网站，收录了很多高质量的数字化古籍善本。",
+      "D": "书格中的数字化古籍资源，一般提供在线阅览和PDF文档下载两种获取方式。"
+    },
+    "answer": "A,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列网站，与龙喵网类似，都属于网址导航网站的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "小木屋（https://wechalet.cn/）",
+      "B": "虫部落·快搜（https://search.chongbuluo.com）",
+      "C": "小木虫（http://muchong.com）",
+      "D": "优设导航（https://hao.uisdc.com）"
+    },
+    "answer": "A,B,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在维普数据库中输入检索词后，勾选“同义词扩展”功能，系统会自动帮我们找到同义词，提升查全率。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "《亚历山大宣言》指出，终身学习是信息素养的核心。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "菲菲更名宝贝是一个实用的效率工具，文件批量重命名是她的重要功能之一。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "影响因子是按年计算的，一本期刊每年的影响因子一般是有变化的",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "Word中内置了几种自动编号样式，如果需要，也可以自定义自动编号样式。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "写论文，要先读文献。读文献，不是去抄别人的内容，而是要了解你的研究起点。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "互联网上的在线视频，都是可以用迅雷、IDM、MOTRIX等下载工具直接下载的。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "一般期刊论文有作者介绍，有些期刊的作者简介中有作者的email。所以我们可以通过找作者发表的学术论文查找ta的联系方式。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "国家知识产权局旗下的专利检索与分析系统（http://pss-system.cnipa.gov.cn），无需注册登录，检索完全免费，可以获取专利全文。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 d79aab84",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列数据库提供职称评审材料打包下载功能的有（）。",
+    "question_type": "single",
+    "options": {
+      "A": "springer",
+      "B": "WEB OF SCIENCE",
+      "C": "维普",
+      "D": "读秀"
+    },
+    "answer": "C",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "关于信息检索语言，下列不正确的说法是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "信息检索语言是信息存储和信息检索双方共同遵循的一种约定",
+      "B": "Python、JAVA、VB这些都是信息检索语言",
+      "C": "信息检索语言是信息标引人员和信息检索用户之间的媒介",
+      "D": "信息检索语言是描述文献特征的人工语言"
+    },
+    "answer": "B",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列属于时间管理工具的是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "简单搜索",
+      "B": "学堂在线",
+      "C": "领英",
+      "D": "番茄土豆"
+    },
+    "answer": "D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在万方学位论文数据库中查找2010-2020年，中华医学会举办的，会议名称中包含“骨科”的会议论文，请问：这些论文中，发文量最大的机构是（ ）。",
+    "question_type": "single",
+    "options": {
+      "A": "西安红会医院",
+      "B": "四川大学华西临床医学院",
+      "C": "上海交通大学",
+      "D": "北京积水潭医院"
+    },
+    "answer": "B",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在Word中，下列内容可以替换的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "空格",
+      "B": "文字",
+      "C": "字号",
+      "D": "字体"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "xmind支持的功能有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "做二维码",
+      "B": "做甘特图",
+      "C": "做思维导图",
+      "D": "抠图"
+    },
+    "answer": "B,C",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "通过OPAC联机公共目录检索系统可以查询的馆藏信息包括（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "图书馆有没有这本书，有几本书",
+      "B": "书籍存放地",
+      "C": "图书作者",
+      "D": "索书号"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列数据库，可以在药智数据中找到的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "医疗器械广告数据库",
+      "B": "中药方剂数据库",
+      "C": "中国临床试验数据库",
+      "D": "临床诊疗指南数据库"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列哪些检索点可以在CNKI学位论文数据库中找到？",
+    "question_type": "multiple",
+    "options": {
+      "A": "导师",
+      "B": "学位授予单位",
+      "C": "期刊名称",
+      "D": "作者单位"
+    },
+    "answer": "A,B,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在搜狗的搜索框中输入： 软件工程 filetype:ppt site:edu.cn 下列说法正确的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "检索表达式中的site:edu.cn，作用是现在检索结果的来源，必须来自教育网（edu.cn）。",
+      "B": "检索表达式中有三个条件，中间用两个空格连接，空格的作用是布尔逻辑“或”，只要满足其中一个条件即可。",
+      "C": "filetype、site这两个语法，百度、必应、谷歌等主流搜索引擎都支持。",
+      "D": "检索表达式中的filetype:ppt，作用是限制搜索结果的文件的类型，必须是PPT文件。"
+    },
+    "answer": "A,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列系统，支持布尔逻辑中或者关系的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "springer",
+      "B": "pqdt",
+      "C": "cnki",
+      "D": "百度"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列平台，可以查询期刊影响因子的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "维普",
+      "B": "读秀",
+      "C": "cnki",
+      "D": "jcr"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "想知道自己老师的博士论文题目，下列渠道有可能帮你实现的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "知网",
+      "B": "国家图书馆",
+      "C": "学堂在线",
+      "D": "藏书馆"
+    },
+    "answer": "A,B",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列属于CNKI位置检索符的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "SEN",
+      "B": "NEAR",
+      "C": "AFT",
+      "D": "PREV"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "如果学校购买了读秀，在校内可以使用读秀的个人认证服务。 注册读秀账号，完成个人认证，以后用这个账号可以在任何有互联网的设备上免费使用读秀。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "同样一本期刊，同一年，无论是哪个机构给出的影响因子都是相同的。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "腾讯医典中的内容，由专业人士撰写，经过了专业审核，相对比较靠谱。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "使用维普提供的馆外授权功能，我们可以通过手机APP在校外下载维普中的论文全文。但在电脑上不行。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "我国高校几乎都有就业信息网，尽管名字不一样，但都会发布比较靠谱的就业信息，而且大部分都没有权限限制，能上网即可访问。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在国家科技报告服务系统（https://www.nstrs.cn）中，经过认证的专业人员登录后可以在线浏览每一份科技报告的全文。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在国家统计局的网站上不仅可以查询具体统计指标的多年数据，而且可以进行可视化数据分析。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在引用别人的文献时，要注明参考文献。尽量引用最原始的观点，避免引用别人的引用。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "如果学校购买了维普期刊数据库，在学校指定的网络范围内使用维普，能找到的论文，都能直接下载全文。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列工具，可以实现PDF拆分、合并、加页码的是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "xmind",
+      "B": "简书",
+      "C": "万彩办公大师",
+      "D": "一起写"
+    },
+    "answer": "C",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列网站不能够以图识图的是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "360图片 http://image.so.com/",
+      "B": "搜狗图片 http://pic.sogou.com",
+      "C": "昵图网 https://www.nipic.com/",
+      "D": "百度图片 https://image.baidu.com/"
+    },
+    "answer": "C",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列工具，属于按键显示工具的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "carnac",
+      "B": "access",
+      "C": "KeyCastOW",
+      "D": "signpost"
+    },
+    "answer": "A,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在word中选定一行文字，如果想增大字号，可以用的快捷键有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "Ctrl+shift+.",
+      "B": "Ctrl+【",
+      "C": "Ctrl+shift+，",
+      "D": "Ctrl+】"
+    },
+    "answer": "A,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "了解一个导师的科研方向和学术水平，可能的信息渠道包括（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "web of science",
+      "B": "CNKI",
+      "C": "国家社科项目数据库",
+      "D": "国家知识产权局的专利检索系统"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列哪些渠道可以找考证资源？",
+    "question_type": "multiple",
+    "options": {
+      "A": "微信公众号",
+      "B": "B站",
+      "C": "图书馆的数字资源",
+      "D": "知乎"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列属于参考文献著录标准的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "WOS",
+      "B": "MLA",
+      "C": "GB/T 7714-2015",
+      "D": "APA"
+    },
+    "answer": "B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在CNKI中，选择对已选结果分析，可以看到的分析项目包括（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "分布分析",
+      "B": "关系网络分析",
+      "C": "总体趋势分析",
+      "D": "对比分析"
+    },
+    "answer": "A,B,C",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在CNKI中查询，复旦大学2020年之前发表的篇名中既含“人工智能”又含“大数据”的CSSCI论文，下列论文符合上述条件的有？",
+    "question_type": "multiple",
+    "options": {
+      "A": "从哲学维度看人工智能与大数据",
+      "B": "大数据时代人工智能辅助量刑的定位、前景及风险防控",
+      "C": "大数据就意味着大智慧吗——兼论作为信息技术发展新方向的“绿色人工智能”",
+      "D": "基于皮肤影像大数据的皮肤病人工智能系列产品研发与应用"
+    },
+    "answer": "B,C",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列哪些渠道可以找到计算机等级考试方面的信息资源（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "大家论坛",
+      "B": "天眼查",
+      "C": "简书",
+      "D": "B站"
+    },
+    "answer": "A,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在中国执行信息公开网上，可以查询（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "被执行人",
+      "B": "限制消费人员",
+      "C": "失信被执行人",
+      "D": "公司工商登记信息"
+    },
+    "answer": "A,B,C",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "CNKI是一个商业学术数据库，需要购买才能使用，在校外，就无法检索。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "用数据看世界(https://ourworldindata.org)，是一个数据资源网站，可以下载数据集.",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "叙词表又称为主题词表，ERIC叙词表是一个比较知名的叙词表。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在Word中修改别人的文档，如果使用“修订”功能，对方在接到修订后的文档后，可以选择接受修订，也可以选择拒绝。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "传统期刊发表需要经过同行评议，预印本系统无需同行评议，发表速度快，但不是所有发表在预印本系统中的文章都有机会发表在期刊上。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "要查找期刊《大学图书馆学报》上的论文，可以在CNKI的高级检索中，选择“期刊名称”为检索点，在后面的检索框中输入（ ），然后点击“检索”按钮。",
+    "question_type": "single",
+    "options": {
+      "A": "《大学图书馆学报》",
+      "B": "（大学图书馆学报）",
+      "C": "大学图书馆学报",
+      "D": "“大学图书馆学报”"
+    },
+    "answer": "C",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在市场监督管理总局网站上，可以查询（）产品广告的审查备案信息。",
+    "question_type": "multiple",
+    "options": {
+      "A": "保健食品",
+      "B": "特殊医疗食品",
+      "C": "医疗器械",
+      "D": "药品"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列属于学术期刊特征的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "一期内容一般由多个作者的多篇文章组成",
+      "B": "定期出版",
+      "C": "一般有一个固定的名称",
+      "D": "连续出版"
+    },
+    "answer": "A,B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列体现信息检索能力的有（ ）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "遇到事情，首先能够想到通过获取信息来解决",
+      "B": "能对找到信息进行评价",
+      "C": "检索信息的过程中，能够利用检索技巧提升检索效率",
+      "D": "明确信息需求后，知道利用哪个系统查找信息"
+    },
+    "answer": "C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在CNKI的专业检索中输入这样的表达式：SU=''北京''*''奥运'' and FT=''环境保护''，关于检索意图，下列说法正确的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "找到的文献，主题中要包含“北京”和“奥运”这两个词",
+      "B": "“北京”和“奥运”之间的星号，表示布尔逻辑“或”关系",
+      "C": "检索表达式中的SU，指的是检索点（检索项）标题",
+      "D": "找到的文献，全文中要包含“环境保护”这个词"
+    },
+    "answer": "A,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列行为，属于一稿多投的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "毕业等着发论文，一篇论文同时投给A,B,C三家期刊。",
+      "B": "写一篇论文，投稿给A期刊，两周都没有得到回复，细微修改后投给了B期刊。",
+      "C": "写一篇论文投稿给A期刊，两周后被拒，然后修改一下格式，又投给B期刊。",
+      "D": "写一篇论文，同时向国内、国外两个期刊投稿。"
+    },
+    "answer": "A,B,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "想知道具体汉字在书法作品中是什么样子，可以用下面哪些网站查询？（）",
+    "question_type": "multiple",
+    "options": {
+      "A": "http://www.shufami.com/",
+      "B": "http://www.shufaai.com/a/zidian/",
+      "C": "http://www.shufazidian.com/",
+      "D": "https://www.cidianwang.com/shufa/"
+    },
+    "answer": "A,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列哪些功能可以在万彩办公大师中找到？（）",
+    "question_type": "multiple",
+    "options": {
+      "A": "做思维导图",
+      "B": "PDF合并",
+      "C": "文本对比",
+      "D": "视频格式互转"
+    },
+    "answer": "B,C,D",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "发表中文论文，只能使用中国的GB参考标准?",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "点击百度首页右上角的设置菜单，可以看到“高级搜索”的链接，点开这个链接可以进行高级检索。另外，通过这个网址（https://www.baidu.com/gaoji/advanced.html）也能使用百度的高级搜索。用这两个方法找到的百度高级搜索页面是完全一样的。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在维普中，使用同义词扩展功能，可以提升查准率。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "临时邮箱，不用注册即可使用，特别适合注册一些一次性使用的账号。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "在检索时，与用“题名”作为检索点相比，用“主题词”作为检索点，检索结果一般更精准。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
+    "answer_status": "confirmed"
+  },
+  {
+    "question_text": "CNKI可以自动生成文献互引网络分析图。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "模拟练习",
+    "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
+    "answer_status": "confirmed"
+  }
+]
