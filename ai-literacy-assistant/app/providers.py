@@ -135,7 +135,7 @@ class OpenAICompatibleProvider:
                 json={
                     "model": self.settings.model_name,
                     "temperature": 0.1,
-                    "max_tokens": 1400,
+                    "max_tokens": 4000,
                     "messages": messages,
                 },
             )
