@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="支持文字与截图解题、联网核对、模拟训练和错题复盘的 AI 信息素养助手。">
+  <title>知衡 AI · 信息素养训练助手</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="知衡 AI 首页">
+      <span class="brand-mark">知</span>
+      <span><strong>知衡 AI</strong><small>信息素养训练助手</small></span>
+    </a>
+    <div class="topbar-right">
+      <span class="privacy-label">本地存储 · 密钥不进入浏览器</span>
+      <span id="connection-status" class="status-chip">检查配置中</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">AI + INFORMATION LITERACY</p>
+        <h1>解题有依据，<br><span>训练有提升。</span></h1>
+      </div>
+      <div class="hero-copy">
+        <p>粘贴题目或上传截图，自动完成识别、初答、检索与复核。每一次模拟都留下可追踪的准确率、错因和响应耗时。</p>
+        <div class="hero-tags"><span>文字 / 图片</span><span>真实来源</span><span>独立测准</span></div>
+      </div>
+    </section>
+
+    <div id="demo-banner" class="notice warning" hidden>
+      当前为演示模式，页面结果只用于验证流程。配置真实视觉模型与搜索 API 后，才能进行有效答题和准确率评测。
+    </div>
+
+    <nav class="workspace-nav" aria-label="功能导航">
+      <button class="nav-item active" data-view="solve"><span>01</span>快速解题</button>
+      <button class="nav-item" data-view="practice"><span>02</span>模拟训练</button>
+      <button class="nav-item" data-view="mistakes"><span>03</span>错题复盘</button>
+      <button class="nav-item" data-view="stats"><span>04</span>数据统计</button>
+    </nav>
+
+    <section id="view-solve" class="view active">
+      <div class="solve-grid">
+        <article class="panel composer">
+          <div class="panel-heading">
+            <div><p class="section-kicker">NEW QUESTION</p><h2>输入一道题</h2></div>
+            <span class="step-badge">文本或截图</span>
+          </div>
+          <label class="field-label" for="question-input">题目内容</label>
+          <textarea id="question-input" rows="9" maxlength="12000" placeholder="粘贴完整题干和选项，例如：&#10;&#10;以下哪种检索方式最适合查找某一主题的最新研究？&#10;A. ...&#10;B. ..."></textarea>
+          <div class="textarea-meta"><span>截图也可以直接粘贴到输入框</span><span id="char-count">0 / 12000</span></div>
+
+          <label id="dropzone" class="dropzone" for="image-input">
+            <input id="image-input" class="visually-hidden-input" type="file" accept="image/png,image/jpeg,image/webp" aria-label="上传题目截图">
+            <span class="upload-symbol">＋</span>
+            <span><strong>添加题目截图</strong><small>点击选择、拖放到这里，JPEG / PNG / WebP，最大 5 MB</small></span>
+          </label>
+          <div id="image-preview" class="image-preview" hidden>
+            <img id="preview-image" alt="待识别题目截图预览">
+            <div><strong id="preview-name"></strong><button id="remove-image" class="text-button" type="button">移除图片</button></div>
+          </div>
+
+          <div class="solve-options">
+            <label class="toggle-label"><input id="search-enabled" type="checkbox" checked><span class="toggle"></span>联网核对来源</label>
+            <span>知识题默认检索，低置信度结果会标记</span>
+          </div>
+          <button id="solve-button" class="primary-button full-width" type="button"><span>开始解题</span><span>→</span></button>
+          <div id="solve-progress" class="progress-card" hidden>
+            <div class="progress-line"><span class="spinner"></span><strong id="progress-text">正在识别题目并生成初答</strong></div>
+            <div class="progress-track"><span></span></div>
+          </div>
+        </article>
+
+        <article class="panel result-panel">
+          <div class="panel-heading">
+            <div><p class="section-kicker">VERIFIED ANSWER</p><h2>答案与依据</h2></div>
+            <span class="step-badge">人工最终确认</span>
+          </div>
+          <div id="quick-result" class="result-content empty-state">
+            <div class="empty-orbit"><span>?</span></div>
+            <h3>答案将在这里出现</h3>
+            <p>结果包含规范答案、解析、置信度、真实来源和各阶段耗时。请勿在缺少依据时直接提交。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="view-practice" class="view">
+      <div class="section-intro">
+        <div><p class="section-kicker">PRACTICE LOOP</p><h2>模拟训练闭环</h2><p>抽题、自动作答、判分、复盘。标准答案只在作答完成后用于判分。</p></div>
+        <div class="practice-controls">
+          <label>主题筛选<input id="practice-topic" type="text" placeholder="全部主题"></label>
+          <label class="checkbox-label"><input id="wrong-only" type="checkbox">只练错题</label>
+          <button id="start-run" class="secondary-button" type="button">开始新一轮</button>
+        </div>
+      </div>
+      <div class="run-toolbar">
+        <span id="run-status">尚未开始训练，请先导入带标准答案的练习题。</span>
+        <div><button id="auto-run" class="primary-button compact" type="button" disabled>连续自动训练</button><button id="stop-auto" class="text-button" type="button" hidden>停止</button></div>
+      </div>
+      <div class="practice-grid">
+        <article class="panel">
+          <div class="panel-heading"><h3>当前题目</h3><span id="practice-type" class="step-badge">等待抽题</span></div>
+          <div id="practice-question" class="practice-question empty-state compact-empty"><p>开始新一轮后，系统会从本地练习题库随机抽题。</p></div>
+          <div class="button-row"><button id="solve-practice" class="primary-button compact" type="button" disabled>自动解答本题</button><button id="next-practice" class="secondary-button compact" type="button" disabled>下一题</button></div>
+        </article>
+        <article class="panel">
+          <div class="panel-heading"><h3>判分结果</h3><span class="step-badge">答后可见</span></div>
+          <div id="practice-result" class="result-content empty-state compact-empty"><p>完成本题后显示模型答案、标准答案和判分结果。</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="view-mistakes" class="view">
+      <div class="section-intro"><div><p class="section-kicker">ERROR REVIEW</p><h2>错题复盘</h2><p>只展示每道题最近一次仍为错误的记录，修正后不会重复堆积。</p></div><button id="refresh-mistakes" class="secondary-button compact" type="button">刷新错题</button></div>
+      <div id="mistakes-list" class="mistake-list"></div>
+    </section>
+
+    <section id="view-stats" class="view">
+      <div class="section-intro"><div><p class="section-kicker">MEASUREMENT</p><h2>训练数据统计</h2><p>这里统计练习与人工反馈结果；正式 80% 验收请运行独立冻结集评测。</p></div><button id="refresh-stats" class="secondary-button compact" type="button">刷新统计</button></div>
+      <div id="stats-cards" class="stats-cards"></div>
+      <div class="stats-grid">
+        <article class="panel"><div class="panel-heading"><h3>题型表现</h3></div><div id="type-stats" class="stat-table"></div></article>
+        <article class="panel"><div class="panel-heading"><h3>最近训练轮次</h3></div><div id="run-stats" class="stat-table"></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>使用边界</strong>
+    <p>题目与图片会发送给所配置的模型供应商，搜索词会发送给搜索供应商。本助手不登录或提交正式比赛，低置信度结果必须人工核对。80% 准确率以未参与调优的冻结测试集实测为准。</p>
+  </footer>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>
