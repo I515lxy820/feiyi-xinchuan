@@ -39,3 +39,16 @@ def test_duplicate_and_leakage_detection(tmp_path):
     records = load_question_records(valid_path)
     with pytest.raises(ValueError, match="数据泄漏"):
         assert_no_leakage(records, {question_hash("同一道题")}, [])
+
+
+@pytest.mark.parametrize("question_type", ["fill", "essay", "unknown"])
+def test_competition_bank_rejects_unsupported_types(tmp_path, question_type):
+    path = tmp_path / f"{question_type}.json"
+    path.write_text(json.dumps([{
+        "question_text": "不属于比赛题型",
+        "question_type": question_type,
+        "options": {},
+        "answer": "答案",
+    }], ensure_ascii=False), encoding="utf-8")
+    with pytest.raises(ValueError, match="仅支持"):
+        load_question_records(path)

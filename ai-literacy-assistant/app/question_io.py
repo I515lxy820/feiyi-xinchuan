@@ -55,8 +55,8 @@ def validate_record(record: QuestionRecord) -> QuestionRecord:
     record.question_text = record.question_text.strip()
     record.options = _parse_options(record.options)
     record.answer = normalize_answer(record.answer, record.question_type)
-    if record.question_type == "unknown":
-        raise ValueError("题库必须明确 question_type")
+    if record.question_type not in {"single", "multiple", "boolean"}:
+        raise ValueError("比赛题库仅支持 single（单选）、multiple（多选）、boolean（判断）")
     if record.question_type in {"single", "multiple"}:
         if not record.options:
             raise ValueError("选择题必须提供 options")
