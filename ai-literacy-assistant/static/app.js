@@ -230,12 +230,27 @@ function parseImportText(raw) {
     const parsed = JSON.parse(trimmed);
     return Array.isArray(parsed) ? parsed : parsed.questions || [];
   }
-  return trimmed
+  const normalized = trimmed.replace(
+    /\n(?=\s*(?:\d+\s*[.、．]\s*)?[\[【(（]\s*(?:单选题|多选题|判断题|单选|多选|判断)\s*[\]】)）])/g,
+    "\n\n"
+  );
+  return normalized
     .split(/\n\s*\n/)
     .map((block) => {
       const lines = block.split("\n").map((line) => line.trim()).filter(Boolean);
-      const question = { question_text: lines[0] || "", question_type: "unknown", options: {}, answer: "" };
+      const tag = lines[0]?.match(/^\s*(?:\d+\s*[.、．]\s*)?[\[【(（]\s*(单选题|多选题|判断题|单选|多选|判断)\s*[\]】)）]\s*/);
+      const typeNamesByTag = { 单选题: "single", 单选: "single", 多选题: "multiple", 多选: "multiple", 判断题: "boolean", 判断: "boolean" };
+      const questionText = (lines[0] || "")
+        .replace(/^\s*\d+\s*[.、．]\s*/, "")
+        .replace(/^[\[【(（]\s*(?:单选题|多选题|判断题|单选|多选|判断)\s*[\]】)）]\s*/, "");
+      const question = {
+        question_text: questionText,
+        question_type: tag ? typeNamesByTag[tag[1]] : "unknown",
+        options: {},
+        answer: "",
+      };
       lines.slice(1).forEach((line) => {
+        if (/^(?:你的答案|收起解析|解析)/.test(line)) return;
         const answer = line.match(/^(?:答案|正确答案)\s*[：:]\s*(.+)$/);
         const option = line.match(/^([A-Za-z])\s*[.、．:：)]\s*(.+)$/);
         if (answer) question.answer = answer[1].trim();
