@@ -211,11 +211,14 @@ class PublicWebReader:
         current_url = url
         redirects = 0
         timeout = httpx.Timeout(self.settings.web_timeout_seconds)
+        transport = self.transport
+        if transport is None and self.settings.web_proxy_url:
+            transport = httpx.AsyncHTTPTransport(proxy=self.settings.web_proxy_url)
         async with httpx.AsyncClient(
             timeout=timeout,
             follow_redirects=False,
             trust_env=False,
-            transport=self.transport,
+            transport=transport,
             headers={
                 "Accept": "text/html, application/xhtml+xml",
                 "User-Agent": "AILiteracyPublicWebReader/1.0",
