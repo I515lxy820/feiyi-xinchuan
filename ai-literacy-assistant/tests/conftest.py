@@ -3,6 +3,7 @@ import re
 import pytest
 
 from app.config import Settings
+from app.providers import SearchOutcome
 from app.schemas import Citation, DraftAnswer
 from app.solver import Solver
 
@@ -11,6 +12,7 @@ class FakeModel:
     def __init__(self):
         self.calls = []
         self.review_answer = None
+        self.needs_search = True
 
     async def draft(self, question_text, image_data_url, options, question_type):
         self.calls.append({
@@ -44,7 +46,7 @@ class FakeModel:
             answer=answer,
             explanation="测试解析",
             confidence=0.91,
-            needs_search=True,
+            needs_search=self.needs_search,
             search_queries=["信息素养测试"],
         )
 
@@ -60,11 +62,43 @@ class FakeModel:
 
 
 class FakeSearch:
+    def __init__(self, results=None):
+        self.calls = []
+        self.results = results
+
     async def search(self, queries):
-        return type("Outcome", (), {
-            "results": [Citation(title="测试来源", url="https://example.com/source", snippet="用于测试的检索摘要", rank=1)],
-            "warnings": [],
-        })()
+        self.calls.append(queries)
+        results = self.results
+        if results is None:
+            results = [Citation(
+                title="测试来源",
+                url="https://example.com/source",
+                snippet="用于测试的检索摘要",
+                rank=1,
+            )]
+        return SearchOutcome(results=results)
+
+
+class FakeWebReader:
+    def __init__(self, results=None, error=None):
+        self.calls = []
+        self.results = results
+        self.error = error
+
+    async def read(self, url):
+        self.calls.append(url)
+        if self.error is not None:
+            raise self.error
+        results = self.results
+        if results is None:
+            results = [Citation(
+                title="测试网页",
+                url=url,
+                snippet="作者：测试作者；摘要：网页摘要",
+                kind="webpage",
+                page_text="仅供模型复核的网页正文",
+            )]
+        return SearchOutcome(results=results)
 
 
 @pytest.fixture
@@ -78,6 +112,7 @@ def settings(tmp_path):
         search_api_key="test-search",
         app_db_path=str(tmp_path / "test.db"),
         confidence_threshold=0.7,
+        web_reader_enabled=False,
     )
 
 

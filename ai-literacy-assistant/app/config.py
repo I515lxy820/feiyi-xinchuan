@@ -1,6 +1,7 @@
 from pathlib import Path
 from typing import Literal
 
+from pydantic import Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -26,6 +27,10 @@ class Settings(BaseSettings):
     model_timeout_seconds: float = 45
     search_timeout_seconds: float = 6
     confidence_threshold: float = 0.72
+    web_reader_enabled: bool = True
+    web_timeout_seconds: float = Field(default=8, gt=0, le=30)
+    web_max_pages: int = Field(default=2, ge=1, le=2)
+    web_max_bytes: int = Field(default=1_048_576, ge=1024, le=5 * 1024 * 1024)
 
     @property
     def database_path(self) -> Path:

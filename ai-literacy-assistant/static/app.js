@@ -158,7 +158,11 @@ function renderResult(container, data, practice = false) {
       link.target = "_blank";
       link.rel = "noopener noreferrer";
       const body = node("div");
-      body.append(node("strong", "", source.title), node("small", "", source.snippet || source.url));
+      body.append(
+        node("strong", "", source.title),
+        node("small", "source-kind", source.kind === "webpage" ? "网页原文" : "搜索摘要"),
+        node("small", "", source.snippet || source.url)
+      );
       link.append(node("span", "source-rank", String(source.rank).padStart(2, "0")), body);
       sources.append(link);
     });

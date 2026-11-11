@@ -12,6 +12,8 @@ class Citation(BaseModel):
     url: str
     snippet: str = ""
     rank: int = 1
+    kind: Literal["search", "webpage"] = "search"
+    page_text: str = Field(default="", exclude=True, repr=False)
 
 
 class DraftAnswer(BaseModel):

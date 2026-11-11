@@ -1,6 +1,7 @@
 import io
 import json
 
+from conftest import FakeSearch, FakeWebReader
 from fastapi.testclient import TestClient
 from PIL import Image
 
@@ -8,6 +9,7 @@ from app.db import Database
 from app.main import create_app
 from app.question_io import question_hash
 from app.schemas import QuestionRecord
+from app.solver import Solver
 
 
 def make_client(settings, solver):
@@ -113,3 +115,40 @@ def test_standard_answer_never_enters_solver(settings, solver):
         assert response.json()["correct_answer"] == secret
     for call in solver.model.calls:
         assert secret not in json.dumps(call, ensure_ascii=False, default=str)
+
+
+def test_webpage_source_is_linked_without_exposing_page_text(settings, model):
+    model.needs_search = False
+    reader = FakeWebReader()
+    solver = Solver(settings, model=model, search=FakeSearch(), web_reader=reader)
+    with make_client(settings, solver) as client:
+        response = client.post("/api/solve", data={
+            "text": "请核对论文 https://example.com/paper",
+            "search_mode": "auto",
+        })
+        assert response.status_code == 200
+        payload = response.json()
+        assert payload["sources"] == [{
+            "title": "测试网页",
+            "url": "https://example.com/paper",
+            "snippet": "作者：测试作者；摘要：网页摘要",
+            "rank": 1,
+            "kind": "webpage",
+        }]
+        assert "page_text" not in response.text
+
+        database = Database(settings.database_path)
+        with database.connect() as connection:
+            citation = connection.execute(
+                "SELECT title, url, snippet, rank FROM citations WHERE attempt_id = ?",
+                (payload["attempt_id"],),
+            ).fetchone()
+        assert dict(citation) == {
+            "title": "测试网页",
+            "url": "https://example.com/paper",
+            "snippet": "作者：测试作者；摘要：网页摘要",
+            "rank": 1,
+        }
+
+    review_call = next(call for call in model.calls if "citations" in call)
+    assert review_call["citations"][0].page_text == "仅供模型复核的网页正文"
