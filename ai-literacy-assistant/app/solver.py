@@ -190,11 +190,17 @@ class Solver:
                             web_failed = True
                             message = f"公开网页读取失败（{url}）"
                             if search_results:
-                                message = f"公开网页暂不可读（{url}），已改用搜索摘要"
+                                message = f"网页响应较慢，已使用搜索摘要作答（{url}）"
                         if isinstance(outcome, ProviderError):
-                            self._append(warnings, f"{message}：{outcome}")
+                            self._append(
+                                warnings,
+                                message if kind == "web" and search_results else f"{message}：{outcome}",
+                            )
                         elif isinstance(outcome, Exception):
-                            self._append(warnings, f"{message}，请人工打开来源核对")
+                            self._append(
+                                warnings,
+                                message if kind == "web" and search_results else f"{message}，请人工打开来源核对",
+                            )
                         else:
                             raise outcome
                         continue
@@ -246,9 +252,9 @@ class Solver:
                         if not outcome.results:
                             web_failed = True
                             self._append(warnings, "公开网页未返回可用内容，已改用搜索摘要")
-                    except ProviderError as exc:
+                    except ProviderError:
                         web_failed = True
-                        self._append(warnings, f"公开网页暂不可读，已改用搜索摘要：{exc}")
+                        self._append(warnings, "网页响应较慢，已使用搜索摘要作答")
                     timings["web"] = round(time.perf_counter() - stage, 3)
 
             ordered_sources = sorted(
