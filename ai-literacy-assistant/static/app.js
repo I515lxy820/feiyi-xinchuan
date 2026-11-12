@@ -360,7 +360,18 @@ async function solveQuick() {
   form.append("search_mode", $("#search-enabled").checked ? "auto" : "off");
   if (state.image) form.append("image", state.image);
   try {
-    const result = await api("/api/solve", { method: "POST", body: form });
+    const job = await api("/api/solve/jobs", { method: "POST", body: form });
+    let result = null;
+    for (let attempt = 0; attempt < 200; attempt += 1) {
+      await new Promise((resolve) => setTimeout(resolve, 900));
+      const status = await api(`/api/solve/jobs/${job.job_id}`);
+      if (status.status === "completed") {
+        result = status.result;
+        break;
+      }
+      if (status.status === "failed") throw new Error(status.detail || "解题失败，请重试");
+    }
+    if (!result) throw new Error("解题任务仍在处理，请稍后重试");
     renderResult($("#quick-result"), result);
   } catch (error) {
     toast(error.message, true);

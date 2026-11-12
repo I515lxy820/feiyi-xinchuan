@@ -371,3 +371,22 @@ async def test_provider_serializes_confirmed_examples(settings, monkeypatch):
     payload = json.loads(captured[0][1]["content"])
     assert payload["question_text"] == "当前题"
     assert payload["confirmed_examples"] == [{"question_text": "相似题", "answer": "B"}]
+
+
+@pytest.mark.asyncio
+async def test_provider_retries_one_empty_response(settings, monkeypatch):
+    provider = OpenAICompatibleProvider(settings)
+    responses = iter(["", '{"question_text":"题","question_type":"single","options":{"A":"甲"},"answer":"A","explanation":"解析","confidence":0.8}'])
+    calls = []
+
+    async def chat(messages):
+        calls.append(messages)
+        return next(responses)
+
+    monkeypatch.setattr(provider, "_chat", chat)
+    try:
+        result = await provider._structured([{"role": "user", "content": "题"}])
+    finally:
+        await provider.close()
+    assert result.answer == "A"
+    assert len(calls) == 2

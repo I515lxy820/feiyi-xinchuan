@@ -159,11 +159,13 @@ class OpenAICompatibleProvider:
 
     async def _structured(self, messages: list[dict[str, Any]]) -> DraftAnswer:
         raw = await self._chat(messages)
+        if not raw.strip():
+            raw = await self._chat(messages)
         try:
             return _parse_json(raw)
         except (ValueError, ValidationError, json.JSONDecodeError) as first_error:
             if not raw.strip():
-                raise ProviderError("模型返回空响应") from first_error
+                raise ProviderError("模型连续两次返回空响应") from first_error
             repaired = await self._chat(
                 [
                     {

@@ -1,7 +1,9 @@
 from contextlib import asynccontextmanager
 import asyncio
+import time
 from pathlib import Path
 from typing import Literal
+from uuid import uuid4
 
 from fastapi import FastAPI, File, Form, HTTPException, Query, UploadFile
 from fastapi.responses import FileResponse, JSONResponse
@@ -42,11 +44,17 @@ def create_app(settings: Settings | None, solver: Solver | None = None) -> FastA
             solver = Solver(settings)
         except ProviderError:
             solver = None
+    solve_jobs: dict[str, dict] = {}
+    solve_tasks: set[asyncio.Task] = set()
 
     @asynccontextmanager
     async def lifespan(app: FastAPI):
         database.initialize()
         yield
+        for task in solve_tasks:
+            task.cancel()
+        if solve_tasks:
+            await asyncio.gather(*solve_tasks, return_exceptions=True)
         if app.state.solver:
             await app.state.solver.close()
 
@@ -91,12 +99,7 @@ def create_app(settings: Settings | None, solver: Solver | None = None) -> FastA
             prompt_version=settings.prompt_version,
         )
 
-    @app.post("/api/solve", response_model=SolveResponse)
-    async def solve(
-        text: str = Form(""),
-        search_mode: Literal["auto", "off"] = Form("auto"),
-        image: UploadFile | None = File(None),
-    ) -> SolveResponse:
+    async def prepare_solve_input(text: str, image: UploadFile | None) -> tuple[str, str | None]:
         question_text = text.strip()
         if len(question_text) > 12000:
             raise HTTPException(status_code=400, detail="题目文字不能超过 12000 字")
@@ -110,6 +113,11 @@ def create_app(settings: Settings | None, solver: Solver | None = None) -> FastA
                 image_data_url = prepare_image(data)
             except ImageValidationError as exc:
                 raise HTTPException(status_code=400, detail=str(exc)) from exc
+        return question_text, image_data_url
+
+    async def execute_solve(
+        question_text: str, image_data_url: str | None, search_mode: Literal["auto", "off"]
+    ) -> SolveResponse:
         response = await require_solver().solve(
             question_text, image_data_url, search_mode=search_mode
         )
@@ -121,6 +129,58 @@ def create_app(settings: Settings | None, solver: Solver | None = None) -> FastA
             prompt_version=settings.prompt_version,
         )
         return response
+
+    @app.post("/api/solve", response_model=SolveResponse)
+    async def solve(
+        text: str = Form(""),
+        search_mode: Literal["auto", "off"] = Form("auto"),
+        image: UploadFile | None = File(None),
+    ) -> SolveResponse:
+        question_text, image_data_url = await prepare_solve_input(text, image)
+        return await execute_solve(question_text, image_data_url, search_mode)
+
+    @app.post("/api/solve/jobs", status_code=202)
+    async def create_solve_job(
+        text: str = Form(""),
+        search_mode: Literal["auto", "off"] = Form("auto"),
+        image: UploadFile | None = File(None),
+    ) -> dict[str, str]:
+        question_text, image_data_url = await prepare_solve_input(text, image)
+        require_solver()
+        job_id = uuid4().hex
+        solve_jobs[job_id] = {"status": "running", "created_at": time.time()}
+
+        async def run() -> None:
+            try:
+                response = await execute_solve(question_text, image_data_url, search_mode)
+                solve_jobs[job_id] = {
+                    "status": "completed",
+                    "created_at": time.time(),
+                    "result": response.model_dump(mode="json"),
+                }
+            except ProviderError as exc:
+                solve_jobs[job_id] = {"status": "failed", "created_at": time.time(), "detail": str(exc)}
+            except Exception:
+                solve_jobs[job_id] = {
+                    "status": "failed",
+                    "created_at": time.time(),
+                    "detail": "解题服务暂时失败，请重试",
+                }
+
+        task = asyncio.create_task(run())
+        solve_tasks.add(task)
+        task.add_done_callback(solve_tasks.discard)
+        return {"job_id": job_id, "status": "running"}
+
+    @app.get("/api/solve/jobs/{job_id}")
+    async def get_solve_job(job_id: str) -> dict:
+        cutoff = time.time() - 3600
+        for stale_id in [key for key, value in solve_jobs.items() if value["created_at"] < cutoff]:
+            solve_jobs.pop(stale_id, None)
+        job = solve_jobs.get(job_id)
+        if job is None:
+            raise HTTPException(status_code=404, detail="解题任务不存在或已过期")
+        return {key: value for key, value in job.items() if key != "created_at"}
 
     @app.post("/api/practice/runs")
     async def create_practice_run(payload: RunCreate) -> dict[str, int]:

@@ -1,5 +1,6 @@
 import io
 import json
+import time
 
 from conftest import FakeSearch, FakeWebReader
 from fastapi.testclient import TestClient
@@ -50,6 +51,27 @@ def test_health_static_and_text_solve(settings, solver):
         assert payload["attempt_id"] > 0
         assert payload["sources"][0]["url"] == "https://example.com/source"
         assert payload["needs_review"] is False
+
+
+def test_async_solve_job_returns_result_by_polling(settings, solver):
+    with make_client(settings, solver) as client:
+        created = client.post("/api/solve/jobs", data={
+            "text": "以下哪项正确？\nA. 甲\nB. 乙",
+            "search_mode": "auto",
+        })
+        assert created.status_code == 202
+        job_id = created.json()["job_id"]
+        for _ in range(100):
+            status = client.get(f"/api/solve/jobs/{job_id}")
+            assert status.status_code == 200
+            payload = status.json()
+            if payload["status"] == "completed":
+                break
+            time.sleep(0.01)
+        assert payload["status"] == "completed"
+        assert payload["result"]["answer"] == "A"
+        assert payload["result"]["attempt_id"] > 0
+        assert client.get("/api/solve/jobs/not-found").status_code == 404
 
 
 def test_image_solve_and_invalid_image(settings, solver):
