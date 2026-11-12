@@ -3270,5 +3270,102 @@
     "answer_status": "confirmed",
     "explanation": "",
     "image_path": ""
+  },
+  {
+    "question_text": "下列系统，支持布尔逻辑中且关系的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "springer",
+      "B": "百度",
+      "C": "cnki",
+      "D": "pqdt"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 fcbebba4",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列可以找到在线课程的平台有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "学堂在线",
+      "B": "中国大学MOOC",
+      "C": "爱课程旗下的资源共享课",
+      "D": "网易公开课"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 fcbebba4",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "想了解一下我国涉及“共享单车”的法律法规，可以通过国家法律法规数据库检索。请问：下列哪些法律法规中出现了“共享单车”这个词？",
+    "question_type": "multiple",
+    "options": {
+      "A": "揭阳市市容管理条例",
+      "B": "辽源市文明行为促进条例",
+      "C": "漠河市文明行为促进条例",
+      "D": "甘肃省文明行为促进条例"
+    },
+    "answer": "A,B,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 fcbebba4",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "关于互联网上的资源，下列说法正确的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "用好互联网的信息资源，可以提升解决问题的效率。",
+      "B": "互联网上有ppt等文件资源，在搜索引擎中可以通过filetype语法查找。",
+      "C": "淘宝、京东这些电商网站，虽然目的是卖货，但也积累了大量信息资源，成为事实上的资源库。",
+      "D": "有些教材的课件，可以在出版社网站上找到。"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 fcbebba4",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "很多时候我们去图书馆借书，并不需要事先通过图书馆的馆藏书目系统进行检索，其原因是图书馆的书太少了。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 fcbebba4",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "现在互联网上有不少在线简历生成器，可以直接填空式做简历。不过，这些在线工具尽管有免费功能，但完全功能一般是要付费的。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 fcbebba4",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "用数据看世界(https://ourworldindata.org)，是一个免费的数据网站。不仅可以下载数据，而且可以对数据进行可视化。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 fcbebba4",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
   }
 ]
