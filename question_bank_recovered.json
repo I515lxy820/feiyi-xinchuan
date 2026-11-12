@@ -2350,5 +2350,97 @@
     "answer_status": "confirmed",
     "explanation": "",
     "image_path": ""
+  },
+  {
+    "question_text": "我想知道每天刷了多久知乎，用了多久微信，应该安装那个APP？",
+    "question_type": "single",
+    "options": {
+      "A": "Forest",
+      "B": "百度脑图",
+      "C": "幕布",
+      "D": "应用计时"
+    },
+    "answer": "D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 691a68e2",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列属于网络问答社区的有（）。",
+    "question_type": "single",
+    "options": {
+      "A": "百度经验",
+      "B": "百度贴吧",
+      "C": "果壳网",
+      "D": "知乎"
+    },
+    "answer": "D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 691a68e2",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列工具软件，属于下载工具的是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "motrix",
+      "B": "xmind",
+      "C": "简书",
+      "D": "石墨"
+    },
+    "answer": "A",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 691a68e2",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "培养学生的终身学习能力，是大学教育的重要任务之一。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 691a68e2",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "写论文，要先读文献。找文献，首选图书馆购置的文献数据库。另外，也可以去找找OA文献。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 691a68e2",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "用最精简的浏览器，安装自己需要的插件。安装插件，只能通过浏览器提供的扩展中心查找安装插件。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 691a68e2",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "如果两篇文献共同引用了另外一篇文献，我们就说这两篇文献是共被引。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 691a68e2",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
   }
 ]
