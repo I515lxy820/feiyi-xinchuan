@@ -1830,5 +1830,37 @@
     "answer_status": "confirmed",
     "explanation": "",
     "image_path": ""
+  },
+  {
+    "question_text": "在万方数据库中，2015-2019年由中华医学会举办的，会议名称包含“骨科”的会议的论文，下面哪个研究内容（高频关键词）最受关注？",
+    "question_type": "single",
+    "options": {
+      "A": "骨质疏松",
+      "B": "内固定",
+      "C": "关节镜",
+      "D": "腰椎间盘突出症"
+    },
+    "answer": "B",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 263c29d5",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在Word中，分页符的快捷键是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "Ctrl+回车",
+      "B": "Ctrl+5",
+      "C": "Ctrl+shift+回车",
+      "D": "Ctrl+*"
+    },
+    "answer": "A",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 263c29d5",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
   }
 ]
