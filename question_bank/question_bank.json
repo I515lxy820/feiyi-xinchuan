@@ -6657,7 +6657,7 @@
   },
   {
     "question_text": "香港科技大学电子学位论文库是一个向社会免费开放的资源平台。请在这个平台上找到名为《Allocating task interaction graphs to processors in heterogeneous networks》。请问这篇论文2.2.4节的标题是什么？",
-    "question_type": "单选题",
+    "question_type": "single",
     "options": {
       "A": "Shared Communication Medium",
       "B": "The Proposed Algorithms",
@@ -6673,7 +6673,7 @@
   },
   {
     "question_text": "如果你觉得一个网站可疑，可以使用国家反诈中心APP的（）功能进行验证。",
-    "question_type": "单选题",
+    "question_type": "single",
     "options": {
       "A": "风险查询",
       "B": "身份核实",
@@ -6689,7 +6689,7 @@
   },
   {
     "question_text": "请问这个网址（http://www.12371.cn/special/xxzd/）是哪个学习平台？",
-    "question_type": "单选题",
+    "question_type": "single",
     "options": {
       "A": "新华社旗下的学习进行时",
       "B": "中组部旗下的共产党员网学习平台",
@@ -6705,7 +6705,7 @@
   },
   {
     "question_text": "在connected papers这个在线工具中输入big data，可以找到大数据这个领域的研究脉络，请问：这个领域中下列哪篇文献的被引量最多？",
-    "question_type": "单选题",
+    "question_type": "single",
     "options": {
       "A": "When Gaussian Process Meets Big Data: A Review of Scalable GPs",
       "B": "Big data: The next frontier for innovation, competition, and productivity",
@@ -6721,7 +6721,7 @@
   },
   {
     "question_text": "Clinical Queries，是pubmed旗下的一个垂直搜索引擎，专注于（ ）文献的搜索。",
-    "question_type": "单选题",
+    "question_type": "single",
     "options": {
       "A": "传统医学",
       "B": "儿童医学",
@@ -6737,7 +6737,7 @@
   },
   {
     "question_text": "下列哪些渠道不能搜索微信公众号？",
-    "question_type": "单选题",
+    "question_type": "single",
     "options": {
       "A": "微信PC版",
       "B": "CNKI",
@@ -6753,7 +6753,7 @@
   },
   {
     "question_text": "arXiv是一个预印本系统，在arXiv中检索“Impacting the bioscience progress by backporting software for Bio-Linux”，查看本篇文章正文中第二句加粗句子是什么？",
-    "question_type": "单选题",
+    "question_type": "single",
     "options": {
       "A": "A software environment?",
       "B": "What is Bio-Linux and what is it good for - also its drawbacks:",
@@ -6769,7 +6769,7 @@
   },
   {
     "question_text": "在CNKI中查询2020年7月“2020年南国博览学术研讨会”上篇名中包含“互联网”和“教育”，并且关键词中包含“教学模式”的会议文献，下列哪篇文献出现在检索结果中？",
-    "question_type": "单选题",
+    "question_type": "single",
     "options": {
       "A": "移动互联网环境下高等教育面临的挑战与对策",
       "B": "“互联网+”视角下高职思政教育体系研究",
@@ -6785,7 +6785,7 @@
   },
   {
     "question_text": "《中国广告》期刊2018年发表过一篇关键词中含有“鬼畜”的文章，请问这篇文章的作者是？",
-    "question_type": "单选题",
+    "question_type": "single",
     "options": {
       "A": "张强",
       "B": "刘悦",
@@ -6801,7 +6801,7 @@
   },
   {
     "question_text": "在美国国会图书馆网站上找到“大明一统山河图”。这事一个地图集。请问，这个地图集共有几张地图？",
-    "question_type": "单选题",
+    "question_type": "single",
     "options": {
       "A": "14",
       "B": "21",
@@ -6817,7 +6817,7 @@
   },
   {
     "question_text": "电脑上不同文件夹中有200多个文件，我想知道哪些文件中出现了“新冠病毒”这个词，用哪个软件搜索比较合适呢？",
-    "question_type": "单选题",
+    "question_type": "single",
     "options": {
       "A": "filelocator",
       "B": "everything",
@@ -6833,7 +6833,7 @@
   },
   {
     "question_text": "关于SSCI、CSSCI，下列说法正确的有（）。",
-    "question_type": "多选题",
+    "question_type": "multiple",
     "options": {
       "A": "SSCI和CSSCI同属于一个体系，都是ISI研制的。",
       "B": "CSSCI和SSCI都侧重于人文社会科学领域。",
@@ -6849,7 +6849,7 @@
   },
   {
     "question_text": "以下哪些是免费电子图书网站？",
-    "question_type": "多选题",
+    "question_type": "multiple",
     "options": {
       "A": "美国国家学术出版社(The National Academics Press)",
       "B": "古腾堡计划(project gutenberg http://www.gutenberg.org)",
@@ -6865,7 +6865,7 @@
   },
   {
     "question_text": "下列可以以图识图的有（）。",
-    "question_type": "多选题",
+    "question_type": "multiple",
     "options": {
       "A": "https://huaban.com/",
       "B": "https://pic.sogou.com/",
@@ -6881,7 +6881,7 @@
   },
   {
     "question_text": "在图书馆查找图书可依据：",
-    "question_type": "多选题",
+    "question_type": "multiple",
     "options": {
       "A": "ISBN",
       "B": "CIP",
@@ -6897,7 +6897,7 @@
   },
   {
     "question_text": "请问国内哪个图书馆有《吴越钱氏宗谱全乘不分卷》这个家谱藏本？",
-    "question_type": "多选题",
+    "question_type": "multiple",
     "options": {
       "A": "四川省图书馆",
       "B": "上海图书馆",
@@ -6913,7 +6913,7 @@
   },
   {
     "question_text": "在万方选题的“文献精读”功能模块中，搜到的论文分成几个大类，其中包括（）。",
-    "question_type": "多选题",
+    "question_type": "multiple",
     "options": {
       "A": "综述性论文",
       "B": "优秀学位论文",
@@ -6929,7 +6929,7 @@
   },
   {
     "question_text": "对维普期刊平台校外访问的描述，正确的是？",
-    "question_type": "多选题",
+    "question_type": "multiple",
     "options": {
       "A": "权限时效15天",
       "B": "只有获得维普校外访问权限，才可以在校外进行检索",
@@ -6945,7 +6945,7 @@
   },
   {
     "question_text": "CNKI提供多种格式的题录数据导出，其中包括（）。",
-    "question_type": "多选题",
+    "question_type": "multiple",
     "options": {
       "A": "APA",
       "B": "EndNote",
@@ -6961,7 +6961,7 @@
   },
   {
     "question_text": "在微信中，下列可以修改的有（）。",
-    "question_type": "多选题",
+    "question_type": "multiple",
     "options": {
       "A": "微信号码",
       "B": "黑名单中的好友",
@@ -6977,7 +6977,7 @@
   },
   {
     "question_text": "下列属于专业医疗信息查询平台的有（）。",
-    "question_type": "多选题",
+    "question_type": "multiple",
     "options": {
       "A": "学堂在线",
       "B": "用药助手",
@@ -6993,9 +6993,9 @@
   },
   {
     "question_text": "OApen，指的是欧洲开放获取出版网络，这是一个基金会，也是一个出版平台，旗下的在线图书馆，可以免费获取电子书全文，获取全文之前需要先注册登录。",
-    "question_type": "判断题",
+    "question_type": "boolean",
     "options": {},
-    "answer": "A",
+    "answer": "正确",
     "explanation": "这是一个识记性题目。OApen，无需注册登录，即可检索、获取电子书全文。",
     "source": "竞赛平台模拟练习解析页 42e0445a",
     "answer_status": "confirmed",
@@ -7004,9 +7004,9 @@
   },
   {
     "question_text": "在微信中，无法通过微信号、手机号、QQ号向对方发出添加好友的请求，原因可能是，对方做了隐私设置。",
-    "question_type": "判断题",
+    "question_type": "boolean",
     "options": {},
-    "answer": "B",
+    "answer": "错误",
     "explanation": "微信中有相关设置。",
     "source": "竞赛平台模拟练习解析页 42e0445a",
     "answer_status": "confirmed",
@@ -7015,9 +7015,9 @@
   },
   {
     "question_text": "与科睿唯安旗下的大多数产品类似，Master Journal List是收费工具，访问需要购买权限。",
-    "question_type": "判断题",
+    "question_type": "boolean",
     "options": {},
-    "answer": "A",
+    "answer": "正确",
     "explanation": "Master Journal List是免费的。",
     "source": "竞赛平台模拟练习解析页 42e0445a",
     "answer_status": "confirmed",
@@ -7026,9 +7026,9 @@
   },
   {
     "question_text": "在百度中用site语法搜索的时候，site后面的域名包含www比不包含www找到的结果要少。",
-    "question_type": "判断题",
+    "question_type": "boolean",
     "options": {},
-    "answer": "B",
+    "answer": "错误",
     "explanation": "这是一个理解性题目。包含www，只能找这个网站上的内容，不会找到这个网站二级域名下的内容。所以要少。",
     "source": "竞赛平台模拟练习解析页 42e0445a",
     "answer_status": "confirmed",
@@ -7037,9 +7037,9 @@
   },
   {
     "question_text": "建群引流、拉人入群、出租账号、帮人解封、帮人收钱，这些都是诈骗行为中的一环，千万不要掉进这些坑。",
-    "question_type": "判断题",
+    "question_type": "boolean",
     "options": {},
-    "answer": "A",
+    "answer": "正确",
     "explanation": "无需解释，谨慎就好。",
     "source": "竞赛平台模拟练习解析页 42e0445a",
     "answer_status": "confirmed",
@@ -7048,9 +7048,9 @@
   },
   {
     "question_text": "解决问题，不仅要搜索，更要探索，在提升效率的同时提升自己。",
-    "question_type": "判断题",
+    "question_type": "boolean",
     "options": {},
-    "answer": "A",
+    "answer": "正确",
     "explanation": "这是一个理解性题目。理解就好。",
     "source": "竞赛平台模拟练习解析页 42e0445a",
     "answer_status": "confirmed",
