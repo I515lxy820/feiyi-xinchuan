@@ -1,0 +1,17 @@
+[
+{"question_text":"在万方数据库中查找学位论文时，时间限定为2010年-2018年，检索点选择“题名”，检索词输入“终身学习”，匹配方式选择“精确”。请问：下列哪篇文献不在检索结果中？","question_type":"single","options":{"A":"终身道德学习理念及其教育启示","B":"终身学习理念下的成人自我学习","C":"欧盟终身学习政策研究","D":"基础教育教师终身学习现状研究"},"answer":"A","topic":"","source":"竞赛平台模拟练习解析页 78c73603"},
+{"question_text":"良好的信息素养，可以帮助我们（）。","question_type":"multiple","options":{"A":"找到解决问题的方法和思路","B":"可以把问题解决的更快","C":"培养终身学习的能力","D":"提升解决问题的质量"},"answer":"A,B,C,D","topic":"","source":"竞赛平台模拟练习解析页 78c73603"},
+{"question_text":"哇哇工具（https://www.iamwawa.cn）是一个在线工具网站，里面有很多实用功能，其中包括（ ）。","question_type":"multiple","options":{"A":"英文字母大小写转换","B":"图片转excel表格工具","C":"文本反转排序工具","D":"文本增加序号工具"},"answer":"A,C,D","topic":"","source":"竞赛平台模拟练习解析页 78c73603"},
+{"question_text":"如果一个学者的H指数是16，下列说法正确的有（ ）。","question_type":"multiple","options":{"A":"这位学者发表的所有论文的被引量都不低于16.","B":"这位学者的论文，其中16篇每篇至少被引16次。","C":"这位学者有超过16篇论文每篇至少被引16次。","D":"这位学者发表的论文至少有16篇。"},"answer":"B,D","topic":"","source":"竞赛平台模拟练习解析页 78c73603"},
+{"question_text":"关于硕鼠这个工具，下列说法正确的有（）。","question_type":"multiple","options":{"A":"硕鼠可以把所有在线视频的源地址识别出来。","B":"硕鼠有PC客户端，也有浏览器插件。","C":"硕鼠是一个在线视频地址转换工具。","D":"硕鼠可以免费使用。"},"answer":"B,C,D","topic":"","source":"竞赛平台模拟练习解析页 78c73603"},
+{"question_text":"关于检索词的匹配方式，下列说法正确的有（）。","question_type":"multiple","options":{"A":"CNKI中，作者单位、篇名、来源期刊这些检索点下有检索词匹配方式的选择。","B":"匹配方式尽管不同系统中表达方式不尽相同，但大多分为两种，精确匹配和模糊匹配","C":"在springer中，可以为检索词加上双引号表示精确匹配，也可以在高级检索中选择在with the exact phrase选项下填写检索词","D":"在有些搜索引擎中可以用双引号实现精确匹配。"},"answer":"A,B,C,D","topic":"","source":"竞赛平台模拟练习解析页 78c73603"},
+{"question_text":"关于万方会议论文数据库，下列说法正确的有（）。","question_type":"multiple","options":{"A":"万方会议论文数据库的全文提供CAJ和PDF两种格式。","B":"万方会议论文数据库下载全文需要权限，有些高校图书馆买了这个数据库，所以在学校指定网络IP范围内可以获取全文。","C":"万方会议论文数据库可以免费查询。","D":"会议名称是万方会议论文数据库中的一个检索点（检索项）。"},"answer":"B,C,D","topic":"","source":"竞赛平台模拟练习解析页 78c73603"},
+{"question_text":"外观设计、实用新型专利说明书中有产品设计图纸，是学习设计的好素材。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 78c73603"},
+{"question_text":"互联网上的多个文件，如果都在同一路径下，就可以在迅雷中使用通配符进行批量下载。","question_type":"boolean","options":{},"answer":"错误","topic":"","source":"竞赛平台模拟练习解析页 78c73603"},
+{"question_text":"在国家统计网站上，不仅可以查询具体指标的多年数据，而且可以在线生成图表。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 78c73603"},
+{"question_text":"习近平系列重要讲话数据，由新华社出品，免费开放，可以导航，也可以检索。","question_type":"boolean","options":{},"answer":"错误","topic":"","source":"竞赛平台模拟练习解析页 78c73603"},
+{"question_text":"通过百度学术可以导出GB7714标准的参考文献，既可以导出单篇文献，也可以批量导出。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 78c73603"},
+{"question_text":"在CNKI中，我们可以对全部检索结果进行文献分析。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 78c73603"},
+{"question_text":"在万方数据库中查找博士论文，找到的结果可以在线阅览全文，也可以下载全文，下载的全文文件需要用caj阅读器打开。","question_type":"boolean","options":{},"answer":"错误","topic":"","source":"竞赛平台模拟练习解析页 78c73603"},
+{"question_text":"中国专利公布公告系统有IPC分类查询功能。不仅可以输入关键字查分类号，而且可以输入分类号查含义。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 78c73603"}
+]
