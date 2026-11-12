@@ -151,7 +151,8 @@ async def test_search_failure_preserves_webpage_and_all_failures_lower_confidenc
     solver = Solver(settings, model=model, search=FakeSearch(), web_reader=failing_reader)
     webpage_failed = await solver.solve("核对论文 https://example.com/paper")
     assert webpage_failed.sources[0].kind == "search"
-    assert any("公开网页读取失败" in warning for warning in webpage_failed.warnings)
+    assert webpage_failed.needs_review is False
+    assert any("公开网页暂不可读" in warning and "已改用搜索摘要" in warning for warning in webpage_failed.warnings)
 
     solver = Solver(settings, model=model, search=FailingSearch(), web_reader=failing_reader)
     failed = await solver.solve("核对论文 https://example.com/paper")

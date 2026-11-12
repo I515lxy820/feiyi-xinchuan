@@ -189,6 +189,8 @@ class Solver:
                         else:
                             web_failed = True
                             message = f"公开网页读取失败（{url}）"
+                            if search_results:
+                                message = f"公开网页暂不可读（{url}），已改用搜索摘要"
                         if isinstance(outcome, ProviderError):
                             self._append(warnings, f"{message}：{outcome}")
                         elif isinstance(outcome, Exception):
@@ -206,7 +208,11 @@ class Solver:
                             self._append(warnings, "未获得有效来源，本题未完成外部来源核对")
                     elif not outcome.results:
                         web_failed = True
-                        self._append(warnings, f"公开网页未返回可用内容（{url}）")
+                        self._append(
+                            warnings,
+                            f"公开网页未返回可用内容（{url}），已改用搜索摘要"
+                            if search_results else f"公开网页未返回可用内容（{url}）",
+                        )
                     sources.extend(outcome.results)
 
             if not urls and page_intent and search_results:
@@ -220,7 +226,7 @@ class Solver:
                         continue
                 if candidate is None:
                     web_failed = True
-                    self._append(warnings, "搜索结果没有可读取的公开网页")
+                    self._append(warnings, "搜索结果没有可读取的公开网页，已使用搜索摘要复核")
                 elif self.web_reader is None:
                     web_failed = True
                     if self.settings.demo_mode:
@@ -239,10 +245,10 @@ class Solver:
                             self._append(warnings, warning)
                         if not outcome.results:
                             web_failed = True
-                            self._append(warnings, "公开网页未返回可用内容")
+                            self._append(warnings, "公开网页未返回可用内容，已改用搜索摘要")
                     except ProviderError as exc:
                         web_failed = True
-                        self._append(warnings, f"公开网页读取失败：{exc}")
+                        self._append(warnings, f"公开网页暂不可读，已改用搜索摘要：{exc}")
                     timings["web"] = round(time.perf_counter() - stage, 3)
 
             ordered_sources = sorted(
@@ -332,7 +338,7 @@ class Solver:
             or final.source_conflict
             or not final.answer
             or search_failed
-            or web_failed
+            or (web_failed and not sources)
             or review_failed
             or any("选项不匹配" in warning or "改变了初答" in warning for warning in warnings)
         )
