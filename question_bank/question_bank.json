@@ -1862,5 +1862,37 @@
     "answer_status": "confirmed",
     "explanation": "",
     "image_path": ""
+  },
+  {
+    "question_text": "在CNKI中查找林毅夫老师发表的文章，选择检索点“作者”，合适的检索词是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "林毅夫先生",
+      "B": "林毅夫同志",
+      "C": "林毅夫老师",
+      "D": "林毅夫"
+    },
+    "answer": "D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 294157a5",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在万方数据库检索中华医学会举办的会议名称包含”骨科“会议的论文，下面选项中下载次数最多的会议论文是：",
+    "question_type": "single",
+    "options": {
+      "A": "微创骨科与微创技术",
+      "B": "髓内钉动力化治疗股骨干骨折延迟愈合的临床分析",
+      "C": "《骨质疏松性骨折诊疗指南》解析",
+      "D": "肩袖损伤的诊断与治疗"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 294157a5",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
   }
 ]
