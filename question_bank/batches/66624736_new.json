@@ -1,0 +1,15 @@
+[
+{"question_text":"用于citespace分析的CNKI题录数据，在导出时应该选择是什么格式？","question_type":"single","options":{"A":"refworks","B":"EndNote","C":"GB/T 7714","D":"APA"},"answer":"A","topic":"","source":"竞赛平台模拟练习解析页 66624736"},
+{"question_text":"在百度的高级搜索页面，可以使用“包含以下的完整关键词”选项实现（）功能。","question_type":"single","options":{"A":"布尔逻辑“或”","B":"精确匹配","C":"布尔逻辑“非”","D":"布尔逻辑“且”"},"answer":"B","topic":"","source":"竞赛平台模拟练习解析页 66624736"},
+{"question_text":"在Word中自动生成目录，需要先设置标题（）。","question_type":"single","options":{"A":"样式","B":"字号","C":"颜色","D":"字体"},"answer":"A","topic":"","source":"竞赛平台模拟练习解析页 66624736"},
+{"question_text":"下列属于学术不端中的伪造行为的有（）。","question_type":"multiple","options":{"A":"编造能为论文提供支持的资料、注释、参考文献。","B":"编造审稿人信息、审稿意见。","C":"编造不符合实际或无法重复验证的研究方法、结论等。","D":"编造不以实际调查或实验取得的数据、图片等。"},"answer":"A,B,C,D","topic":"","source":"竞赛平台模拟练习解析页 66624736"},
+{"question_text":"在CNKI中选择“篇名”检索点，输入“信息素养与信息检索”检索词，匹配方式选择“精确”，找到的结果可能是（）。","question_type":"multiple","options":{"A":"《全媒体时代的医学信息素养与信息检索》","B":"《“信息素养与信息检索通用教程”慕课及其教材的一体化建设》","C":"《信息检索与信息素养》","D":"《信息素养与信息检索概论》"},"answer":"A,B,D","topic":"","source":"竞赛平台模拟练习解析页 66624736"},
+{"question_text":"关于野鸡大学的识别，下列说法正确的有（）。","question_type":"multiple","options":{"A":"看官网域名是不是以edu.cn结尾，如果不是，一定是野鸡大学。","B":"去教育部查询高校名单，如果名单中没有，肯定是野鸡大学。","C":"去阳光高考这个网站的院校库中查询，如果找不到，肯定是野鸡大学。","D":"去工信部域名备案系统中查看网站备案信息，如果查不到或者不一致，是野鸡大学的可能性就大多了。"},"answer":"B,C,D","topic":"","source":"竞赛平台模拟练习解析页 66624736"},
+{"question_text":"关于文献综述，下列说法正确的有（）。","question_type":"multiple","options":{"A":"文献综述，不是观点的罗列，要学会评述，要有完美的逻辑。","B":"做文献综述，要明白做文献综述的目的和意义。","C":"评述别人的文献，要客观，不能断章取义，也不能避重就轻，更不能歪曲别人的意思。","D":"做文献综述，要选择合适的文献。选择的文献要合适，关键的文献要找到，文献的级别不能低，新文献不能少。"},"answer":"A,B,C,D","topic":"","source":"竞赛平台模拟练习解析页 66624736"},
+{"question_text":"OA资源的全文免费获取，可以通过哪些渠道？","question_type":"multiple","options":{"A":"通过CNKI、WOS等学术数据库查找","B":"去OA期刊官网查找下载","C":"实用OA学术搜索引擎检索","D":"通过OA知识库查找"},"answer":"B,C,D","topic":"","source":"竞赛平台模拟练习解析页 66624736"},
+{"question_text":"在选择检索系统时，需要考虑的因素有（）。","question_type":"multiple","options":{"A":"检索功能","B":"访问权限","C":"收录资源的类型","D":"收录资源的范围"},"answer":"A,B,C,D","topic":"","source":"竞赛平台模拟练习解析页 66624736"},
+{"question_text":"有道云笔记所具有的功能（）。","question_type":"multiple","options":{"A":"在线抠图","B":"识别图片中的文字","C":"语音速记","D":"网页剪辑"},"answer":"B,C,D","topic":"","source":"竞赛平台模拟练习解析页 66624736"},
+{"question_text":"目前，我国高校大多开设信息素养教育类课程，名称各异，如信息检索、文献检索、信息素养等。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 66624736"},
+{"question_text":"读秀，作为一个商业数据库，获取全文虽然需要权限，但检索是没有限制的，任何地方都可以免费检索。","question_type":"boolean","options":{},"answer":"错误","topic":"","source":"竞赛平台模拟练习解析页 66624736"},
+{"question_text":"凡是教育主管部门认可的大学，其官方网站的域名一定是中国教育网的二级域名，也就是说，一定以edu.cn结尾。","question_type":"boolean","options":{},"answer":"错误","topic":"","source":"竞赛平台模拟练习解析页 66624736"}
+]
