@@ -1,0 +1,17 @@
+[
+{"question_text":"互联网上有一些在线翻译工具，比如百度翻译、谷歌翻译、有道翻译。但使用这些工具，必须先登录。","question_type":"boolean","options":{},"answer":"错误","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"访问国家图书馆的数字资源需要注册账号，用自己的身份证号号实名注册后可以免费使用国图的很多资源。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"一篇被引次数为10的文章一定比一篇被引次数为3的文章影响力强。","question_type":"boolean","options":{},"answer":"错误","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"如果检索系统中多个检索条件之间没有明确的连接关系，默认情况下一般指的是或者关系。","question_type":"boolean","options":{},"answer":"错误","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"在excel单元格中输入18位身份证号码，回车后很可能会是以科学计数法的方式显示（出现E+17），解决这个问题，可以在百度的搜索框中输入检索词\"excel e+17\"进行搜索。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"ORCID，全称是：Open Researcher and Contributor ID，翻译成中文，就是：开放研究者与贡献者身份，通俗地讲，就是科研人员的学术身份证。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"在用数据看世界(https://ourworldindata.org)这个网站中，可以找到动态图形。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"百度、搜狗、360、必应这些搜索引擎一般都有检索词联想的功能，但cnki、springer这些学术数据库没有检索词联想功能。","question_type":"boolean","options":{},"answer":"错误","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"良好的信息素养，可以帮助我们找到好的资源，找到好的方法，找到合适的工具。综合利用这些资源、方法、工具，可以创造性地解决问题，提升解决问题的效率。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"百度网盘支持将本地文件拖拽上传到指定的文件夹。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"影响因子一般指的是期刊的影响因子，一篇论文、一个作者是不存在影响因子这个说法的","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"把结构化的数据转换成非结构的数据，是数据清洗的一个重要内容。（）","question_type":"boolean","options":{},"answer":"错误","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"我国各省标准地图服务系统，界面和功能都是统一的，只是内容不同。","question_type":"boolean","options":{},"answer":"错误","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"在百度的搜索框中输入 inurl:jiqiao excel ，检索意图是：要求jiqiao这个字符串出现在标题中，excel这个检索词出现在网页内容中。","question_type":"boolean","options":{},"answer":"错误","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"论文排版，如果涉及到公式，可以用word中公式设计工具。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"}
+]

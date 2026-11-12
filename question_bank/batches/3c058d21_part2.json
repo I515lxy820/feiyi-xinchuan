@@ -1,0 +1,17 @@
+[
+{"question_text":"查询化妆品的注册备案信息，可以去（）网站。","question_type":"single","options":{"A":"企业信用信息公示系统","B":"药品监督管理局","C":"天眼查","D":"工信部的域名备案系统"},"answer":"B","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"下列功能，百度网盘不支持的是（）。","question_type":"single","options":{"A":"制作思维导图","B":"本地文件上传到网盘","C":"网盘中的文件下载到本地","D":"网盘中的文件分享给他人"},"answer":"A","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"在百度的高级搜索界面中（https://www.baidu.com/gaoji/advanced.html）的站内检索功能在（）项。","question_type":"single","options":{"A":"第三","B":"第四","C":"最后一项","D":"第一"},"answer":"C","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"在国家职业教育智慧教育平台上可以找到国家级的《影视动画》课程。请问，下列哪个学校的国家级《影视动画》课程可以在这个平台上找到？","question_type":"single","options":{"A":"深圳职业技术大学","B":"汉中职业技术学院","C":"宁波职业技术学院","D":"四川职业技术学院"},"answer":"A","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"在CNKI中找北京大学发表的期刊论文，需要选择的检索点是（）。","question_type":"single","options":{"A":"北京大学","B":"篇名","C":"作者单位","D":"作者"},"answer":"C","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"大多数专利文献我们可以免费获取，请问名为“一种MR眼镜的延长续航系统及其续航方法”的专利文献中，重点解决什么问题？","question_type":"single","options":{"A":"解决电影院MR眼镜用电模式的合理切换控制问题。","B":"解决学校图书馆MR眼镜用电模式的合理切换控制问题。","C":"解决公司MR眼镜用电模式的合理切换控制问题。","D":"解决景区MR眼镜用电模式的合理切换控制问题。"},"answer":"D","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"在万方数据库的专业检索中，如果想要查找一篇题名中“基因克隆”和“绵羊”至少出现一个，必须来源于《中国畜牧杂志》，且基金不是国家自然科学基金的文献，应该输入什么检索式？","question_type":"single","options":{"A":"题名:(\"基因克隆\"/绵羊)*刊名:\"中国畜牧杂志\"^基金:国家自然科学基金","B":"题名:(\"基因克隆\"and绵羊)or刊名:\"中国畜牧杂志\"not基金:国家自然科学基金","C":"题名:(\"基因克隆\"or绵羊)and刊名:\"中国畜牧杂志\"not基金:国家自然科学基金","D":"题名:(\"基因克隆\"+绵羊)*刊名:\"中国畜牧杂志\"-基金:国家自然科学基金"},"answer":"C","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"下列工具，不属于笔记软件的是（）。","question_type":"single","options":{"A":"为知笔记","B":"印象笔记","C":"xmind","D":"有道云笔记"},"answer":"C","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"在Word中，用鼠标点击窗口的（），可以快速打开或关闭导航窗格。","question_type":"single","options":{"A":"右下角的页面缩放区","B":"右上角的关闭按钮","C":"左下角的页码区","D":"左上角的保存按钮"},"answer":"C","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"下列工具，具有文件同步功能的是（）。","question_type":"single","options":{"A":"百度指数","B":"listary","C":"坚果云","D":"小白盘"},"answer":"C","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"在百度脑图中，Tab键的默认功能是？","question_type":"single","options":{"A":"插入下级节点","B":"删除下级节点","C":"插入同级节点","D":"删除同级节点"},"answer":"A","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"有些网页内容无法复制，但在打印预览中可以复制（提醒：不是所有的网页都是这样的哦），请问：用这种方法的快捷键是下面的哪个组合？","question_type":"single","options":{"A":"alt+p","B":"ctrl+p","C":"alt+a","D":"ctrl+t"},"answer":"B","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"下列软件可以下载字体并使用的是？","question_type":"single","options":{"A":"得到","B":"Polly","C":"字由","D":"讯飞有声"},"answer":"C","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"在中国家谱知识服务平台上可以找到《蓉城叶氏宗族全谱八卷》（1943年撰修），请问第三卷（测）的影印页数是多少？","question_type":"single","options":{"A":"139","B":"301","C":"256","D":"198"},"answer":"A","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"},
+{"question_text":"想找注册会计师（简称：CPA）方面的内容，注册会计师也好，CPA也好，这两个词只要出现其一即可。在搜索引擎百度中如何表达这种或者关系？（）","question_type":"single","options":{"A":"注册会计师 | CPA","B":"注册会计师-CPA","C":"注册会计师 CPA","D":"注册会计师*CPA"},"answer":"A","topic":"","source":"竞赛平台模拟练习解析页 3c058d21"}
+]

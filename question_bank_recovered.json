@@ -945,5 +945,890 @@
     "topic": "模拟练习",
     "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
     "answer_status": "confirmed"
+  },
+  {
+    "question_text": "下列网站可以进行词频统计的是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "语料库在线",
+      "B": "石墨文档",
+      "C": "果壳网",
+      "D": "大家论坛"
+    },
+    "answer": "A",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "关于时间管理工具Forest，下列说法错误的是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "Forest具有番茄工作法的理念。",
+      "B": "Forest完全免费。",
+      "C": "Forest是一个时间管理工具。",
+      "D": "Forest既有正面的激励，也有负面的惩罚。"
+    },
+    "answer": "B",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在百度的高级搜索搜索界面（https://www.baidu.com/gaoji/advanced.html）中，第三项是“包含以下任意一个关键词”，如果在其后的搜索框中输入 大数据 人工智能 ，那么我的检索意图是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "出现人工智能，大不能出现大数据，布尔逻辑非的意思",
+      "B": "出现大数据，但不能出现人工智能，布尔逻辑非的意思",
+      "C": "大数据和人工智能这两个词只要出现一个就可以了，布尔逻辑或者的意思",
+      "D": "大数据和人工智能这两个词都必须出现在检索结果中，布尔逻辑并且的意思"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在高校开设的下列课程中，不属于信息素养教育类课程的是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "文献检索",
+      "B": "医学信息检索",
+      "C": "信息检索与利用",
+      "D": "大学生修养"
+    },
+    "answer": "D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "中科院期刊分区彻底抛弃影响因子，只用超越指数作为分区数据基础的年份起始年份是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "2020",
+      "B": "2022",
+      "C": "2019",
+      "D": "2021"
+    },
+    "answer": "B",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "信息检索一般翻译为？",
+    "question_type": "single",
+    "options": {
+      "A": "information evaluation",
+      "B": "information awareness",
+      "C": "information retrieval",
+      "D": "information literacy"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在搜索引擎中，我们用空格链接多个检索词或者检索条件时，空格表示（）关系。",
+    "question_type": "single",
+    "options": {
+      "A": "并且",
+      "B": "大于",
+      "C": "或者",
+      "D": "非"
+    },
+    "answer": "A",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "如果不想让搜索引擎拆分检索词，可以为检索词加上（）。",
+    "question_type": "single",
+    "options": {
+      "A": "小括号",
+      "B": "双引号",
+      "C": "中括号",
+      "D": "大括号"
+    },
+    "answer": "B",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在搜索引擎中可以使用site语法实现指定网站的站内检索。如果搜索清华大学的网站中“大数据安全”方面的内容，最好用下面哪个检索表达式？（ ）",
+    "question_type": "single",
+    "options": {
+      "A": "大数据安全 site:http://www.tsinghua.edu.cn",
+      "B": "大数据安全 site（tsinghua.edu.cn）",
+      "C": "大数据安全site:tsinghua.edu.cn",
+      "D": "大数据安全 site:tsinghua.edu.cn"
+    },
+    "answer": "D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "香港科技大学图书馆有一个在线的古籍及特藏阅览区，实质上是一个向社会开放的机构知识库，里面有十多个资源库，其中包括Chinese books before 1949。在这个资源库中查找名为《大食故宮餘載》的文献，这本文献在这个平台上有224页。请问这本文献在这个平台上的第十二页右下角的字是什么？",
+    "question_type": "single",
+    "options": {
+      "A": "蕪",
+      "B": "仓",
+      "C": "克",
+      "D": "手"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "查医疗器械的注册备案信息，可以去（）网站。",
+    "question_type": "single",
+    "options": {
+      "A": "药品监督管理局",
+      "B": "学信网",
+      "C": "知识产权局",
+      "D": "裁判文书网"
+    },
+    "answer": "A",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "通过互联网免费用浙江图书馆的数字资源，需要注册账号，请问在哪注册？",
+    "question_type": "single",
+    "options": {
+      "A": "B站",
+      "B": "支付宝",
+      "C": "微信",
+      "D": "QQ"
+    },
+    "answer": "B",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "完成了毕业论文之后，现需要在正文前添加论文目录以便检索和最优的操作方法是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "直接输入作为目录的标题文字和相对应的页码创建目录",
+      "B": "自动插入目录 不使用内置标题样式，而是直接基于自定义样式创建目录",
+      "C": "将文档的各级标题设置为内置标题样式，然后基于内置标题样式创建目录",
+      "D": "利用word提供的“手动目录”功能"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "关于百度学术，下列说法错误的是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "在百度学术中可以按照GB7714的标准导出参考文献。",
+      "B": "通过百度学术找到的每一篇学术文献，都可以获得全文。",
+      "C": "百度学术是一个专搜学术资源的垂直搜索引擎。",
+      "D": "百度学术往往给出一篇文献的多个来源。"
+    },
+    "answer": "B",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列平台，可以找到慕课资源并且有学习激励机制的是（）",
+    "question_type": "single",
+    "options": {
+      "A": "新华社旗下的学习进行时",
+      "B": "人民网旗下的学习路上",
+      "C": "学习强国",
+      "D": "中组部旗下的共产党员网学习平台"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "查询化妆品的注册备案信息，可以去（）网站。",
+    "question_type": "single",
+    "options": {
+      "A": "企业信用信息公示系统",
+      "B": "药品监督管理局",
+      "C": "天眼查",
+      "D": "工信部的域名备案系统"
+    },
+    "answer": "B",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列功能，百度网盘不支持的是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "制作思维导图",
+      "B": "本地文件上传到网盘",
+      "C": "网盘中的文件下载到本地",
+      "D": "网盘中的文件分享给他人"
+    },
+    "answer": "A",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在百度的高级搜索界面中（https://www.baidu.com/gaoji/advanced.html）的站内检索功能在（）项。",
+    "question_type": "single",
+    "options": {
+      "A": "第三",
+      "B": "第四",
+      "C": "最后一项",
+      "D": "第一"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在国家职业教育智慧教育平台上可以找到国家级的《影视动画》课程。请问，下列哪个学校的国家级《影视动画》课程可以在这个平台上找到？",
+    "question_type": "single",
+    "options": {
+      "A": "深圳职业技术大学",
+      "B": "汉中职业技术学院",
+      "C": "宁波职业技术学院",
+      "D": "四川职业技术学院"
+    },
+    "answer": "A",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在CNKI中找北京大学发表的期刊论文，需要选择的检索点是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "北京大学",
+      "B": "篇名",
+      "C": "作者单位",
+      "D": "作者"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "大多数专利文献我们可以免费获取，请问名为“一种MR眼镜的延长续航系统及其续航方法”的专利文献中，重点解决什么问题？",
+    "question_type": "single",
+    "options": {
+      "A": "解决电影院MR眼镜用电模式的合理切换控制问题。",
+      "B": "解决学校图书馆MR眼镜用电模式的合理切换控制问题。",
+      "C": "解决公司MR眼镜用电模式的合理切换控制问题。",
+      "D": "解决景区MR眼镜用电模式的合理切换控制问题。"
+    },
+    "answer": "D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在万方数据库的专业检索中，如果想要查找一篇题名中“基因克隆”和“绵羊”至少出现一个，必须来源于《中国畜牧杂志》，且基金不是国家自然科学基金的文献，应该输入什么检索式？",
+    "question_type": "single",
+    "options": {
+      "A": "题名:(\"基因克隆\"/绵羊)*刊名:\"中国畜牧杂志\"^基金:国家自然科学基金",
+      "B": "题名:(\"基因克隆\"and绵羊)or刊名:\"中国畜牧杂志\"not基金:国家自然科学基金",
+      "C": "题名:(\"基因克隆\"or绵羊)and刊名:\"中国畜牧杂志\"not基金:国家自然科学基金",
+      "D": "题名:(\"基因克隆\"+绵羊)*刊名:\"中国畜牧杂志\"-基金:国家自然科学基金"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列工具，不属于笔记软件的是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "为知笔记",
+      "B": "印象笔记",
+      "C": "xmind",
+      "D": "有道云笔记"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在Word中，用鼠标点击窗口的（），可以快速打开或关闭导航窗格。",
+    "question_type": "single",
+    "options": {
+      "A": "右下角的页面缩放区",
+      "B": "右上角的关闭按钮",
+      "C": "左下角的页码区",
+      "D": "左上角的保存按钮"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列工具，具有文件同步功能的是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "百度指数",
+      "B": "listary",
+      "C": "坚果云",
+      "D": "小白盘"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在百度脑图中，Tab键的默认功能是？",
+    "question_type": "single",
+    "options": {
+      "A": "插入下级节点",
+      "B": "删除下级节点",
+      "C": "插入同级节点",
+      "D": "删除同级节点"
+    },
+    "answer": "A",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "有些网页内容无法复制，但在打印预览中可以复制（提醒：不是所有的网页都是这样的哦），请问：用这种方法的快捷键是下面的哪个组合？",
+    "question_type": "single",
+    "options": {
+      "A": "alt+p",
+      "B": "ctrl+p",
+      "C": "alt+a",
+      "D": "ctrl+t"
+    },
+    "answer": "B",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列软件可以下载字体并使用的是？",
+    "question_type": "single",
+    "options": {
+      "A": "得到",
+      "B": "Polly",
+      "C": "字由",
+      "D": "讯飞有声"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在中国家谱知识服务平台上可以找到《蓉城叶氏宗族全谱八卷》（1943年撰修），请问第三卷（测）的影印页数是多少？",
+    "question_type": "single",
+    "options": {
+      "A": "139",
+      "B": "301",
+      "C": "256",
+      "D": "198"
+    },
+    "answer": "A",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "想找注册会计师（简称：CPA）方面的内容，注册会计师也好，CPA也好，这两个词只要出现其一即可。在搜索引擎百度中如何表达这种或者关系？（）",
+    "question_type": "single",
+    "options": {
+      "A": "注册会计师 | CPA",
+      "B": "注册会计师-CPA",
+      "C": "注册会计师 CPA",
+      "D": "注册会计师*CPA"
+    },
+    "answer": "A",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "信息素养为什么能促进效率的提升？（）",
+    "question_type": "multiple",
+    "options": {
+      "A": "良好的信息素养有助于发现新资源",
+      "B": "良好的信息素养有助于发现新方法",
+      "C": "良好的信息素养有助于资源、工具和方法的融会贯通",
+      "D": "良好的信息素养有助于发现新工具"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "找求职攻略，可以用以下哪些渠道？",
+    "question_type": "multiple",
+    "options": {
+      "A": "百度指数",
+      "B": "知乎",
+      "C": "百度经验",
+      "D": "微信"
+    },
+    "answer": "B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "关于维普的检索，下列说法正确的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "在维普中，检索结果出来之后，我们可以根据一定的条件对检索结果进行筛选。",
+      "B": "维普的检索词的匹配方式，默认情况下是“精确”",
+      "C": "在用维普进行检索时，我们可以设置时间范围",
+      "D": "维普支持and、or、not布尔逻辑检索"
+    },
+    "answer": "A,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列课程，可以在网易公开课这个平台上找到的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "牛津大学：批判性推理入门",
+      "B": "北京大学：影片赏析",
+      "C": "麻省理工学院：西方世界的爱情哲学",
+      "D": "加州艺术学院：服装设计"
+    },
+    "answer": "A,B,C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列属于信息检索范畴的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "在携程网选择城市和时间区间，找到许多宾馆的报价。",
+      "B": "北京大学图书馆网站馆藏书目查询系统，找到《白银资本》这本书的馆藏状态。",
+      "C": "在搜狗中输入“泽平宏观”，找到了许多宏观经济方面的深度文章。",
+      "D": "走进图书馆书库，边走边逛，看到一本名为《至味在人间》的图书。"
+    },
+    "answer": "A,B,C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列属于信息检索系统的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "购买火车票的APP12306",
+      "B": "B站内置的搜索",
+      "C": "CNKI知网",
+      "D": "百度图片"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "关于用Word进行论文排版，下列说法正确的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "不要总在一个文档中修改，尽量多保存一些副本。",
+      "B": "定稿、打印稿，最好用PDF格式。",
+      "C": "论文的各级标题，可以用样式。",
+      "D": "可以通过设置，调整自动保存的时间间隔。"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列属于下载工具的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "motrix",
+      "B": "focusky",
+      "C": "迅雷",
+      "D": "idm"
+    },
+    "answer": "A,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "进入百度高级搜索界面的方法有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "扫描百度首页的二维码进入",
+      "B": "在百度首页点击右上角设置中的高级搜索",
+      "C": "在百度中搜索“高级搜索”",
+      "D": "直接输入网址（https://www.baidu.com/gaoji/advanced.html）"
+    },
+    "answer": "B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "关于索引，下列说法正确的有（ ）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "SCIE，指的是网络版的SCI。在我国，SCIE收录的论文，都被称为SCI论文。",
+      "B": "SSCI和SCI，收录的范围没有交叉。",
+      "C": "SSCI，社会科学引文索引，侧重于人文社会科学。",
+      "D": "SCI，科学引文索引，侧重于理工类学科。"
+    },
+    "answer": "A,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在搜索引擎中，用filetype语法可以实现指定文件类型的搜索，请问：用filetype语法可以搜索哪些格式的文档？（）",
+    "question_type": "multiple",
+    "options": {
+      "A": "doc",
+      "B": "xls",
+      "C": "pdf",
+      "D": "mp4"
+    },
+    "answer": "A,B,C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "万彩办公大师集成了十几个与PDF编辑相关的工具条件。请问，下列哪些功能可以通过万彩办公大师完成。",
+    "question_type": "multiple",
+    "options": {
+      "A": "上课之后，老师给的课件是PDF版，想把它转成PPT版。",
+      "B": "拍了100多张照片，想把这些照片合并到一个PDF文件中，并添加上页码。",
+      "C": "自己做了一个学习Excel的教程攻略，PDF版的，想用一个图片作为水印。",
+      "D": "扫码了一堆文件，扫描仪直接生成了一个PDF文件，其中有些页面方向不对，想调整一下。"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "除了名片，以下哪些信息可以做成二维码？",
+    "question_type": "multiple",
+    "options": {
+      "A": "WiFi",
+      "B": "地图位置",
+      "C": "网址",
+      "D": "短信"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "论文选题，可以从以下几个方面入手（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "从学科交叉中找线索。",
+      "B": "关注近年来国家社科和国家自科的立项题目。",
+      "C": "从社会现实中选题。",
+      "D": "关注领域内的高水平会议，跟踪科研热点。"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在中国执行信息公开网上，我们可以查询到哪些信息？",
+    "question_type": "multiple",
+    "options": {
+      "A": "执行法律文书",
+      "B": "失信被执行人",
+      "C": "被执行人信息",
+      "D": "限制消费人员"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "互联网上有一些在线翻译工具，比如百度翻译、谷歌翻译、有道翻译。但使用这些工具，必须先登录。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "访问国家图书馆的数字资源需要注册账号，用自己的身份证号号实名注册后可以免费使用国图的很多资源。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "一篇被引次数为10的文章一定比一篇被引次数为3的文章影响力强。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "如果检索系统中多个检索条件之间没有明确的连接关系，默认情况下一般指的是或者关系。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在excel单元格中输入18位身份证号码，回车后很可能会是以科学计数法的方式显示（出现E+17），解决这个问题，可以在百度的搜索框中输入检索词\"excel e+17\"进行搜索。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "ORCID，全称是：Open Researcher and Contributor ID，翻译成中文，就是：开放研究者与贡献者身份，通俗地讲，就是科研人员的学术身份证。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在用数据看世界(https://ourworldindata.org)这个网站中，可以找到动态图形。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "百度、搜狗、360、必应这些搜索引擎一般都有检索词联想的功能，但cnki、springer这些学术数据库没有检索词联想功能。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "良好的信息素养，可以帮助我们找到好的资源，找到好的方法，找到合适的工具。综合利用这些资源、方法、工具，可以创造性地解决问题，提升解决问题的效率。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "百度网盘支持将本地文件拖拽上传到指定的文件夹。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "影响因子一般指的是期刊的影响因子，一篇论文、一个作者是不存在影响因子这个说法的",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "把结构化的数据转换成非结构的数据，是数据清洗的一个重要内容。（）",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "我国各省标准地图服务系统，界面和功能都是统一的，只是内容不同。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在百度的搜索框中输入 inurl:jiqiao excel ，检索意图是：要求jiqiao这个字符串出现在标题中，excel这个检索词出现在网页内容中。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "论文排版，如果涉及到公式，可以用word中公式设计工具。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 3c058d21",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
   }
 ]
