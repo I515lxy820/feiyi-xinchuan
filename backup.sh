@@ -9,16 +9,15 @@ WORKSPACE="/workspace"
 
 echo "💾 开始备份..."
 
-# 1. 跨挂载点 rsync 备份 (最可靠)
-rsync -av --delete \
-  "$WORKSPACE/question_bank/" \
-  "$WORKSPACE/ai-literacy-assistant/.env" \
-  "$WORKSPACE/ai-literacy-assistant/data/" \
-  "$WORKSPACE/ai-literacy-assistant/app/" \
-  "$WORKSPACE/ai-literacy-assistant/static/" \
-  "$WORKSPACE/ai-literacy-assistant/scripts/" \
-  "$WORKSPACE/ai-literacy-assistant/tests/" \
-  "$BACKUP_DIR/" 2>&1 | tail -3
+# 1. 跨挂载点多重备份 (最可靠)
+mkdir -p "$BACKUP_DIR"
+cp -rf "$WORKSPACE/question_bank" "$BACKUP_DIR/"
+cp -f "$WORKSPACE/ai-literacy-assistant/.env" "$BACKUP_DIR/"
+cp -rf "$WORKSPACE/ai-literacy-assistant/data" "$BACKUP_DIR/"
+cp -rf "$WORKSPACE/ai-literacy-assistant/app" "$BACKUP_DIR/"
+cp -rf "$WORKSPACE/ai-literacy-assistant/static" "$BACKUP_DIR/"
+cp -rf "$WORKSPACE/ai-literacy-assistant/scripts" "$BACKUP_DIR/"
+cp -rf "$WORKSPACE/ai-literacy-assistant/tests" "$BACKUP_DIR/"
 
 # 2. SQLite 数据库单独拷一份
 cp -f "$WORKSPACE/ai-literacy-assistant/data/app.db" \
