@@ -3103,5 +3103,172 @@
     "answer_status": "confirmed",
     "explanation": "",
     "image_path": ""
+  },
+  {
+    "question_text": "下列网址，是百度高级搜索页面的是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "https://www.baidu.com/advanced/gaoji.html",
+      "B": "https://www.baidu.com/gaoji.html",
+      "C": "https://www.baidu.com/advanced.html",
+      "D": "https://www.baidu.com/gaoji/advanced.html"
+    },
+    "answer": "D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 c3588bc0",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列属于政府网站上信息资源特点的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "一般免费",
+      "B": "比较权威",
+      "C": "都需要注册登录",
+      "D": "不易下载"
+    },
+    "answer": "A,B",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 c3588bc0",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列信息资源可以通过淘宝找到的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "某一款化妆品的使用方法",
+      "B": "某一本书的配套光盘内容",
+      "C": "某地的特产",
+      "D": "数码相机的说明书资料"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 c3588bc0",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列网站，能够搜索图片的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "https://huaban.com/",
+      "B": "https://pixabay.com/",
+      "C": "https://music.163.com/",
+      "D": "https://pic.sogou.com/"
+    },
+    "answer": "A,B,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 c3588bc0",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列文件格式，可以作为电子书文件格式的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "epub",
+      "B": "mobi",
+      "C": "pdf",
+      "D": "chm"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 c3588bc0",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在卫生健康委员会网站上，可以查询（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "医生的资质",
+      "B": "护士的资质",
+      "C": "医院的诊疗范围",
+      "D": "药品广告"
+    },
+    "answer": "A,B,C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 c3588bc0",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在CNKI的文献分析中，我们可以查看检索结果的（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "作者分布",
+      "B": "机构分布",
+      "C": "基金分布",
+      "D": "期刊分布"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 c3588bc0",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "布尔逻辑检索中的并且关系可以缩小检索结果的范围，提升查全率。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 c3588bc0",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "终身学习，既是个体适应社会发展的需要，也是个体自身进步的重要条件。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 c3588bc0",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "我们之所以能够在CNKI等学术论文检索系统中能按照篇名、作者、作者单位、关键词等检索点查找文献，是因为这些检索系统在之前的信息存储过程中对文献的这些字段进行了著录。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 c3588bc0",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "国家留学网，只提供公派出国留学资助，与自费留学生没有关系。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 c3588bc0",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在百度的高级搜索界面（https://www.baidu.com/gaoji/advanced.html），我们可以通过鼠标进行设置，限定检索结果的文件类型。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 c3588bc0",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
   }
 ]
