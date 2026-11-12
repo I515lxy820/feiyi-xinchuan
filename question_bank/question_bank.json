@@ -2119,5 +2119,236 @@
     "answer_status": "confirmed",
     "explanation": "",
     "image_path": ""
+  },
+  {
+    "question_text": "找北京大学发表的、题目中含有“比较优势”的CSSCI论文，涉及的布尔逻辑关系是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "非",
+      "B": "或者",
+      "C": "并且",
+      "D": "精确匹配"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在CNKI期刊论文数据库的高级检索中，可以使用运算符*、+、-、''、\"\"、()等符号，实现同一检索项内多个检索词的组合运算。请问 + 表示什么运算关系？",
+    "question_type": "single",
+    "options": {
+      "A": "并且",
+      "B": "包括",
+      "C": "或者",
+      "D": "不含"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "知网中，2020年前《图书馆》上发表的关键词含有“法律”的CSSCI有多少篇？",
+    "question_type": "single",
+    "options": {
+      "A": "100余篇",
+      "B": "150余篇",
+      "C": "300余篇",
+      "D": "不足100篇"
+    },
+    "answer": "D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在GB/T7714-2015这个有关参考文献著录格式的国家标准中，图书这种文献类型，用字母（）来表示。",
+    "question_type": "single",
+    "options": {
+      "A": "J",
+      "B": "N",
+      "C": "M",
+      "D": "D"
+    },
+    "answer": "C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在图书馆阅览室， 1、G642.0/050；2、G812.2-49；3、G811.01；4、G40/656/2018这些图书排架顺序是：",
+    "question_type": "single",
+    "options": {
+      "A": "2341",
+      "B": "4132",
+      "C": "1423",
+      "D": "4321"
+    },
+    "answer": "B",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在word中画一条线段，为了保证画出的线段是水平方向，可以在划线的时候按着（ ）键。",
+    "question_type": "single",
+    "options": {
+      "A": "ctrl",
+      "B": "tab",
+      "C": "alt",
+      "D": "shift"
+    },
+    "answer": "D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "国家留学网的域名是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "http://www.csc.edu.cn/",
+      "B": "https://www.chsi.com.cn/",
+      "C": "http://www.moe.gov.cn/",
+      "D": "https://www.csc.edu.cn/"
+    },
+    "answer": "D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "中图分类号由字母和数字组成，一般是一个字母加一串数字，但有一类是两个字母加一串数字，请问是哪一类？",
+    "question_type": "single",
+    "options": {
+      "A": "F类",
+      "B": "T类",
+      "C": "O类",
+      "D": "H类"
+    },
+    "answer": "B",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "阿里图标是阿里巴巴旗下的一个免费搜索图标的网站，龙喵网这个网址导航链接了阿里图标这个网址。请问，阿里图标被收录在龙喵网的哪个栏目下？",
+    "question_type": "single",
+    "options": {
+      "A": "运营",
+      "B": "设计",
+      "C": "前端",
+      "D": "生活"
+    },
+    "answer": "B",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在百度高级搜索界面（https://www.baidu.com/gaoji/advanced.html）中可以进行语言类型的限制，其中的选项分别有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "仅在英文中",
+      "B": "全部语言",
+      "C": "仅在繁体中文中",
+      "D": "仅在简体中文中"
+    },
+    "answer": "B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列数据库，可以查询会议文献的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "京东读书",
+      "B": "PQDT",
+      "C": "万方",
+      "D": "CNKI"
+    },
+    "answer": "C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "大部分报纸有电子版，不仅可以看当期，而且可以追溯过往，有些还提供PDF文档下载。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "慢慢买是一个比价搜索引擎。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "B站，既有网页版，也有手机APP。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "点击百度首页右上角的设置菜单，可以看到“高级搜索”的链接，点开这个链接可以进行高级检索。另外，通过这个网址（https://www.baidu.com/gaoji/advanced.html）也能使用百度的高级搜索。用这两个方法找到的百度高级搜索页面都有语言限制的选项。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "MIT THESES是麻省理工的学位论文数据库，大部分论文有全文，使用需要付费。",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 7f102656",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
   }
 ]

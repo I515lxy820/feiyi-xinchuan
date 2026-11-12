@@ -1,0 +1,9 @@
+[
+{"question_text":"在百度高级搜索界面（https://www.baidu.com/gaoji/advanced.html）中可以进行语言类型的限制，其中的选项分别有（）。","question_type":"multiple","options":{"A":"仅在英文中","B":"全部语言","C":"仅在繁体中文中","D":"仅在简体中文中"},"answer":"B,C,D","topic":"","source":"竞赛平台模拟练习解析页 7f102656"},
+{"question_text":"下列数据库，可以查询会议文献的有（）。","question_type":"multiple","options":{"A":"京东读书","B":"PQDT","C":"万方","D":"CNKI"},"answer":"C,D","topic":"","source":"竞赛平台模拟练习解析页 7f102656"},
+{"question_text":"大部分报纸有电子版，不仅可以看当期，而且可以追溯过往，有些还提供PDF文档下载。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 7f102656"},
+{"question_text":"慢慢买是一个比价搜索引擎。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 7f102656"},
+{"question_text":"B站，既有网页版，也有手机APP。","question_type":"boolean","options":{},"answer":"正确","topic":"","source":"竞赛平台模拟练习解析页 7f102656"},
+{"question_text":"点击百度首页右上角的设置菜单，可以看到“高级搜索”的链接，点开这个链接可以进行高级检索。另外，通过这个网址（https://www.baidu.com/gaoji/advanced.html）也能使用百度的高级搜索。用这两个方法找到的百度高级搜索页面都有语言限制的选项。","question_type":"boolean","options":{},"answer":"错误","topic":"","source":"竞赛平台模拟练习解析页 7f102656"},
+{"question_text":"MIT THESES是麻省理工的学位论文数据库，大部分论文有全文，使用需要付费。","question_type":"boolean","options":{},"answer":"错误","topic":"","source":"竞赛平台模拟练习解析页 7f102656"}
+]
