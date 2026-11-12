@@ -4391,5 +4391,515 @@
     "source": "竞赛平台模拟练习解析页 ccea5645",
     "answer_status": "confirmed",
     "topic": ""
+  },
+  {
+    "question_text": "授权登录，基于的协议是（）。",
+    "question_hash": "c39fc65c64257995",
+    "question_type": "single",
+    "options": {
+      "A": "FTP",
+      "B": "TCP/IP",
+      "C": "CC0",
+      "D": "OAuth2.0"
+    },
+    "answer": "D",
+    "explanation": "正确答案：D你的答案：未作答\n解析\nOAuth简单说就是一种授权的协议，只要授权方和被授权方遵守这个协议去写代码提供服务，那双方就是实现了OAuth模式。目前QQ、微信的授权登录一般基于OAuth2.0。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "在我国绝大部分高校，毕业论文后的参考文献，要求用（）格式。",
+    "question_hash": "74048b2efe982ed7",
+    "question_type": "single",
+    "options": {
+      "A": "MLA",
+      "B": "GB/T 7714",
+      "C": "refworks",
+      "D": "APA"
+    },
+    "answer": "B",
+    "explanation": "正确答案：B你的答案：未作答\n解析\n我国的毕业论文，一般要求用国标，GB/T 7714。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "香港科技大学图书馆有一个在线的古籍及特藏阅览区，实质上是一个向社会开放的机构知识库，里面有十多个资源库，其中包括Antique Maps of China。这个资源库收录不少中国古旧地图。在这个资源库中查找名为《A Map to illustrate the war in China》地图。请问这张题图的尺寸是？",
+    "question_hash": "2a367f7ca548704b",
+    "question_type": "single",
+    "options": {
+      "A": "70×35",
+      "B": "85×38",
+      "C": "75×34",
+      "D": "50×40"
+    },
+    "answer": "C",
+    "explanation": "正确答案：C你的答案：未作答\n解析\n在这个系统中找到这张地图，在题录数据中可以看到尺寸。地址：https://lbezone.ust.hk/bib/b534946",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "下列哪个工具的功能与MOTRIX功能类似？",
+    "question_hash": "008ba3e232fcff4e",
+    "question_type": "single",
+    "options": {
+      "A": "微信",
+      "B": "wps",
+      "C": "迅雷",
+      "D": "雨课堂"
+    },
+    "answer": "C",
+    "explanation": "正确答案：C你的答案：未作答\n解析\n这是一个识记性题目。MOTRIX和迅雷都是文件下载工具。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "下列工具，属于按键显示工具的是（）。",
+    "question_hash": "815b88677aae596d",
+    "question_type": "single",
+    "options": {
+      "A": "方方格子",
+      "B": "幕布",
+      "C": "onenote",
+      "D": "KeyCastOW"
+    },
+    "answer": "D",
+    "explanation": "正确答案：D你的答案：未作答\n解析\n幕布是思维导图工具；方方格子是excel插件；onenote是微软的笔记软件。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "使用citespace进行文献分析，需要先采集数据。采集的数据文件，命名要以（）开头。",
+    "question_hash": "2b3ecc074c07ba8a",
+    "question_type": "single",
+    "options": {
+      "A": "input",
+      "B": "download",
+      "C": "data",
+      "D": "citespace"
+    },
+    "answer": "B",
+    "explanation": "正确答案：B你的答案：未作答\n解析\n以download开头的命名方式，是citespace的要求。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "arXiv是一个预印本系统，在arXiv中检索\"Impacting the bioscience progress by backporting software for Bio-Linux\"，查看本篇文章正文中第二句加粗句子是什么？",
+    "question_hash": "3820072a5f1a5d07",
+    "question_type": "single",
+    "options": {
+      "A": "A software environment?",
+      "B": "What is Bio-Linux and what is it good for - also its drawbacks:",
+      "C": "How this all affects Bio-Linux?",
+      "D": "\"The drawback of the workflow: \""
+    },
+    "answer": "A",
+    "explanation": "正确答案：A你的答案：未作答\n解析\n试试就知道了，地址是这个:https://arxiv.org/。点击pdf图标可获得pdf全文。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "在pubmed首页的检索框中输入big data，回车后找到很多结果。查看检索细节，下列哪个是系统翻译后执行的结果？",
+    "question_hash": "6d5bea915e980776",
+    "question_type": "single",
+    "options": {
+      "A": "\"big data\"[MeSH Terms] OR (\"big\"[All Fields] AND \"data\"[All Fields]) OR \"big data\"[All Fields]",
+      "B": "\"big data\"[MeSH Terms] OR (\"big\"[All Fields] AND \"data\"[All Fields]) AND \"big data\"[All Fields]",
+      "C": "\"big data\"[MeSH Terms] OR (\"big\"[All Fields] OR \"data\"[All Fields]) OR \"big data\"[All Fields]",
+      "D": "\"big data\"[MeSH Terms] AND (\"big\"[All Fields] AND \"data\"[All Fields]) OR \"big data\"[All Fields]"
+    },
+    "answer": "A",
+    "explanation": "正确答案：A你的答案：未作答\n解析\n在pubmed首页输入检索词，然后在高级检索中查看检索细节，可以看到具体翻译后的检索表达式。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "在中华古籍资源库中找到1750年出版的《榆次县志》。请问这个县志\"卷二\"的总页码与下列哪个数字最接近？",
+    "question_hash": "4ea0897a1cbfc2eb",
+    "question_type": "single",
+    "options": {
+      "A": "35",
+      "B": "175",
+      "C": "322",
+      "D": "87"
+    },
+    "answer": "A",
+    "explanation": "正确答案：A你的答案：未作答\n解析\n这是一个探索性题目。找到这个县志，打开\"卷二\"，看一下就知道了。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "下列关于zetero这个文献管理工具的说法，错误的是（）。",
+    "question_hash": "e525166bc9968609",
+    "question_type": "single",
+    "options": {
+      "A": "zetero有浏览器插件。",
+      "B": "可以通过拖拽的方式把PDF格式文献导入zetero。",
+      "C": "zetero是一个文献管理工具。",
+      "D": "zetero是一个付费工具。"
+    },
+    "answer": "D",
+    "explanation": "正确答案：D你的答案：未作答\n解析\nzetero是一个免费工具。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "在万方数据库中，2015-2019年由中华医学会举办的，会议名称包含\"骨科\"的会议的论文，下面哪个研究内容（高频关键词）最受关注？",
+    "question_hash": "3e974ac7e063d9bc",
+    "question_type": "single",
+    "options": {
+      "A": "内固定",
+      "B": "骨质疏松",
+      "C": "腰椎间盘突出症",
+      "D": "关节镜"
+    },
+    "answer": "A",
+    "explanation": "正确答案：A你的答案：未作答\n解析\n这道题需要借助结果的分析功能，在检索结果的上方，点\"统计分析\"，查看关键词。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "下列关于美国政府数据开放平台data.gov的说法，错误的是（）。",
+    "question_hash": "4ced90a70e8c2f42",
+    "question_type": "single",
+    "options": {
+      "A": "data.gov只能查阅美国联邦政府的开放数据，不能查到各州的开放数据。",
+      "B": "data.gov提供基于主体的导航，可以根据导航浏览数据。",
+      "C": "data.gov提供数据搜索入口，可以一站式查询。",
+      "D": "data.gov是美国政府数据开放平台。"
+    },
+    "answer": "A",
+    "explanation": "正确答案：A你的答案：未作答\n解析\ndata.gov不仅能查阅美国联邦政府的开放数据，也能查到各州的开放数据。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "在维普数据库中检索包括\"精神疾病\"这个题名或关键词的文章,同时勾选同义词扩展功能，选择\"psychotic disorder\"、\"mental illness\"、\"神经系统疾病\"这三个同义词，精确检索，时间限定为自收录起始年-2018年，找到的文章数量与下面哪个选项匹配？",
+    "question_hash": "07694f1fdb485974",
+    "question_type": "single",
+    "options": {
+      "A": "超过18000篇",
+      "B": "超过11000篇",
+      "C": "不超过1500篇",
+      "D": "将近10000篇"
+    },
+    "answer": "B",
+    "explanation": "正确答案：B你的答案：未作答\n解析\n试试就知道了，网址是这个http://www.cqvip.com/。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "在CNKI中查找林毅夫老师发表的文章，选择检索点\"作者\"，合适的检索词是（）。",
+    "question_hash": "ec0677824bb8f7bd",
+    "question_type": "single",
+    "options": {
+      "A": "林毅夫同志",
+      "B": "林毅夫老师",
+      "C": "林毅夫",
+      "D": "林毅夫先生"
+    },
+    "answer": "C",
+    "explanation": "正确答案：C你的答案：未作答\n解析\n这个是一个理解性题目。检索词很干净，不要画蛇添足。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "一本期刊，2021年、2022年、2023年发表的论文数量分别是200篇、300篇、500篇。这三年的论文在2023年的被引量分别500次、400次、100次。请问，这本期刊在2023年的影响因子是（）。",
+    "question_hash": "e66e3f7ef2599794",
+    "question_type": "single",
+    "options": {
+      "A": "1.5",
+      "B": "1.6",
+      "C": "1.8",
+      "D": "1"
+    },
+    "answer": "C",
+    "explanation": "正确答案：C你的答案：未作答\n解析\nIF(2023)=该期刊2021年至2022年所有文章在2023年被引用的总次数/该期刊2021年至2022年所有文章数。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "下列网站可以识别字体的有（）。",
+    "question_hash": "735e8538e4c8ee0d",
+    "question_type": "multiple",
+    "options": {
+      "A": "鸠摩搜索 https://www.jiumodiary.com/",
+      "B": "百度识图 https://image.baidu.com/",
+      "C": "识字体 https://www.likefont.com/",
+      "D": "求字体 http://www.qiuziti.com/"
+    },
+    "answer": "C,D",
+    "explanation": "正确答案：CD你的答案：未作答\n解析\n百度识图不能识别字体，鸠摩搜索是搜电子书的。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "世界银行提供哪些格式的下载？",
+    "question_hash": "faa9a6a3be3383c6",
+    "question_type": "multiple",
+    "options": {
+      "A": "CSV",
+      "B": "word",
+      "C": "Excel",
+      "D": "XML"
+    },
+    "answer": "A,C,D",
+    "explanation": "正确答案：ACD你的答案：未作答\n解析\n视频中有提到哦，http://data.worldbank.org.cn/也可以点击网址找找答案哦。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "在百度的高级搜索界面中，对检索词出现位置的限制有多种选择，其中包括（）。",
+    "question_hash": "1472f81556beb0e5",
+    "question_type": "multiple",
+    "options": {
+      "A": "网页的任何地方",
+      "B": "仅在网页的标题中",
+      "C": "仅在网页的图片中",
+      "D": "仅在网页的URL中"
+    },
+    "answer": "A,B,D",
+    "explanation": "正确答案：ABD你的答案：未作答\n解析\n试一下！https://www.baidu.com/gaoji/advanced.html",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "香港科技大学图书馆有一个在线的古籍及特藏阅览区，实质上是一个向社会开放的机构知识库，里面有十多个资源库，其中包括（）。",
+    "question_hash": "ed2fac67f3e550cb",
+    "question_type": "multiple",
+    "options": {
+      "A": "Westem books about China before1949",
+      "B": "Rare Books on History of Science",
+      "C": "Chinese Books before 1949（Thread Bound）",
+      "D": "Antique Maps of China"
+    },
+    "answer": "A,B,C,D",
+    "explanation": "正确答案：ABCD你的答案：未作答\n解析\nhttps://lbezone.ust.hk/rse/,这个地址，看一下就知道了。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "关于获取CNKI文献全文的方法，下列说法正确的有：",
+    "question_hash": "a412d1a945bc3a95",
+    "question_type": "multiple",
+    "options": {
+      "A": "若学校购买相应权限，校内可免费获取全文",
+      "B": "校外可用学校的vpn免费获取全文",
+      "C": "校外使用CNKI，检索和获取全文都是免费的",
+      "D": "用公共图书馆提供的免费服务获取全文"
+    },
+    "answer": "A,B,D",
+    "explanation": "正确答案：ABD你的答案：未作答\n解析\n动手去试试就知道了。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "在国家中小学智慧教育平台上可以找到（ ）。",
+    "question_hash": "74220c1b32a23654",
+    "question_type": "multiple",
+    "options": {
+      "A": "中小学视频课程",
+      "B": "中小学课本电子版",
+      "C": "中小学数学奥林匹克竞赛历年真题",
+      "D": "国外中小学视频课程"
+    },
+    "answer": "A,B",
+    "explanation": "正确答案：AB你的答案：未作答\n解析\n这是一个探索性题目。在国家中小学智慧教育平台上可以找到中小学课本电子版、中小学视频课程。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "关于作者署名，下列说法正确的有（）。",
+    "question_hash": "27f70a407752a531",
+    "question_type": "multiple",
+    "options": {
+      "A": "在研究和论文撰写中做出贡献的都可以署名；",
+      "B": "不符合署名条件，但也做出贡献的人员，可以在致谢中体现；",
+      "C": "论文署名顺序，按照职务大小确定；",
+      "D": "贡献最大的，可以署第一作者，若贡献都大，而且差不多，有些期刊可以署共同第一作者；"
+    },
+    "answer": "B,D",
+    "explanation": "正确答案：BD你的答案：未作答\n解析\n做出重要贡献的，才能署名；按照贡献大小确定署名顺序。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "关于MeSH主题词表，下列说法正确的有（）。",
+    "question_hash": "f4a8d56a4eb29bdd",
+    "question_type": "multiple",
+    "options": {
+      "A": "在MeSH中，多个自由词可能对应同一个主题词。",
+      "B": "MeSH主题词表有在线数据库，可以免费查询。",
+      "C": "MeSH主题词表，一般指的是NCBI旗下的医学主题词表。",
+      "D": "在MeSH主题词表中，一个词可能有多个下位词，只有一个上位词。"
+    },
+    "answer": "A,B,C",
+    "explanation": "正确答案：ABC你的答案：未作答\n解析\n在MeSH主题词表中，一个词可能有多个下位词，也可能有多个上位词。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "在PQDT中找题目中含有\"大数据\"的论文，下列说法正确的有（）。",
+    "question_hash": "865dfeff912df9cf",
+    "question_type": "multiple",
+    "options": {
+      "A": "检索词的匹配方式是\"短语\"",
+      "B": "输入的检索词是\"大数据\"",
+      "C": "在高级检索中选择的检索点是\"标题\"",
+      "D": "输入的检索词是\"big data\""
+    },
+    "answer": "A,C,D",
+    "explanation": "正确答案：ACD你的答案：未作答\n解析\n在PQDT中输入检索词是要用英文，用\"短语\"这种匹配方式表示不能拆分。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "在知乎中搜索实用的浏览器插件，可以用下列哪些检索词？",
+    "question_hash": "03d7b0cecc5fb012",
+    "question_type": "multiple",
+    "options": {
+      "A": "相见恨晚 浏览器插件",
+      "B": "好用不火 浏览器插件",
+      "C": "浏览器插件 吐血推荐",
+      "D": "浏览器插件 神器"
+    },
+    "answer": "A,B,C,D",
+    "explanation": "正确答案：ABCD你的答案：未作答\n解析\n这是一个理解性题目。打开知乎，试试就知道了。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "作为一个数据可视化工具，tableau是一个收费工具，没有免费版本。\nA 正确\nB 错误",
+    "question_hash": "2d501c01dfcbeada",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "explanation": "tableau有一个免费的public版",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "论文排版，如果涉及到公式，可以用word中公式设计工具。\nA 错误\nB 正确",
+    "question_hash": "9f5cff9a51db7e41",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "explanation": "试试就知道了",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "大部分报纸有电子版，不仅可以看当期，而且可以追溯过往，有些还提供PDF文档下载。\nA 正确\nB 错误",
+    "question_hash": "a9cd3e1b1c9a69ea",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "explanation": "找一个报纸的电子版试试。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "如果有人大复印报刊资料的访问权限，人大复印报刊资料提供转载证明，自己可以在线开具。\nA 正确\nB 错误",
+    "question_hash": "a818426e4fc28a36",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "explanation": "试试就知道了，可以在线开具。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "Aminer不仅可以找到作者的研究成果，而且能从文献计量的角度对作者进行评价。\nA 错误\nB 正确",
+    "question_hash": "53b1b5e82f79f4ec",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "explanation": "试试就知道了。这是网址，去试一下。https://www.aminer.cn",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "ACM Digital Library平台上的资源都可以免费获取全文。\nA 错误\nB 正确",
+    "question_hash": "c6d12f4691383bdd",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "explanation": "这是一个理解性题目。ACM digital library虽然是一个商业数据库，但检索是完全免费的，而且能够免费获取部分文献的全文。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "CSSCI数据库（http://cssci.nju.edu.cn）是一个商业数据库，下载全文需要付费，但检索是免费的。\nA 错误\nB 正确",
+    "question_hash": "9a41b3b874322a15",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "explanation": "检索也是需要权限的，学校没交钱，在校内是无法检索的。这和CNKI不一样，CNKI检索是免费的。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "中国记者网还能查看\"记者证核发公告\"、\" 记者证注销公告\"等信息， 鉴别假记者，这些信息有时候也用的到。\nA 错误\nB 正确",
+    "question_hash": "c807193d25934192",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "错误",
+    "explanation": "http://press.nppa.gov.cn/，点开网页就可查询啦。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "一个具有信息素养的人，不仅具有各种信息能力，而且还要具有信息意识。\nA 正确\nB 错误",
+    "question_hash": "20d34bce0a2c33b2",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "explanation": "这是一个理解性题目。信息意识是信息素养的重要组成部分。",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
+  },
+  {
+    "question_text": "自己的密码，尽量让别人看不出规律，而且自己要记得住。不同地方的密码，最好不一样。\nA 正确\nB 错误",
+    "question_hash": "cb277667c7938f87",
+    "question_type": "boolean",
+    "options": {},
+    "answer": "正确",
+    "explanation": "",
+    "source": "竞赛平台模拟练习解析页 535878da",
+    "answer_status": "confirmed",
+    "topic": ""
   }
 ]
