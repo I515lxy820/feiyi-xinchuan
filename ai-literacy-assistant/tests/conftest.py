@@ -14,12 +14,13 @@ class FakeModel:
         self.review_answer = None
         self.needs_search = True
 
-    async def draft(self, question_text, image_data_url, options, question_type):
+    async def draft(self, question_text, image_data_url, options, question_type, references=None):
         self.calls.append({
             "question_text": question_text,
             "image_data_url": image_data_url,
             "options": options,
             "question_type": question_type,
+            "references": references,
         })
         parsed_options = options or {
             match.group(1): match.group(2).strip()

@@ -5,8 +5,10 @@ import pytest
 from conftest import FakeSearch, FakeWebReader
 
 from app.answers import answers_match, normalize_answer
+from app.db import Database
 from app.evaluation import evaluate_records, summarize
 from app.providers import OpenAICompatibleProvider, ProviderError
+from app.question_io import question_hash
 from app.schemas import Citation, DraftAnswer, QuestionRecord
 from app.solver import Solver
 
@@ -257,3 +259,113 @@ async def test_review_receives_bounded_web_text_as_untrusted_user_data(
     assert "page_text" not in payload["sources"][2]
     assert payload["sources"][0]["url"] == "https://example.com/1"
     assert payload["sources"][0]["kind"] == "webpage"
+
+
+def seed_question(settings, record):
+    database = Database(settings.database_path)
+    database.initialize()
+    database.insert_questions([(record, question_hash(record.question_text))])
+
+
+@pytest.mark.asyncio
+async def test_exact_bank_match_returns_standard_answer_without_model(settings, model):
+    record = QuestionRecord(
+        question_text="题库中的单选题",
+        question_type="single",
+        options={"A": "甲", "B": "乙"},
+        answer="B",
+        explanation="已确认解析",
+    )
+    seed_question(settings, record)
+    solver = Solver(settings, model=model, search=FakeSearch())
+    response = await solver.solve(record.question_text)
+    assert response.answer == "B"
+    assert response.explanation == "已确认解析"
+    assert response.answer_status == "confirmed"
+    assert response.needs_review is False
+    assert model.calls == []
+
+
+@pytest.mark.asyncio
+async def test_exact_bank_match_remaps_reordered_options(settings, model):
+    record = QuestionRecord(
+        question_text="选项顺序发生变化的题",
+        question_type="single",
+        options={"A": "甲", "B": "乙"},
+        answer="A",
+    )
+    seed_question(settings, record)
+    solver = Solver(settings, model=model, search=FakeSearch())
+    response = await solver.solve(
+        record.question_text,
+        options={"A": "乙", "B": "甲"},
+        question_type="single",
+    )
+    assert response.answer == "B"
+    assert response.options == {"A": "乙", "B": "甲"}
+    assert model.calls == []
+
+
+@pytest.mark.asyncio
+async def test_similar_bank_question_is_passed_as_confirmed_example(settings, model):
+    record = QuestionRecord(
+        question_text="CNKI可以自动生成文献互引网络分析图。",
+        question_type="boolean",
+        answer="正确",
+    )
+    seed_question(settings, record)
+    model.needs_search = False
+    solver = Solver(settings, model=model, search=FakeSearch())
+    response = await solver.solve(
+        "CNKI能够自动生成文献互引网络分析图。", question_type="boolean"
+    )
+    assert response.answer == "正确"
+    references = model.calls[0]["references"]
+    assert len(references) == 1
+    assert references[0]["answer"] == "正确"
+
+
+@pytest.mark.asyncio
+async def test_bank_exclude_hash_prevents_self_answer_leakage(settings, model):
+    record = QuestionRecord(
+        question_text="测评时必须排除自己的题",
+        question_type="single",
+        options={"A": "甲", "B": "乙"},
+        answer="B",
+    )
+    seed_question(settings, record)
+    model.needs_search = False
+    solver = Solver(settings, model=model, search=FakeSearch())
+    response = await solver.solve(
+        record.question_text,
+        options=record.options,
+        question_type="single",
+        bank_exclude_hash=question_hash(record.question_text),
+    )
+    assert response.answer == "A"
+    assert model.calls[0]["references"] == []
+
+
+@pytest.mark.asyncio
+async def test_provider_serializes_confirmed_examples(settings, monkeypatch):
+    provider = OpenAICompatibleProvider(settings)
+    captured = []
+
+    async def structured(messages):
+        captured.append(messages)
+        return DraftAnswer(answer="A", question_type="single", confidence=0.8)
+
+    monkeypatch.setattr(provider, "_structured", structured)
+    try:
+        await provider.draft(
+            "当前题",
+            None,
+            {"A": "甲"},
+            "single",
+            references=[{"question_text": "相似题", "answer": "B"}],
+        )
+    finally:
+        await provider.close()
+    payload = json.loads(captured[0][1]["content"])
+    assert payload["question_text"] == "当前题"
+    assert payload["confirmed_examples"] == [{"question_text": "相似题", "answer": "B"}]

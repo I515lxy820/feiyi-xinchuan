@@ -6,6 +6,7 @@ from typing import Any
 
 from .answers import answers_match
 from .imaging import prepare_image
+from .question_io import question_hash
 from .schemas import QuestionRecord
 from .solver import Solver
 
@@ -66,7 +67,10 @@ def summarize(results: list[dict[str, Any]]) -> dict[str, Any]:
 
 
 async def evaluate_records(
-    records: list[QuestionRecord], solver: Solver, concurrency: int = 2
+    records: list[QuestionRecord],
+    solver: Solver,
+    concurrency: int = 2,
+    bank_exclude_self: bool = False,
 ) -> list[dict[str, Any]]:
     semaphore = asyncio.Semaphore(max(1, concurrency))
 
@@ -89,6 +93,7 @@ async def evaluate_records(
                     options=record.options,
                     question_type=record.question_type,
                     search_mode="auto",
+                    bank_exclude_hash=question_hash(record.question_text) if bank_exclude_self else "",
                 )
                 is_correct = answers_match(response.answer, record.answer, record.question_type)
                 return {

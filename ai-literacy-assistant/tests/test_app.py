@@ -74,6 +74,7 @@ def test_image_solve_and_invalid_image(settings, solver):
 
 
 def test_practice_feedback_mistakes_and_stats(settings, solver):
+    solver.question_bank = None
     add_question(settings, "正确题")
     add_question(settings, "答错题")
     with make_client(settings, solver) as client:

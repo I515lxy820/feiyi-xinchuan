@@ -12,6 +12,8 @@ from .providers import (
     build_model_provider,
     build_search_provider,
 )
+from .question_bank import QuestionBank
+from .question_io import normalized_question_text
 from .schemas import Citation, DraftAnswer, SolveResponse
 from .web_reader import WebReader, build_web_reader
 
@@ -28,12 +30,17 @@ class Solver:
         model: ModelProvider | None = None,
         search: SearchProvider | None = None,
         web_reader: WebReader | None = None,
+        question_bank: QuestionBank | None = None,
+        use_question_bank: bool = True,
     ):
         self.settings = settings
         self.model = model or build_model_provider(settings)
         self.search = search if search is not None else build_search_provider(settings)
         self.web_reader = (
             web_reader if web_reader is not None else build_web_reader(settings)
+        )
+        self.question_bank = question_bank or (
+            QuestionBank(settings.database_path) if use_question_bank else None
         )
 
     @staticmethod
@@ -49,16 +56,70 @@ class Solver:
         options: dict[str, str] | None = None,
         question_type: str = "unknown",
         search_mode: str = "auto",
+        bank_exclude_hash: str = "",
     ) -> SolveResponse:
         started = time.perf_counter()
-        options = options or {}
+        options = options or {
+            match.group(1): match.group(2).strip()
+            for match in re.finditer(r"(?m)^\s*([A-Z])[.、．]\s*(.+)$", question_text)
+        }
         warnings: list[str] = []
         if self.settings.demo_mode:
             warnings.append("当前为演示模式，答案与检索不能作为真实能力或准确率依据")
 
+        references = []
+        timings: dict[str, float] = {}
+        if self.question_bank is not None and question_text and not image_data_url:
+            stage = time.perf_counter()
+            match = self.question_bank.lookup(
+                question_text, exclude_hash=bank_exclude_hash
+            )
+            timings["question_bank"] = round(time.perf_counter() - stage, 3)
+            references = match.references
+            if match.exact is not None:
+                bank_answer = match.exact["answer"]
+                bank_options = match.exact["options"]
+                can_use_exact = not (
+                    bank_options
+                    and not options
+                    and normalized_question_text(question_text) != match.exact["normalized_text"]
+                )
+                if options and bank_options and match.exact["question_type"] in {"single", "multiple"}:
+                    labels_by_text = {
+                        normalized_question_text(value): label for label, value in options.items()
+                    }
+                    mapped = []
+                    for label in bank_answer.split(","):
+                        option_text = bank_options.get(label, "")
+                        mapped_label = labels_by_text.get(normalized_question_text(option_text))
+                        if not mapped_label:
+                            can_use_exact = False
+                            break
+                        mapped.append(mapped_label)
+                    if can_use_exact:
+                        bank_answer = normalize_answer(
+                            ",".join(mapped), match.exact["question_type"]
+                        )
+                if can_use_exact:
+                    timings["total"] = round(time.perf_counter() - started, 3)
+                    return SolveResponse(
+                        question_text=question_text,
+                        question_type=match.exact["question_type"],
+                        options=options or bank_options,
+                        answer=bank_answer,
+                        explanation=match.exact["explanation"] or "本题命中本地题库中的已确认题目，按题库标准答案作答。",
+                        confidence=0.99,
+                        needs_review=False,
+                        timings=timings,
+                        demo_mode=self.settings.demo_mode,
+                        answer_status="confirmed",
+                    )
+
         stage = time.perf_counter()
-        draft = await self.model.draft(question_text, image_data_url, options, question_type)
-        timings = {"draft": round(time.perf_counter() - stage, 3)}
+        draft = await self.model.draft(
+            question_text, image_data_url, options, question_type, references=references
+        )
+        timings["draft"] = round(time.perf_counter() - stage, 3)
         final = draft.model_copy(deep=True)
         sources: list[Citation] = []
         search_failed = False
