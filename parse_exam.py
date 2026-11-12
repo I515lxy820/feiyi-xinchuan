@@ -11,6 +11,7 @@ import sys
 import os
 import sqlite3
 import datetime
+import unicodedata
 
 BANK_JSON = "/workspace/question_bank/question_bank.json"
 BANK_XLSX = "/workspace/question_bank/question_bank.xlsx"
@@ -22,7 +23,10 @@ TYPE_CN = {"single": "单选", "multiple": "多选", "boolean": "判断"}
 
 
 def make_hash(text: str) -> str:
-    return hashlib.sha1(text.strip().encode("utf-8")).hexdigest()[:16]
+    """与 app.question_io.question_hash 完全一致，保证查询/自排除能命中。"""
+    value = unicodedata.normalize("NFKC", text).casefold()
+    value = re.sub(r"[\W_]+", "", value, flags=re.UNICODE)
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()
 
 
 def parse_questions(text: str):
