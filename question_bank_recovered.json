@@ -2442,5 +2442,213 @@
     "answer_status": "confirmed",
     "explanation": "",
     "image_path": ""
+  },
+  {
+    "question_text": "下列可以快速合并多个PDF文件的工具软件是（）。",
+    "question_type": "single",
+    "options": {
+      "A": "万彩办公大师",
+      "B": "1checker",
+      "C": "字由",
+      "D": "snipaste"
+    },
+    "answer": "A",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 70512269",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "利用CNKI进行检索并分析，下列哪一个机构对慢性阻塞性肺病的研究文章最多？",
+    "question_type": "single",
+    "options": {
+      "A": "四川大学华西医院",
+      "B": "北京协和医院",
+      "C": "上海医科大学中山医院",
+      "D": "解放军总医院"
+    },
+    "answer": "A",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 70512269",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在一席的平台上，有一个名为《没有回家的士兵》的演讲，请问这个演讲的演讲者是谁？",
+    "question_type": "single",
+    "options": {
+      "A": "曹天元",
+      "B": "孙春龙",
+      "C": "毕晓楠",
+      "D": "李迪华"
+    },
+    "answer": "B",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 70512269",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列属于参考文献作用的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "为进一步查找文献检索提供线索",
+      "B": "支持作者的观点",
+      "C": "区分原创与引用",
+      "D": "明确研究的基础"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 70512269",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "通过习近平系列重要讲话数据库查找，下列哪些报道中，习近平提到了“数字货币”这个词？",
+    "question_type": "multiple",
+    "options": {
+      "A": "习近平在二十国集团领导人第十五次峰会第一阶段会议上的讲话",
+      "B": "国家主席习近平发表二〇二一年新年贺词",
+      "C": "《求是》发表的习近平文章：国家中长期经济社会发展战略若干重大问题",
+      "D": "习近平：在全国脱贫攻坚总结表彰大会上的讲话"
+    },
+    "answer": "A,C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 70512269",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "有一个我国国家标准的中文名称是“粮油检验 小麦粉馒头加工品质评价”，请找到这个标准的全文，并判断下面哪些说法是正确的。",
+    "question_type": "multiple",
+    "options": {
+      "A": "这是一个强制性国家标准。",
+      "B": "这是一个推荐性国家标准。",
+      "C": "这个标准的实施时间是2018-10-01。",
+      "D": "在国家标准化管理委员会网站上的“国家标准全文公开系统”中，这个标准的文档，连同封面、正文以及附录，共8页。"
+    },
+    "answer": "B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 70512269",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "万彩办公大师提供哪些功能合集？",
+    "question_type": "multiple",
+    "options": {
+      "A": "图片处理工具集",
+      "B": "格式转换工具合集",
+      "C": "OCR识别工具集",
+      "D": "PDF合集"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 70512269",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列能够评价学术的有（）",
+    "question_type": "multiple",
+    "options": {
+      "A": "H指数",
+      "B": "SCI",
+      "C": "被引次数",
+      "D": "影响因子"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 70512269",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列古籍影印版，能在书格这个网站上找到，且PDF文件大小超过200M的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "绘事琐言（原色版）",
+      "B": "西厢记版画.21幅.明崇祯十三年闵齐伋六色套印本",
+      "C": "新修成都府志.58卷.明.冯任.修.张世雍等纂.明天启元年刊本",
+      "D": "北京皇城建筑装饰.附图80叶.东京帝国大学工科大学编.小川一真出版部刊.1906年（原色版）"
+    },
+    "answer": "A,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 70512269",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在一本图书的版权页上可以找到（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "责任者（比如：作者）",
+      "B": "书名",
+      "C": "索书号",
+      "D": "ISBN"
+    },
+    "answer": "A,B,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 70512269",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "在用搜索引擎查找信息时，下列哪种情况适合用一句话作为检索词。（）",
+    "question_type": "multiple",
+    "options": {
+      "A": "查找一个单选题来自哪一年的高考原题",
+      "B": "安装软件时，系统弹出一个警告，想了解如何解决",
+      "C": "查找一句话出自哪一本小说",
+      "D": "查找信息素养方面的教学PPT"
+    },
+    "answer": "A,B,C",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 70512269",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "下列关于百度指数，正确的有（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "使用百度指数需要登录百度账号。",
+      "B": "百度指数可以定制时间段查看数据",
+      "C": "百度指数可以对比多个词的指数数据",
+      "D": "查询普通词条，百度指数是免费的。"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 70512269",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
+  },
+  {
+    "question_text": "很多理工类的学术期刊，摘要一般包括（）。",
+    "question_type": "multiple",
+    "options": {
+      "A": "结果",
+      "B": "方法和过程",
+      "C": "结论",
+      "D": "目的意义（背景）"
+    },
+    "answer": "A,B,C,D",
+    "topic": "",
+    "source": "竞赛平台模拟练习解析页 70512269",
+    "answer_status": "confirmed",
+    "explanation": "",
+    "image_path": ""
   }
 ]
