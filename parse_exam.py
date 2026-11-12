@@ -124,6 +124,12 @@ def normalize(q: dict) -> None:
     cn = q.get("question_type")
     if cn in TYPE_MAP:
         q["question_type"] = TYPE_MAP[cn]
+    text = q.get("question_text", "")
+    for pattern in (r"\n\s*A\s*(正确|错误)", r"\n\s*A\s*[.、．]", r"\n\s*正确答案", r"\n\s*收起解析", r"\n\s*展开全部"):
+        match = re.search(pattern, text)
+        if match:
+            text = text[:match.start()]
+    q["question_text"] = text.strip()
     if q["question_type"] == "boolean":
         if q["answer"] == "A":
             q["answer"] = "正确"

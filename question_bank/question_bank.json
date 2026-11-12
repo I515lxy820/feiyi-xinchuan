@@ -585,9 +585,9 @@
     "answer": "正确",
     "topic": "模拟练习",
     "source": "https://js.zhixinst.com/ 模拟练习解析页 7f102656",
-    "answer_status": "confirmed",
+    "answer_status": "pending",
     "question_hash": "ea35db7974f59c3171f5b7a7a9754a72a551613e66b9493bdfa85626a621e087",
-    "explanation": ""
+    "explanation": "[多批次答案冲突，待人工核对] "
   },
   {
     "question_text": "同样一本期刊，同一年，无论是哪个机构给出的影响因子都是相同的。",
@@ -871,9 +871,9 @@
     "answer": "正确",
     "topic": "模拟练习",
     "source": "https://js.zhixinst.com/ 模拟练习解析页 691a68e2",
-    "answer_status": "confirmed",
+    "answer_status": "pending",
     "question_hash": "9a465f3626f58138dd41169944a73242fd7e625c023409d30cba070179889e97",
-    "explanation": ""
+    "explanation": "[多批次答案冲突，待人工核对] "
   },
   {
     "question_text": "叙词表又称为主题词表，ERIC叙词表是一个比较知名的叙词表。",
@@ -1087,9 +1087,9 @@
     "answer": "错误",
     "topic": "模拟练习",
     "source": "https://js.zhixinst.com/ 模拟练习解析页 e4d2cbf9",
-    "answer_status": "confirmed",
+    "answer_status": "pending",
     "question_hash": "2dffa925bb88d5d1348157ed588cf8c0b224f546fab0f9a5e02bb6f012cb2b05",
-    "explanation": ""
+    "explanation": "[多批次答案冲突，待人工核对] "
   },
   {
     "question_text": "CNKI可以自动生成文献互引网络分析图。",
@@ -1898,8 +1898,8 @@
     "answer": "错误",
     "topic": "",
     "source": "竞赛平台模拟练习解析页 3c058d21",
-    "answer_status": "confirmed",
-    "explanation": "",
+    "answer_status": "pending",
+    "explanation": "[多批次答案冲突，待人工核对] ",
     "image_path": "",
     "question_hash": "cacb00922c64585796a51b8731bd1353e5a391c8f1a638e7420fb268087384dc"
   },
@@ -2042,8 +2042,8 @@
     "answer": "正确",
     "topic": "",
     "source": "竞赛平台模拟练习解析页 3c058d21",
-    "answer_status": "confirmed",
-    "explanation": "",
+    "answer_status": "pending",
+    "explanation": "[多批次答案冲突，待人工核对] ",
     "image_path": "",
     "question_hash": "b518b22b428da31cbfaed2c95eb24c2d6c41dea8936dc72b17aa3deec75ff437"
   },
@@ -2326,8 +2326,8 @@
     "answer": "正确",
     "topic": "",
     "source": "竞赛平台模拟练习解析页 d79aab84",
-    "answer_status": "confirmed",
-    "explanation": "",
+    "answer_status": "pending",
+    "explanation": "[多批次答案冲突，待人工核对] ",
     "image_path": "",
     "question_hash": "44df1c8aa597c000dc5bb7d88c3b35d0402a6a2cc2ffaa31cc6b266d9b8f1adf"
   },
@@ -2561,8 +2561,8 @@
     "answer": "正确",
     "topic": "",
     "source": "竞赛平台模拟练习解析页 7f102656",
-    "answer_status": "confirmed",
-    "explanation": "",
+    "answer_status": "pending",
+    "explanation": "[多批次答案冲突，待人工核对] ",
     "image_path": "",
     "question_hash": "fdcf7600bdd2267120e207071cc441434d43d2f230cb682c61ffb4f18b3656c0"
   },
@@ -2585,8 +2585,8 @@
     "answer": "错误",
     "topic": "",
     "source": "竞赛平台模拟练习解析页 7f102656",
-    "answer_status": "confirmed",
-    "explanation": "",
+    "answer_status": "pending",
+    "explanation": "[多批次答案冲突，待人工核对] ",
     "image_path": "",
     "question_hash": "ddc3a0a2802dc05ac0c9b8ac690a5792891b4744b38d1a0c3772063d5392612c"
   },
@@ -2684,8 +2684,8 @@
     "answer": "错误",
     "topic": "",
     "source": "竞赛平台模拟练习解析页 691a68e2",
-    "answer_status": "confirmed",
-    "explanation": "",
+    "answer_status": "pending",
+    "explanation": "[多批次答案冲突，待人工核对] ",
     "image_path": "",
     "question_hash": "edc26e8cab43819420543a3a07c1f8d80f5ecc7148c8252121f6c4ca2dbd3f83"
   },
@@ -3391,8 +3391,8 @@
     "answer": "错误",
     "topic": "",
     "source": "竞赛平台模拟练习解析页 66624736",
-    "answer_status": "confirmed",
-    "explanation": "",
+    "answer_status": "pending",
+    "explanation": "[多批次答案冲突，待人工核对] ",
     "image_path": "",
     "question_hash": "cc276a1682520d30d250752ec9fe578ca502b2bd3877160e907e69f6959d8972"
   },
@@ -4298,17 +4298,6 @@
     "topic": ""
   },
   {
-    "question_text": "在word中，\"CTRL+回车\"，这个快捷键的功能是（）。",
-    "question_hash": "745e1ff5d74654405b6de7bf5b3c8634f74c6dc6a7880d2a9a6b48616ace063a",
-    "question_type": "single",
-    "options": {},
-    "answer": "D",
-    "explanation": "正确答案：D你的答案：未作答\n解析\n动手试试就知道了，视频中没讲哦。",
-    "source": "竞赛平台模拟练习解析页 ccea5645",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
     "question_text": "关于百度网盘，下列说法错误的是（）。",
     "question_hash": "c7317d46f6875b3a3662c906fe2e778dd4e2bb09e2df2a20acf07e35461e0d79",
     "question_type": "single",
@@ -4326,17 +4315,6 @@
     "options": {},
     "answer": "D",
     "explanation": "正确答案：D你的答案：未作答\n解析\nOALIB和doaj是学术搜索引擎，搜开放获取学术资源的，主要是论文。springer是学术数据库，使用是需要权限的。ICPSR，指的是Inter-University Consortium for Political and Social Research，也就是美国校际社会科学数据共享联盟，可以免费下载科研数据，社科类的。",
-    "source": "竞赛平台模拟练习解析页 ccea5645",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "找北京大学发表的、题目中含有\"比较优势\"的CSSCI论文，涉及的布尔逻辑关系是（）。",
-    "question_hash": "afb5de22334ba5e8b8e711ad71d2c306f413057ce2496ceb3f48a7ff6291b388",
-    "question_type": "single",
-    "options": {},
-    "answer": "B",
-    "explanation": "正确答案：B你的答案：未作答\n解析\n作者单位是北京大学、篇名中包含\"比较优势\"、来源类别为CSSCI期刊，这三个条件都必须满足，典型的并且关系。",
     "source": "竞赛平台模拟练习解析页 ccea5645",
     "answer_status": "confirmed",
     "topic": ""
@@ -4452,17 +4430,6 @@
     "topic": ""
   },
   {
-    "question_text": "在CNKI中，一篇含有\"新冠疫情\"和\"BT\"这两个关键词，且学位授予单位为吉林大学的学位论文共有多少章？",
-    "question_hash": "bc9d5143493e328baa2545b53b2e3caf82a1ccd957b0c664564e6c30766cd957",
-    "question_type": "single",
-    "options": {},
-    "answer": "B",
-    "explanation": "正确答案：B你的答案：未作答\n解析\n试试就知道了，网址是这个https://www.cnki.net。",
-    "source": "竞赛平台模拟练习解析页 ccea5645",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
     "question_text": "在web of science中，表示布尔逻辑\"或\"的连接词是（）。",
     "question_hash": "0a3132c815e010a4f4c78db66fb65bbf45d2a115c2b245482c68cba7d1062f54",
     "question_type": "single",
@@ -4513,17 +4480,6 @@
     "options": {},
     "answer": "A,B,C,D",
     "explanation": "正确答案：ABCD你的答案：未作答\n解析\n试试就知道了。",
-    "source": "竞赛平台模拟练习解析页 ccea5645",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "在CNKI中查询，复旦大学2020年之前发表的篇名中既含\"人工智能\"又含\"大数据\"的CSSCI论文，下列论文符合上述条件的有？",
-    "question_hash": "a5810f4fd6301cf333fc0666196327d19075e1eb20826364bef55d4f57169a81",
-    "question_type": "multiple",
-    "options": {},
-    "answer": "A,B",
-    "explanation": "正确答案：AB你的答案：未作答\n解析\n去试试就知道了，地址是这个：https://www.cnki.net/。注意篇名之间的连接关系为\"并含\"，作者单位的匹配方式应选择模糊，来源类别勾选CSSCI。",
     "source": "竞赛平台模拟练习解析页 ccea5645",
     "answer_status": "confirmed",
     "topic": ""
@@ -4876,22 +4832,6 @@
     "topic": ""
   },
   {
-    "question_text": "在万方数据库中，2015-2019年由中华医学会举办的，会议名称包含\"骨科\"的会议的论文，下面哪个研究内容（高频关键词）最受关注？",
-    "question_hash": "21b644e1bbe87ed03bfd100190a7491dcef54c0c36f776e5c71b30ce95943f39",
-    "question_type": "single",
-    "options": {
-      "A": "内固定",
-      "B": "骨质疏松",
-      "C": "腰椎间盘突出症",
-      "D": "关节镜"
-    },
-    "answer": "A",
-    "explanation": "正确答案：A你的答案：未作答\n解析\n这道题需要借助结果的分析功能，在检索结果的上方，点\"统计分析\"，查看关键词。",
-    "source": "竞赛平台模拟练习解析页 535878da",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
     "question_text": "下列关于美国政府数据开放平台data.gov的说法，错误的是（）。",
     "question_hash": "912ad05be044646de4de5e459dbc358cd686c2eefc423e15892a5af7847a22be",
     "question_type": "single",
@@ -4903,38 +4843,6 @@
     },
     "answer": "A",
     "explanation": "正确答案：A你的答案：未作答\n解析\ndata.gov不仅能查阅美国联邦政府的开放数据，也能查到各州的开放数据。",
-    "source": "竞赛平台模拟练习解析页 535878da",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "在维普数据库中检索包括\"精神疾病\"这个题名或关键词的文章,同时勾选同义词扩展功能，选择\"psychotic disorder\"、\"mental illness\"、\"神经系统疾病\"这三个同义词，精确检索，时间限定为自收录起始年-2018年，找到的文章数量与下面哪个选项匹配？",
-    "question_hash": "73c74cb15309514896630079bd2bd83ca52e220983c90b6cb3a0b2e3e066b5e9",
-    "question_type": "single",
-    "options": {
-      "A": "超过18000篇",
-      "B": "超过11000篇",
-      "C": "不超过1500篇",
-      "D": "将近10000篇"
-    },
-    "answer": "B",
-    "explanation": "正确答案：B你的答案：未作答\n解析\n试试就知道了，网址是这个http://www.cqvip.com/。",
-    "source": "竞赛平台模拟练习解析页 535878da",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "在CNKI中查找林毅夫老师发表的文章，选择检索点\"作者\"，合适的检索词是（）。",
-    "question_hash": "6d0e34730ebb177d64ee741b006f337730407687efd8e756a6e8dcc083150ca1",
-    "question_type": "single",
-    "options": {
-      "A": "林毅夫同志",
-      "B": "林毅夫老师",
-      "C": "林毅夫",
-      "D": "林毅夫先生"
-    },
-    "answer": "C",
-    "explanation": "正确答案：C你的答案：未作答\n解析\n这个是一个理解性题目。检索词很干净，不要画蛇添足。",
     "source": "竞赛平台模拟练习解析页 535878da",
     "answer_status": "confirmed",
     "topic": ""
@@ -5116,8 +5024,8 @@
     "topic": ""
   },
   {
-    "question_text": "作为一个数据可视化工具，tableau是一个收费工具，没有免费版本。\nA 正确\nB 错误",
-    "question_hash": "3f7808888cfbd2d0355f0c1ce6258879e107fd94f7d03ae6dfebecfa87dfd44c",
+    "question_text": "作为一个数据可视化工具，tableau是一个收费工具，没有免费版本。",
+    "question_hash": "b3b035e3bb11ddfb032f7aa643c50a45358c94a1ee8907b1a4bb99ca27dd1502",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -5127,30 +5035,8 @@
     "topic": ""
   },
   {
-    "question_text": "论文排版，如果涉及到公式，可以用word中公式设计工具。\nA 错误\nB 正确",
-    "question_hash": "b399b14fd18bea92cccbb045b937b405d5cc7c2d752a3eb9084179a811998cf7",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "错误",
-    "explanation": "试试就知道了",
-    "source": "竞赛平台模拟练习解析页 535878da",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "大部分报纸有电子版，不仅可以看当期，而且可以追溯过往，有些还提供PDF文档下载。\nA 正确\nB 错误",
-    "question_hash": "05ad222f164bbe871e30e054e2b1813c65ee9655e8f57bc7f6653bbdf55c4ce6",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "正确",
-    "explanation": "找一个报纸的电子版试试。",
-    "source": "竞赛平台模拟练习解析页 535878da",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "如果有人大复印报刊资料的访问权限，人大复印报刊资料提供转载证明，自己可以在线开具。\nA 正确\nB 错误",
-    "question_hash": "85267ce6736c54dd7a8f438b4094b48ef48f6c0bad1579b9bdefe78d60d2fc1f",
+    "question_text": "如果有人大复印报刊资料的访问权限，人大复印报刊资料提供转载证明，自己可以在线开具。",
+    "question_hash": "2645c4321b6728bd0dbdd19d20cd7dbe1931bde66afbdb765941ca24d300c6fc",
     "question_type": "boolean",
     "options": {},
     "answer": "正确",
@@ -5160,8 +5046,8 @@
     "topic": ""
   },
   {
-    "question_text": "Aminer不仅可以找到作者的研究成果，而且能从文献计量的角度对作者进行评价。\nA 错误\nB 正确",
-    "question_hash": "6e2f36ef141de4df3fc37cc5d7ae3a57d820f8264ef5299c2c96fb9ee7c3f4e1",
+    "question_text": "Aminer不仅可以找到作者的研究成果，而且能从文献计量的角度对作者进行评价。",
+    "question_hash": "d9d196bcf9341aa183b39c7cbb0a024b4709144480f866ba649a43e4bdbf2b62",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -5171,8 +5057,8 @@
     "topic": ""
   },
   {
-    "question_text": "ACM Digital Library平台上的资源都可以免费获取全文。\nA 错误\nB 正确",
-    "question_hash": "7378d6bfbd923b8377d8893795ea989a34f390b88b185303d05ad50cb9480719",
+    "question_text": "ACM Digital Library平台上的资源都可以免费获取全文。",
+    "question_hash": "7d02d90f6257afa8b98f9d8d28cc82321caec379fcd6443953e8f8acab3bc90f",
     "question_type": "boolean",
     "options": {},
     "answer": "正确",
@@ -5182,8 +5068,8 @@
     "topic": ""
   },
   {
-    "question_text": "CSSCI数据库（http://cssci.nju.edu.cn）是一个商业数据库，下载全文需要付费，但检索是免费的。\nA 错误\nB 正确",
-    "question_hash": "89cc58dcc00ed9a7c36ac4543fb9128a1a43e26c96a705f8fc2d81ad0db6e799",
+    "question_text": "CSSCI数据库（http://cssci.nju.edu.cn）是一个商业数据库，下载全文需要付费，但检索是免费的。",
+    "question_hash": "a15bf5b52e1588db4d1447621098cbc3a3334b842710d3ffeb74504e2ba9514b",
     "question_type": "boolean",
     "options": {},
     "answer": "正确",
@@ -5193,8 +5079,8 @@
     "topic": ""
   },
   {
-    "question_text": "中国记者网还能查看\"记者证核发公告\"、\" 记者证注销公告\"等信息， 鉴别假记者，这些信息有时候也用的到。\nA 错误\nB 正确",
-    "question_hash": "e0c05e4319dd06a527bdbd31776781fc3c803000df87bc0f3693b5fc9b71a208",
+    "question_text": "中国记者网还能查看\"记者证核发公告\"、\" 记者证注销公告\"等信息， 鉴别假记者，这些信息有时候也用的到。",
+    "question_hash": "4bb6a251cb3d0c885109a39508e7fdc0e9ae1b65707a83e4b252133041010fe7",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -5204,8 +5090,8 @@
     "topic": ""
   },
   {
-    "question_text": "一个具有信息素养的人，不仅具有各种信息能力，而且还要具有信息意识。\nA 正确\nB 错误",
-    "question_hash": "5e1bd21eb7eb8ed0d34b5d60654bb2899f8c2b98c376f5575a16cf6c26b84326",
+    "question_text": "一个具有信息素养的人，不仅具有各种信息能力，而且还要具有信息意识。",
+    "question_hash": "a90f23d0fa9782e7d29ef834ddfd15ee3bf47cf735ebd270a7ed4f5e029a25da",
     "question_type": "boolean",
     "options": {},
     "answer": "正确",
@@ -5215,8 +5101,8 @@
     "topic": ""
   },
   {
-    "question_text": "自己的密码，尽量让别人看不出规律，而且自己要记得住。不同地方的密码，最好不一样。\nA 正确\nB 错误",
-    "question_hash": "f481d3773b5fd0a6e38ee8768acc80898c11a73e19ab553cad4c92fc3dc72aa4",
+    "question_text": "自己的密码，尽量让别人看不出规律，而且自己要记得住。不同地方的密码，最好不一样。",
+    "question_hash": "ff8752727838e6046f9ac34e5e097d2ee42037ad97fc414db9d01511588c1a59",
     "question_type": "boolean",
     "options": {},
     "answer": "正确",
@@ -5501,8 +5387,8 @@
     "topic": ""
   },
   {
-    "question_text": "在微信中，无法通过微信号、手机号、QQ号向对方发出添加好友的请求，原因可能是，对方做了隐私设置。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "a4dcac94d2f8bc2edc1ee24e84a0aa736e8b231c7f2e3d6f436e34ece1aa12de",
+    "question_text": "在微信中，无法通过微信号、手机号、QQ号向对方发出添加好友的请求，原因可能是，对方做了隐私设置。",
+    "question_hash": "6d4ea6a2dbbd3e8aa319a8d89967c291c5993a390e64ef20aaaf9cdc4de06c83",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -5512,52 +5398,8 @@
     "topic": ""
   },
   {
-    "question_text": "在我国，一个授权专利除了发明专利单行本，在之前的发明专利申请公布阶段，会有一个发明专利申请单行本。发明专利单行本的内容与发明专利申请单行本的内容是完全一致的。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "59d49b1e51868aa206e5597f729844ce7b10a5fe1c640bbc029befc9b47fa196",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "错误",
-    "explanation": "正确答案：B你的答案：未作答\n解析\n一个专利最后授权的内容与前面公布的内容，有可能不完全一致。",
-    "source": "竞赛平台模拟练习解析页 652eaa5e",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "叙词表也就是主题词表，它是概括某一学科或若干学科领域的名词术语组成的规范词汇表，用来将规范检索语言转换成自然语言的词汇控制工具。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "679345b3b40da1781c10b2880e2afa93020fddcf1a70220165d2ce3de235d6a7",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "错误",
-    "explanation": "正确答案：B你的答案：未作答\n解析\n这是一个理解性题目。最后一句说反了。应该是：用来将自然语言转换成规范检索语言的词汇控制工具。",
-    "source": "竞赛平台模拟练习解析页 652eaa5e",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "一篇被引次数为10的文章一定比一篇被引次数为3的文章影响力强。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "89da59220533fae47f92075406bc8516cdd5d674f7241eeee7d31e66fff866b2",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "正确",
-    "explanation": "正确答案：A你的答案：未作答\n解析\n由于被引次数没有考虑时间因素，所以不能直接比较。",
-    "source": "竞赛平台模拟练习解析页 652eaa5e",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "在国家科技报告服务系统（https://www.nstrs.cn）中，社会公众需要登录后才能检索。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "33b8bea7aa5cbd09541fb1e29217c75f108bc6571797315aadbf5b26e1a98227",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "正确",
-    "explanation": "正确答案：A你的答案：未作答\n解析\n在国家科技报告服务系统（https://www.nstrs.cn）中，社会公众无需登录即可检索。",
-    "source": "竞赛平台模拟练习解析页 652eaa5e",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "在德温特专利数据库中找到的专利，标题和摘要和原专利一致。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "bc6d620c6fb46f0c107e25975f8a0cfa9bfe61f23b1eb269e5b9833480d71912",
+    "question_text": "在德温特专利数据库中找到的专利，标题和摘要和原专利一致。",
+    "question_hash": "ef72031e29d449c86c9f4d66e18d3794cdd23ff80389e373f85f2b244f0e2356",
     "question_type": "boolean",
     "options": {},
     "answer": "正确",
@@ -5567,45 +5409,12 @@
     "topic": ""
   },
   {
-    "question_text": "点击百度首页右上角的设置菜单，可以看到\"高级搜索\"的链接，点开这个链接可以进行高级检索。另外，通过这个网址（https://www.baidu.com/gaoji/advanced.html）也能使用百度的高级搜索。用这两个方法找到的百度高级搜索页面都有语言限制的选项。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "4c10a74f8909e4d2c6d8847c44ee66057d1e21541b6db3c8e98ac31f094c6b72",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "正确",
-    "explanation": "正确答案：A你的答案：未作答\n解析\n通过这个网址（https://www.baidu.com/gaoji/advanced.html）找到的百度的高级搜索页面中有语言限制的选项。点击百度首页右上角的设置菜单，可以看到\"高级搜索\"的链接，点开这个链接可以进行高级检索，但百度的这个高级搜索页面没有语言限制的选项。",
-    "source": "竞赛平台模拟练习解析页 652eaa5e",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "在检索时，与用\"题名\"作为检索点相比，用\"主题词\"作为检索点，检索结果一般更精准。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "a0cbd8b9d9b519fa14d11b88da31d873aefdf4276aebb1d53e197efb34508086",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "正确",
-    "explanation": "正确答案：A你的答案：未作答\n解析\n这是一个理解性题目。用主题词作为检索点，一般情况下可以兼顾查准率和查全率，不一定更精准。具体情况具体分析。",
-    "source": "竞赛平台模拟练习解析页 652eaa5e",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "CNCI可以代表某一篇论文的相对影响力，如果CNCI等于3，可以理解为这篇论文的影响力是全球平均水平的3倍。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "7aad5fc62b208ff1ac8039c6c321c5dbdc90a44fa6b521f29445a54152254e36",
+    "question_text": "CNCI可以代表某一篇论文的相对影响力，如果CNCI等于3，可以理解为这篇论文的影响力是全球平均水平的3倍。",
+    "question_hash": "9b91ead45be6628d343512e865fa2e32ff4372604e0afb265b56da7164b36923",
     "question_type": "boolean",
     "options": {},
     "answer": "正确",
     "explanation": "正确答案：A你的答案：未作答\n解析\nCNCI可以代表某一篇论文的相对影响力，如果CNCI大于1，表示这篇论文的被引次数高于全球平均水平。具体分值可以理解为相对于全球平均水平的倍数。",
-    "source": "竞赛平台模拟练习解析页 652eaa5e",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "在维普中，使用同义词扩展功能，可以提升查准率。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "3f4a74f3082bff1eb90a0b46d326f9e07281f0fde5a0c148096d50d08644c42b",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "错误",
-    "explanation": "正确答案：B你的答案：未作答\n解析\n同义词扩展功能，可以提升查全率。",
     "source": "竞赛平台模拟练习解析页 652eaa5e",
     "answer_status": "confirmed",
     "topic": ""
@@ -5644,17 +5453,6 @@
     "topic": ""
   },
   {
-    "question_text": "知网中，2020年前《图书馆》上发表的关键词含有\"法律\"的CSSCI有多少篇？",
-    "question_hash": "71603f1388a022c85fc771b6882c0b5be380ba429384b7ff13b6427f08e738e4",
-    "question_type": "single",
-    "options": {},
-    "answer": "C",
-    "explanation": "正确答案：C你的答案：未作答\n解析\n有的期刊名是包含了\"图书馆\"三个字，如大学图书馆，如果找期刊名仅有图书馆三个字，需要限定\"精确\"，此外，CSSCI是有变化的，有的期刊可能某年不是CSSCI，后来是CSSCI，所以要选择来源类型\"CSSCI\"。",
-    "source": "竞赛平台模拟练习解析页 223a267f",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
     "question_text": "下列网站提供英文大小写在线转换功能的是（ ）。",
     "question_hash": "1a836b8d8a86fe471ebb330aba6d003adea9e7d87e7a013bbb67d1a44fab7f80",
     "question_type": "single",
@@ -5677,45 +5475,12 @@
     "topic": ""
   },
   {
-    "question_text": "用汉典查询\"王\"这个字的解释，下列哪个出自《说文解字》？",
-    "question_hash": "109e50f87b6d03a427b5ff4fd87fc5572191ad962ee5eaf6fc0b3a4b45a57ea9",
-    "question_type": "single",
-    "options": {},
-    "answer": "C",
-    "explanation": "正确答案：C你的答案：未作答\n解析\n试试就知道了。参考：https://www.zdic.net/hans/%E7%8E%8B",
-    "source": "竞赛平台模拟练习解析页 223a267f",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "在万方数据库中查找学位论文时，时间限定为2010年-2018年，检索点选择\"题名\"，检索词输入\"终身学习\"，匹配方式选择\"精确\"。请问：下列哪篇文献不在检索结果中？",
-    "question_hash": "c3775cd5175a73de0db887a841707110aeb459b338801fe73681bdce43e9db86",
-    "question_type": "single",
-    "options": {},
-    "answer": "B",
-    "explanation": "正确答案：B你的答案：未作答\n解析\n试试就知道了，网址是这个http://www.wanfangdata.com.cn/index.html。",
-    "source": "竞赛平台模拟练习解析页 223a267f",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
     "question_text": "在springer中输入\"comput*\"进行检索，请问这是一种（）截词检索技术。",
     "question_hash": "16fc3b39cd89f0c4cd9d837a3e8989ea11d9f7cb5440a94dfaa93ead790923d8",
     "question_type": "single",
     "options": {},
     "answer": "D",
     "explanation": "正确答案：D你的答案：未作答\n解析\n前方一致，后面用通配符，属于后截断。",
-    "source": "竞赛平台模拟练习解析页 223a267f",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "在百度的高级搜索页面，可以使用\"包含以下的完整关键词\"选项实现（）功能。",
-    "question_hash": "27484b8162738cc45298a1e10cf30f22bab751f86f73cc8ac2421dd874c8d3dd",
-    "question_type": "single",
-    "options": {},
-    "answer": "D",
-    "explanation": "正确答案：D你的答案：未作答\n解析\n\"包含以下完整的关键词\"，意思是不拆分关键词，是精确匹配。",
     "source": "竞赛平台模拟练习解析页 223a267f",
     "answer_status": "confirmed",
     "topic": ""
@@ -5897,8 +5662,8 @@
     "topic": ""
   },
   {
-    "question_text": "在Master Journal List中可以找到SCI、SSCI、ESCI、A&HCI期刊的主页。在期刊主页，可以免费查看期刊的影响因子、JCI、即时指数等评价指标。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "046ce957a9e04ceedcbf10d44d3391ade0af5b07a656c3f91afbe7c54ac44aa9",
+    "question_text": "在Master Journal List中可以找到SCI、SSCI、ESCI、A&HCI期刊的主页。在期刊主页，可以免费查看期刊的影响因子、JCI、即时指数等评价指标。",
+    "question_hash": "9866eee45607a1d23bfe1ce8c96b2ccbb4e774820f4ab823fa70705c45b1b96e",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -5908,8 +5673,8 @@
     "topic": ""
   },
   {
-    "question_text": "在CNKI的高级检索界面，文献类型选择\"学术期刊\"，在设置检索条件的时候，可以看到\"篇名\"这个检索点。如果把文献类型修改为\"学位论文\"，同样可以选择\"篇名\"这个检索点。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "5541f7db8dc69161dbd0f978144d485781bb761419e9cf6df3b613a8c1995503",
+    "question_text": "在CNKI的高级检索界面，文献类型选择\"学术期刊\"，在设置检索条件的时候，可以看到\"篇名\"这个检索点。如果把文献类型修改为\"学位论文\"，同样可以选择\"篇名\"这个检索点。",
+    "question_hash": "c35afbf7fb6e95d2e0b8961cd1821ce623abe60e0b1ac6dea9e39b9a64b82e02",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -5919,8 +5684,8 @@
     "topic": ""
   },
   {
-    "question_text": "从CNKI中导出的题录数据可以做共被引分析。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "823445a6849a3d3f86b53abaa8e62988e47dccd0345c6d33d3ea5c4f034d2975",
+    "question_text": "从CNKI中导出的题录数据可以做共被引分析。",
+    "question_hash": "a9120a717c044de27e8d9d26293f2f5d9d95583bbd243ec98a5f8a4365b42f1b",
     "question_type": "boolean",
     "options": {},
     "answer": "正确",
@@ -5930,8 +5695,8 @@
     "topic": ""
   },
   {
-    "question_text": "中医药领域一些中文专有名词，可能存在多个英文翻译，并不唯一。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "04097b660f183a480f479b77ad7510a725d54d0ab95b13ac3a10e96e1eb605e4",
+    "question_text": "中医药领域一些中文专有名词，可能存在多个英文翻译，并不唯一。",
+    "question_hash": "3131e4d7c6f06798dfbeb6ca5052862e54e7d7f3377c0dbd899773e385e0d1d4",
     "question_type": "boolean",
     "options": {},
     "answer": "正确",
@@ -5941,19 +5706,8 @@
     "topic": ""
   },
   {
-    "question_text": "读秀，作为一个商业数据库，获取全文虽然需要权限，但检索是没有限制的，任何地方都可以免费检索。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "97b74fd7c90ecfd9342ce0b58cd12f8b81f83bf020df1bef19c3f0dc72fa6c06",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "正确",
-    "explanation": "正确答案：A你的答案：未作答\n解析\ncnki好像是这样的，读秀不是。学校没买，或者自己在家里用没有付费或者认证，检索也是不行的。",
-    "source": "竞赛平台模拟练习解析页 223a267f",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "哈佛大学网站上有专门的在线课程平台，其中的在线课程都是免费的。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "afb72366a46737743da5cb08680146ab9f6f9895380742450e92db73390dee01",
+    "question_text": "哈佛大学网站上有专门的在线课程平台，其中的在线课程都是免费的。",
+    "question_hash": "d97a8935f5791814a4e48329947208546d5fa460bda48398d0d0d90b9765586f",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -5963,19 +5717,8 @@
     "topic": ""
   },
   {
-    "question_text": "如果学校购买了读秀，在校内可以使用读秀的个人认证服务。 注册读秀账号，完成个人认证，以后用这个账号可以在任何有互联网的设备上免费使用读秀。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "f851617d43a234cb6b343c880af2d4c2af338bfdc9fe37cc42a40ce201863cde",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "错误",
-    "explanation": "正确答案：B你的答案：未作答\n解析\n试试就知道了",
-    "source": "竞赛平台模拟练习解析页 223a267f",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "在Springer的检索结果中，如果想去掉没有全文的索引结果，就勾选\"Include Preview-Only content\"选项。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "7e998a2d367a95e28b508192e552f698317568453eda898a9115c4849f13c915",
+    "question_text": "在Springer的检索结果中，如果想去掉没有全文的索引结果，就勾选\"Include Preview-Only content\"选项。",
+    "question_hash": "f8e636beec7abd047b45318665d81808903304bf006bbbedbf93778507432ff3",
     "question_type": "boolean",
     "options": {},
     "answer": "正确",
@@ -5985,8 +5728,8 @@
     "topic": ""
   },
   {
-    "question_text": "查药品注册信息，可以去卫生健康委员会网站。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "c77635ca238a1810661d49757eb170a6ff323d2bc620e5aee2e15e8206943331",
+    "question_text": "查药品注册信息，可以去卫生健康委员会网站。",
+    "question_hash": "adc7134923ac10bd65eb7b5ff30b6fcb1e971180c567d00525bc76b6754bd75d",
     "question_type": "boolean",
     "options": {},
     "answer": "正确",
@@ -5996,8 +5739,8 @@
     "topic": ""
   },
   {
-    "question_text": "在CNKI中，无论是期刊论文、会议论文，还是学位论文，都提供PDF和CAJ两种全文格式。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "d8de96cba8e68c6553e72c3abb8432c2b5b06cd90b1226503ec1b422848ed128",
+    "question_text": "在CNKI中，无论是期刊论文、会议论文，还是学位论文，都提供PDF和CAJ两种全文格式。",
+    "question_hash": "eb6984aac5914201a32e5fd52b0148c1dd4b1cdc85b2bf05a7c04a5928aa90da",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -6117,17 +5860,6 @@
     "topic": ""
   },
   {
-    "question_text": "在搜索引擎中可以使用site语法实现指定网站的站内检索。如果搜索清华大学的网站中\"大数据安全\"方面的内容，最好用下面哪个检索表达式？（ ）",
-    "question_hash": "a4db87a3383157b8b2a693f046b9b97ad3f256fabd6210b8853d054904a0e6e1",
-    "question_type": "single",
-    "options": {},
-    "answer": "C",
-    "explanation": "正确答案：C你的答案：未作答\n解析\nsite冒号后面直接跟网站域名，不加http:// 、www等字符，site语法与其他检索条件之间要加空格。",
-    "source": "竞赛平台模拟练习解析页 eb312cd0",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
     "question_text": "用IEEE Xplore找到题名为《A Blended Learning Model Based on Smart Learning Environment to Improve College Students' Information Literacy》的OA论文，下载PDF全文。请问这篇论文的PDF文件共有（ ）页。",
     "question_hash": "56a905be56e343e622438b7bf311773f1dc996aed2170e2b85f94b1f38dc07b3",
     "question_type": "single",
@@ -6227,30 +5959,8 @@
     "topic": ""
   },
   {
-    "question_text": "互联网上有很多免费的效率工具，善用这些工具，可以提升解决问题的效率。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "3b839161041a71f07988f0a86cfb96a183dadfe84a06d706fcab0f8d7af60289",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "错误",
-    "explanation": "正确答案：B你的答案：未作答\n解析\n这是一个理解性题目。无需解释。",
-    "source": "竞赛平台模拟练习解析页 eb312cd0",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "找墓志拓片影印版，可以试试中国历代墓志数据库。访问这个数据库，需要购买。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "8e715e9599b08d45678b2bc886d058162846116c006a5dcf3f29bf4fca294249",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "错误",
-    "explanation": "正确答案：B你的答案：未作答\n解析\n这个数据库是浙江大学图书馆古籍碑帖研究与保护中心做的开放资源，可以免费使用。",
-    "source": "竞赛平台模拟练习解析页 eb312cd0",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "中国大学MOOC的课程只能在手机上安装APP进行学习，在电脑端是无法使用的。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "0a1dbcfe38dc0b775a579a5ab0651ecdbfe0e2bb487d53e080122a60f2fc615b",
+    "question_text": "中国大学MOOC的课程只能在手机上安装APP进行学习，在电脑端是无法使用的。",
+    "question_hash": "744bcc34a684dda657cbb1a6b25ba743739a896342d107d935387e9adf0aa749",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -6260,19 +5970,8 @@
     "topic": ""
   },
   {
-    "question_text": "在国家统计网站上，不仅可以查询具体指标的多年数据，而且可以在线生成图表。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "8dec4121e9f70043493901df2c73b21355b2543c672901c2d84ad06da0ad692d",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "正确",
-    "explanation": "正确答案：A你的答案：未作答\n解析\n综合视频，去国家统计局探索一下，你肯定就明白了。",
-    "source": "竞赛平台模拟练习解析页 eb312cd0",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "解决问题，不仅要搜索，更要探索，在提升效率的同时提升自己。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "685db54711f302a1c68624eb042b61733da04e456d1830f720cbc3301ff0cfe2",
+    "question_text": "解决问题，不仅要搜索，更要探索，在提升效率的同时提升自己。",
+    "question_hash": "ef6999ec45e2ed630dbfb9b1455113cf4b8f81fb2a29388fd91997fec53014a8",
     "question_type": "boolean",
     "options": {},
     "answer": "正确",
@@ -6282,8 +5981,8 @@
     "topic": ""
   },
   {
-    "question_text": "在pubmed首页的检索框中，输入blood pressure[mesh]，与输入\"blood pressure\"[mesh]，检索结果是一样的。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "0cf83b323d3b5132b545eda1c372da1b89d9d6bbcd7f23f97e8774985f474795",
+    "question_text": "在pubmed首页的检索框中，输入blood pressure[mesh]，与输入\"blood pressure\"[mesh]，检索结果是一样的。",
+    "question_hash": "ba9ff51b8b1da4b394fa0cccd99f5cff147c8996610b5648447d60377e64bbb2",
     "question_type": "boolean",
     "options": {},
     "answer": "正确",
@@ -6293,19 +5992,8 @@
     "topic": ""
   },
   {
-    "question_text": "慢慢买是一个比价搜索引擎。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "c2ad40e7285bea55987f5d0dd629c1562b561d7d5b2e09f2fe670e597cc4be02",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "错误",
-    "explanation": "正确答案：B你的答案：未作答\n解析\n登录http://www.manmanbuy.com/这个网站，试一下",
-    "source": "竞赛平台模拟练习解析页 eb312cd0",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "遇到未知问题，搜攻略，找思路，有时候可以大幅度提升解决问题的效率和质量。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "2a23892f774a4e04870cddc3b08f0cd37d6ecf2d395de1652b9b13bbd9cf4ea7",
+    "question_text": "遇到未知问题，搜攻略，找思路，有时候可以大幅度提升解决问题的效率和质量。",
+    "question_hash": "83ad36e1964ec53486a67fba2470cb681387844cf6c36fee0155b8bbf99cec89",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -6315,8 +6003,8 @@
     "topic": ""
   },
   {
-    "question_text": "将信息素养教育置于终身学习能力培养的语境下，从培养信息意识、探究精神出发，训练学生基于信息解决问题的能力和素质，这也许是新时代信息素养教育的突破点和着力点。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "8cec40b60ba75a6a0ad92597c9b72c9a45826658351b12150bd3f48bc5100dcb",
+    "question_text": "将信息素养教育置于终身学习能力培养的语境下，从培养信息意识、探究精神出发，训练学生基于信息解决问题的能力和素质，这也许是新时代信息素养教育的突破点和着力点。",
+    "question_hash": "c572395180705dcbed5d9a6afe0c4ee534c0a7f47d7962c4b028c0f02381065c",
     "question_type": "boolean",
     "options": {},
     "answer": "正确",
@@ -6326,8 +6014,8 @@
     "topic": ""
   },
   {
-    "question_text": "共享屏幕和远程控制是一回事\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "673bbf37004f0e112609d796f2f7c8adf67435bbda0b196bdf25487aae926633",
+    "question_text": "共享屏幕和远程控制是一回事",
+    "question_hash": "5c804a152b9f4599047bc85e433bacf19848165ddef420f9e773af0e1c9eb822",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -6557,19 +6245,8 @@
     "topic": ""
   },
   {
-    "question_text": "用数据看世界(https://ourworldindata.org)，是一个数据资源网站，可以下载数据集.\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "3bff6308ecf02cc53728955998476852441a1da9edea22142e7631ec568d8635",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "错误",
-    "explanation": "正确答案：B你的答案：未作答\n解析\n进去看看就知道了。",
-    "source": "竞赛平台模拟练习解析页 81b9279f",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "CNKI首页的检索入口（就是那个醒目的检索框），是综合检索，可以找到很多类型的文献。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "179aad79fbcb1318ab8e8e0ccd966330c924b80f3201929f1784857cd63bdd66",
+    "question_text": "CNKI首页的检索入口（就是那个醒目的检索框），是综合检索，可以找到很多类型的文献。",
+    "question_hash": "06ea64db4a299ee68969c92e447b7d7e9fb300184c56e37537fa99d609448ac9",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -6579,19 +6256,8 @@
     "topic": ""
   },
   {
-    "question_text": "腾讯医典，是一个医疗信息科普平台，有APP，也有微信小程序。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "ac9a626c64ea3eebc7718751104f2dc53ce4f6bb893444c2fba165a30970c10e",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "正确",
-    "explanation": "正确答案：A你的答案：未作答\n解析\n试试就知道了。",
-    "source": "竞赛平台模拟练习解析页 81b9279f",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "WGestures是一个文件整理工具，使用需要付费。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "3598aad58e183438f41d8ac4e0127187c2a645177dc02be4328ed9d5648ed4c1",
+    "question_text": "WGestures是一个文件整理工具，使用需要付费。",
+    "question_hash": "2a801688492214b734b6e7ca68ccdd187fe51f35f52edd2983ee97ac246a1a2b",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -6601,19 +6267,8 @@
     "topic": ""
   },
   {
-    "question_text": "用最精简的浏览器，安装自己需要的插件。安装插件，只能通过浏览器提供的扩展中心查找安装插件。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "43fbe741b6360b3d9d4fbdc7d5f1a9c0200ee0c82f6902557ddd51c38253f418",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "正确",
-    "explanation": "正确答案：A你的答案：未作答\n解析\n也有一些第三方的插件查询网站，甚至有些插件有自己的官方网站。",
-    "source": "竞赛平台模拟练习解析页 81b9279f",
-    "answer_status": "confirmed",
-    "topic": ""
-  },
-  {
-    "question_text": "基于CSSCI题录数据，用citespace进行文献分析，下载的题录数据，可以直接使用，无需进行格式转换。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "8d9bad54930000804b1de29e4d98b71d305751f497e9da7ed06c0c2f756b6682",
+    "question_text": "基于CSSCI题录数据，用citespace进行文献分析，下载的题录数据，可以直接使用，无需进行格式转换。",
+    "question_hash": "0bb22266bea6dc917b5109ed3156155816e136f3462fc2cb32ae40e6ca7776b9",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -6623,8 +6278,8 @@
     "topic": ""
   },
   {
-    "question_text": "IEEE Xplore是一个免费数据库，检索和获取全文都是免费的。\n\nA正确\n\nB错误\n\n收起解析",
-    "question_hash": "c5ae2effec27c250da4c3780336598c43978791180c3c44937a0bd7651309377",
+    "question_text": "IEEE Xplore是一个免费数据库，检索和获取全文都是免费的。",
+    "question_hash": "c2a8b55611dbc7eb9fd452dddd59bc365cf2a757cf8b62145b9d24cba512ba6b",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -6634,8 +6289,8 @@
     "topic": ""
   },
   {
-    "question_text": "如果想知道一句话的出处，可以用这句话作为检索词在搜索引擎中搜索。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "dd017cd5925c85eaeee08f8c2d23b3206fa43fae84e0b6624266aca6c2f788c7",
+    "question_text": "如果想知道一句话的出处，可以用这句话作为检索词在搜索引擎中搜索。",
+    "question_hash": "d06d652788fe174355974b9e963d7f2f96700d0b76f196107726a7a0d651e7ff",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -6645,8 +6300,8 @@
     "topic": ""
   },
   {
-    "question_text": "在CNKI的高级检索中，可以限制检索结果的文献类型，比如学位论文、报纸等。\n\nA错误\n\nB正确\n\n收起解析",
-    "question_hash": "cec9a898744d6a676cf7f241cb424e95ff060a44e5b00fa452381fdf6f76a2ae",
+    "question_text": "在CNKI的高级检索中，可以限制检索结果的文献类型，比如学位论文、报纸等。",
+    "question_hash": "de2033bfb4d54bcc57d6b73e766e17aa7d545077d0c3bda410f5fa430907e0ae",
     "question_type": "boolean",
     "options": {},
     "answer": "错误",
@@ -6752,38 +6407,6 @@
     "topic": ""
   },
   {
-    "question_text": "arXiv是一个预印本系统，在arXiv中检索“Impacting the bioscience progress by backporting software for Bio-Linux”，查看本篇文章正文中第二句加粗句子是什么？",
-    "question_type": "single",
-    "options": {
-      "A": "A software environment?",
-      "B": "What is Bio-Linux and what is it good for - also its drawbacks:",
-      "C": "How this all affects Bio-Linux?",
-      "D": "\"The drawback of the workflow: \""
-    },
-    "answer": "A",
-    "explanation": "试试就知道了，地址是这个:https://arxiv.org/。点击pdf图标可获得pdf全文。",
-    "source": "竞赛平台模拟练习解析页 42e0445a",
-    "answer_status": "confirmed",
-    "question_hash": "eb957c9b31e7179aea0885acef1e00616a6d53dbc586d52e3e478a3d9a544648",
-    "topic": ""
-  },
-  {
-    "question_text": "在CNKI中查询2020年7月“2020年南国博览学术研讨会”上篇名中包含“互联网”和“教育”，并且关键词中包含“教学模式”的会议文献，下列哪篇文献出现在检索结果中？",
-    "question_type": "single",
-    "options": {
-      "A": "移动互联网环境下高等教育面临的挑战与对策",
-      "B": "“互联网+”视角下高职思政教育体系研究",
-      "C": "基于互联网思维的高校思想政治教育创新研究",
-      "D": "“互联网+”背景下高校辅导员思政教育工作探讨"
-    },
-    "answer": "A",
-    "explanation": "去试试就知道了，地址是这个：https://www.cnki.net/。进入CNKI的会议文献专业检索界面，流程与找期刊论文差不多，选择检索点篇名、关键词和会议名称，篇名与关键词之间为并且关系，再限制会议时间就ok啦。",
-    "source": "竞赛平台模拟练习解析页 42e0445a",
-    "answer_status": "confirmed",
-    "question_hash": "96dc50378477f8b63a472efc8f246283442d738c9e496054253565c9befbb791",
-    "topic": ""
-  },
-  {
     "question_text": "《中国广告》期刊2018年发表过一篇关键词中含有“鬼畜”的文章，请问这篇文章的作者是？",
     "question_type": "single",
     "options": {
@@ -6797,22 +6420,6 @@
     "source": "竞赛平台模拟练习解析页 42e0445a",
     "answer_status": "confirmed",
     "question_hash": "4bf95854916447951467fb64b04bdb2c6238deff79e03e8d20dc24ada1ffe2ae",
-    "topic": ""
-  },
-  {
-    "question_text": "在美国国会图书馆网站上找到“大明一统山河图”。这事一个地图集。请问，这个地图集共有几张地图？",
-    "question_type": "single",
-    "options": {
-      "A": "14",
-      "B": "21",
-      "C": "8",
-      "D": "12"
-    },
-    "answer": "A",
-    "explanation": "https://www.loc.gov/resource/g7820m.gct00230/?st=gallery   打开这个网页就知道了。",
-    "source": "竞赛平台模拟练习解析页 42e0445a",
-    "answer_status": "confirmed",
-    "question_hash": "bd4d76d20468df3399424c1728af573cce32340cf93ad143412fdc3800285158",
     "topic": ""
   },
   {
@@ -6912,22 +6519,6 @@
     "topic": ""
   },
   {
-    "question_text": "在万方选题的“文献精读”功能模块中，搜到的论文分成几个大类，其中包括（）。",
-    "question_type": "multiple",
-    "options": {
-      "A": "综述性论文",
-      "B": "优秀学位论文",
-      "C": "高关注论文",
-      "D": "新发表论文"
-    },
-    "answer": "A,B,C,D",
-    "explanation": "进去探索一下，这四个都有的。",
-    "source": "竞赛平台模拟练习解析页 42e0445a",
-    "answer_status": "confirmed",
-    "question_hash": "914fdf94abfab7e34e90f1082d7ac9ba565e1d1a143fd2b52a1d76b76ca681e3",
-    "topic": ""
-  },
-  {
     "question_text": "对维普期刊平台校外访问的描述，正确的是？",
     "question_type": "multiple",
     "options": {
@@ -7003,17 +6594,6 @@
     "topic": ""
   },
   {
-    "question_text": "在微信中，无法通过微信号、手机号、QQ号向对方发出添加好友的请求，原因可能是，对方做了隐私设置。",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "错误",
-    "explanation": "微信中有相关设置。",
-    "source": "竞赛平台模拟练习解析页 42e0445a",
-    "answer_status": "confirmed",
-    "question_hash": "6d4ea6a2dbbd3e8aa319a8d89967c291c5993a390e64ef20aaaf9cdc4de06c83",
-    "topic": ""
-  },
-  {
     "question_text": "与科睿唯安旗下的大多数产品类似，Master Journal List是收费工具，访问需要购买权限。",
     "question_type": "boolean",
     "options": {},
@@ -7044,17 +6624,6 @@
     "source": "竞赛平台模拟练习解析页 42e0445a",
     "answer_status": "confirmed",
     "question_hash": "049f00eaaa3646143351028285a6968eb0bf5e3c0f82ae1496eaea0bad10630a",
-    "topic": ""
-  },
-  {
-    "question_text": "解决问题，不仅要搜索，更要探索，在提升效率的同时提升自己。",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "正确",
-    "explanation": "这是一个理解性题目。理解就好。",
-    "source": "竞赛平台模拟练习解析页 42e0445a",
-    "answer_status": "confirmed",
-    "question_hash": "ef6999ec45e2ed630dbfb9b1455113cf4b8f81fb2a29388fd91997fec53014a8",
     "topic": ""
   },
   {
@@ -7202,38 +6771,6 @@
     "topic": ""
   },
   {
-    "question_text": "在中国家谱知识服务平台上，不仅可以查找家谱资源，而且有家规家训相关资源。在这个平台可以找到“常德府武陵縣皮氏宗規”，请问这个宗规的最后一句是什么？",
-    "question_type": "single",
-    "options": {
-      "A": "非敢杜撰已也",
-      "B": "則舉動便不苟且",
-      "C": "當必有興起而身體力行者矣",
-      "D": "故自陷於過惡"
-    },
-    "answer": "A",
-    "explanation": "中国家谱知识服务平台首页，检索框下方有“家规家训”链接，进去可以检索。输入名称，注意要用繁体，即可找到，打开可以看到。地址：https://jiapu.library.sh.cn/#/familyRules",
-    "source": "竞赛平台模拟练习解析页 833dd9e4",
-    "answer_status": "confirmed",
-    "question_hash": "020754ed7f9b04634d16f483b31cde3ec324c2bd000d22ea975cd7cba675a862",
-    "topic": ""
-  },
-  {
-    "question_text": "在web of science中，检索点选择“标题”，检索词输入leg和ache这两个单词，中间用空格连接。这种表达方式，体现的是布尔检索中的（）关系。",
-    "question_type": "single",
-    "options": {
-      "A": "非",
-      "B": "或者",
-      "C": "映射",
-      "D": "并且"
-    },
-    "answer": "D",
-    "explanation": "检索框中的空格，一般表示“并且”关系，表示两个检索词都要出现。在其他检索系统中，也是类似的逻辑。",
-    "source": "竞赛平台模拟练习解析页 833dd9e4",
-    "answer_status": "confirmed",
-    "question_hash": "7fcae4490c04c435a343e840a6335767e9680caea7c0cd25a16bf2853aab75fa",
-    "topic": ""
-  },
-  {
     "question_text": "《“互联网 + ”视角下基于微视频的信息素养教育创新研究》这篇文章的关键词对应的英文翻译包括以下哪几个？",
     "question_type": "multiple",
     "options": {
@@ -7373,17 +6910,6 @@
     "topic": ""
   },
   {
-    "question_text": "将信息素养教育置于终身学习能力培养的语境下，从培养信息意识、探究精神出发，训练学生基于信息解决问题的能力和素质，这也许是新时代信息素养教育的突破点和着力点。",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "正确",
-    "explanation": "这是一个理解性题目。仔细琢磨题干的表述，是正确的理解。",
-    "source": "竞赛平台模拟练习解析页 833dd9e4",
-    "answer_status": "confirmed",
-    "question_hash": "c572395180705dcbed5d9a6afe0c4ee534c0a7f47d7962c4b028c0f02381065c",
-    "topic": ""
-  },
-  {
     "question_text": "微信号是识别身份的重要ID，一旦确定，就无法修改了。",
     "question_type": "boolean",
     "options": {},
@@ -7403,33 +6929,6 @@
     "source": "竞赛平台模拟练习解析页 833dd9e4",
     "answer_status": "confirmed",
     "question_hash": "36c10e4253f8bdf9690778be56386c74370be9ed9666013fc9b75d0f2fc88145",
-    "topic": ""
-  },
-  {
-    "question_text": "中国大学MOOC的课程只能在手机上安装APP进行学习，在电脑端是无法使用的。",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "错误",
-    "explanation": "",
-    "source": "竞赛平台模拟练习解析页 833dd9e4",
-    "answer_status": "confirmed",
-    "question_hash": "744bcc34a684dda657cbb1a6b25ba743739a896342d107d935387e9adf0aa749",
-    "topic": ""
-  },
-  {
-    "question_text": "在国家知识产权局旗下的专利检索及分析系统中可以找到一个名为“一种物联网应用充电宝加工用夹持装置”专利文献（发明专利申请单行本），这个专利文献共有8页，最后两页是附图。请问第7页（也就是附图的第一页）有几张图？",
-    "question_type": "single",
-    "options": {
-      "A": "4",
-      "B": "1",
-      "C": "3",
-      "D": "2"
-    },
-    "answer": "D",
-    "explanation": "找到全文，打开看看就知道了。",
-    "source": "竞赛平台模拟练习解析页 0b661aab",
-    "answer_status": "confirmed",
-    "question_hash": "9702dc06e23c68a96ca2d428b0cdcd2a94b49d4df63afcbd1d0d9297b03a744f",
     "topic": ""
   },
   {
@@ -7661,17 +7160,6 @@
     "source": "竞赛平台模拟练习解析页 0b661aab",
     "answer_status": "confirmed",
     "question_hash": "d0ddbbbc7b65d038f4fa403a08019739326ee3fdd2ea4498fbc87741137248f7",
-    "topic": ""
-  },
-  {
-    "question_text": "哈佛大学网站上有专门的在线课程平台，其中的在线课程都是免费的。",
-    "question_type": "boolean",
-    "options": {},
-    "answer": "错误",
-    "explanation": "这是一个识记性题目。哈佛大学网站上有专门的在线课程平台，其中的在线课程，有付费的，也有免费的。",
-    "source": "竞赛平台模拟练习解析页 0b661aab",
-    "answer_status": "confirmed",
-    "question_hash": "d97a8935f5791814a4e48329947208546d5fa460bda48398d0d0d90b9765586f",
     "topic": ""
   }
 ]

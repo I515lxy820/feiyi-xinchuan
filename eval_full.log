@@ -1,0 +1,69 @@
+已完成 10/245
+已完成 20/245
+已完成 30/245
+已完成 40/245
+已完成 50/245
+已完成 60/245
+已完成 70/245
+已完成 80/245
+已完成 90/245
+已完成 100/245
+已完成 110/245
+已完成 120/245
+已完成 130/245
+已完成 140/245
+已完成 150/245
+已完成 160/245
+已完成 170/245
+已完成 180/245
+已完成 190/245
+已完成 200/245
+已完成 210/245
+已完成 220/245
+已完成 230/245
+已完成 240/245
+已完成 245/245
+{
+  "total": 245,
+  "correct": 216,
+  "accuracy": 0.8816326530612245,
+  "accuracy_wilson_95": [
+    0.8352,
+    0.9163
+  ],
+  "coverage": 0.9959183673469387,
+  "answered_accuracy": 0.8852459016393442,
+  "manual_review_count": 0,
+  "by_type": {
+    "single": {
+      "total": 74,
+      "correct": 67,
+      "accuracy": 0.9054054054054054
+    },
+    "multiple": {
+      "total": 92,
+      "correct": 72,
+      "accuracy": 0.782608695652174
+    },
+    "boolean": {
+      "total": 79,
+      "correct": 77,
+      "accuracy": 0.9746835443037974
+    }
+  },
+  "by_input_type": {
+    "text": {
+      "total": 245,
+      "correct": 216,
+      "accuracy": 0.8816326530612245
+    }
+  },
+  "latency_seconds": {
+    "p50": 8.752,
+    "p95": 28.978
+  },
+  "sample_sufficient": true,
+  "meets_80_percent": true,
+  "status": "passed"
+}
+详细结果已保存到 /workspace/question_bank/evaluation-bank-full.json

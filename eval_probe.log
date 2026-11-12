@@ -1,0 +1,38 @@
+已完成 10/40
+已完成 20/40
+已完成 30/40
+已完成 40/40
+{
+  "total": 40,
+  "correct": 22,
+  "accuracy": 0.55,
+  "accuracy_wilson_95": [
+    0.3983,
+    0.6929
+  ],
+  "coverage": 0.975,
+  "answered_accuracy": 0.5641025641025641,
+  "manual_review_count": 0,
+  "by_type": {
+    "multiple": {
+      "total": 40,
+      "correct": 22,
+      "accuracy": 0.55
+    }
+  },
+  "by_input_type": {
+    "text": {
+      "total": 40,
+      "correct": 22,
+      "accuracy": 0.55
+    }
+  },
+  "latency_seconds": {
+    "p50": 13.278,
+    "p95": 50.523
+  },
+  "sample_sufficient": false,
+  "meets_80_percent": false,
+  "status": "insufficient_sample"
+}
+详细结果已保存到 /workspace/question_bank/probe-multiple-v2b.json
